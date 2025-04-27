@@ -1,0 +1,30 @@
+title: "Python drops"
+author: "Rodrigo Girão Serrão"
+
+# [[[cog
+# import cog
+# import datetime as dt
+# cog.outl(f"date: {dt.date.today():%d-%m-%Y}")
+# ]]]
+date: 27-04-2025
+# [[[end]]]
+
+keywords:
+  - programming
+  - python
+lang: en-GB
+
+toc: true
+documentclass: report
+fontfamily: atkinson
+fontfamilyoptions: default
+colorlinks: true
+margin-left: 1in
+margin-right: 1in
+header-includes: |
+  \usepackage{graphicx}
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[LE,RE,LO,RO]{}
+  \fancyfoot[CE,CO]{\small Check online to get updates for free.}
+  \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
