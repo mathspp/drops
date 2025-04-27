@@ -10,6 +10,12 @@ from collections import defaultdict
 import string
 from ruamel.yaml import YAML
 
+def slugify(title):
+    unsafe_punctuation = str(set(string.punctuation) - set("-_."))
+    return title.lower().replace(" ", "-").translate(
+        str.maketrans("", "", unsafe_punctuation)
+    )
+
 # Initialize
 yaml = YAML()
 theme_to_references = defaultdict(list)
@@ -47,7 +53,7 @@ for file in tip_files:
 # Group themes by first character
 grouped = defaultdict(list)
 for theme, references in theme_to_references.items():
-    first_char = theme[0].upper()
+    first_char = theme[0].upper() if theme[0] != "`" else theme[1].upper()
     if first_char in string.ascii_uppercase:
         group_key = first_char
     elif first_char == '_':
@@ -58,15 +64,15 @@ for theme, references in theme_to_references.items():
 
 # Sort the groups and their contents
 sorted_groups = sorted(grouped.items(), key=lambda x: (x[0] != '#', x[0]))
-output_lines = []
+output_lines = ["# Themed index\n"]
 
 for group_key, themes in sorted_groups:
-    output_lines.append(f'# {group_key}\n')
+    output_lines.append(f'## {group_key}\n')
     # Sort themes alphabetically
     for theme, references in sorted(themes, key=lambda x: x[0].lower()):
         # Sort references by number
         references_sorted = sorted(references, key=lambda x: x[0])
-        links = ', '.join(f'[{num}](#{num}--{title.lower().replace(" ", "-").replace("–", "").replace("--", "-")})' for num, title in references_sorted)
+        links = ', '.join(f'[{num}](#{slugify(title)})' for num, title in references_sorted)
         output_lines.append(f'- {theme}: {links}')
     output_lines.append('')  # Blank line between groups
 

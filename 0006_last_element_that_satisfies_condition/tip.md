@@ -1,7 +1,7 @@
 ---
 themes:
     - iterables
-    - collections.deque
+    - "`collections.deque`"
     - generation expression
 ---
 
