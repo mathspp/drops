@@ -3,11 +3,11 @@ WEBP_FILES := $(shell find . -name "*.webp" | sort)
 TIPS := $(shell find . -name "tip.md" | sort)
 
 BOOK_SOURCE := 0000.intro.md $(TIPS) 9998.themed-index.md 9999.outro.md
-BOOK_DEPENDS := $(PNG_FILES) $(BOOKS_SOURCE) frontmatter.yaml cover.*
+BOOK_DEPENDS := $(PNG_FILES) $(BOOK_SOURCE) frontmatter.yaml cover.*
 
-GENERAL_PANDOC_OPTIONS := --from markdown+fenced_divs --metadata-file=frontmatter.yaml
-LATEX_PANDOC_OPTIONS := $(GENERAL_PANDOC_OPTIONS) --pdf-engine=xelatex
-EPUB_PANDOC_OPTIONS := $(GENERAL_PANDOC_OPTIONS) --epub-cover-image=cover.webp
+PANDOC_OPTIONS := --from markdown+fenced_divs --metadata-file=frontmatter.yaml
+LATEX_PANDOC_OPTIONS := $(PANDOC_OPTIONS) --pdf-engine=xelatex
+EPUB_PANDOC_OPTIONS := $(PANDOC_OPTIONS) --epub-cover-image=cover.webp
 
 all: drops.pdf drops.epub flashcards.pdf
 
