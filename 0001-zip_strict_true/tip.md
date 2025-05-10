@@ -1,6 +1,6 @@
 ---
 themes:
-    - built-ins
+    - "built-ins"
     - "`zip`"
     - "`strict` (keyword argument)"
 ---

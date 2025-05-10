@@ -1,7 +1,7 @@
 ---
 themes:
-    - dictionaries
-    - standard library
+    - "dictionaries"
+    - "standard library"
     - "`collections` (module)"
     - "`collections.ChainMap`"
 ---

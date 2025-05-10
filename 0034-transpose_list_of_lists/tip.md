@@ -1,9 +1,9 @@
 ---
 themes:
-    - builtins
+    - "built-ins"
     - "`zip`"
-    - splat operator `*`
-    - asterisk `*`
+    - "splat operator `*`"
+    - "asterisk `*`"
 ---
 
 ## 34 – Transpose a list of lists

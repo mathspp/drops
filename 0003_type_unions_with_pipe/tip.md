@@ -1,9 +1,9 @@
 ---
 themes:
-    - typing
+    - "typing"
     - "`isinstance`"
-    - vertical bar `|`
-    - type unions
+    - "vertical bar `|`"
+    - "type unions"
 ---
 
 ## 3 – Type unions with the vertical bar in `isinstance`

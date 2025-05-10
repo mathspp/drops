@@ -1,6 +1,6 @@
 ---
 themes:
-    - generators
+    - "generators"
     - "`StopIteration`"
 ---
 

@@ -1,10 +1,10 @@
 ---
 themes:
-    - standard library
+    - "standard library"
     - "`datetime` (module)"
     - "`datetime.date.today`"
     - "`datetime.datetime.now`"
-    - dates and times
+    - "dates and times"
 ---
 
 ## 21 – Current date and time

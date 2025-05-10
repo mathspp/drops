@@ -1,9 +1,9 @@
 ---
 themes:
-    - standard library
+    - "standard library"
     - "`enum` (module)"
     - "`enum.auto`"
-    - introspection
+    - "introspection"
 ---
 
 ## 39 – Automatic enumeration values

@@ -1,7 +1,7 @@
 ---
 themes:
-    - metaprogramming
-    - inheritance
+    - "metaprogramming"
+    - "inheritance"
     - "`__init_subclass__`"
 ---
 

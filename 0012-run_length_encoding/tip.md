@@ -1,7 +1,7 @@
 ---
 themes:
-    - standard library
-    - iterables
+    - "standard library"
+    - "iterables"
     - "`itertools`"
     - "`itertools.groupby`"
 ---

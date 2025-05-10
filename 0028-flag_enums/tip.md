@@ -1,6 +1,6 @@
 ---
 themes:
-    - standard library
+    - "standard library"
     - "`enum` (module)"
     - "`enum.Flag`"
 ---

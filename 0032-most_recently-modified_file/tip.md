@@ -1,8 +1,8 @@
 ---
 themes:
     - "`key` (keyword argument)"
-    - builtins
-    - standard library
+    - "built-ins"
+    - "standard library"
     - "`pathlib`"
     - "`pathlib.Path.iterdir`"
     - "`pathlib.Path.isfile`"

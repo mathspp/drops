@@ -1,10 +1,10 @@
 ---
 themes:
-    - standard library
+    - "standard library"
     - "`contextlib`"
     - "`contextlib.contextmanager`"
-    - generators
-    - context managers
+    - "generators"
+    - "context managers"
 ---
 
 ## 17 – Create context managers with `contextlib.contextmanager`

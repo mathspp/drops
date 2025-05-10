@@ -13,7 +13,7 @@ all: drops.pdf drops.epub flashcards.pdf
 
 .PHONY: frontmatter.yaml
 frontmatter.yaml:
-	uv tool run cog -r $@
+	cog -r $@
 
 .PHONY: 9998.themed-index.md
 9998.themed-index.md:
@@ -24,14 +24,14 @@ flashcards.pdf: $(PNG_FILES)
 	@uv run files_to_pdf.py $@ $(PNG_FILES)
 
 drops.tex: $(BOOK_DEPENDS)
-	uvx pandoc -s -o $@ $(LATEX_PANDOC_OPTIONS) $(BOOK_SOURCE)
+	pandoc -s -o $@ $(LATEX_PANDOC_OPTIONS) $(BOOK_SOURCE)
 
 drops.pdf: $(BOOK_DEPENDS)
-	uvx pandoc -s -o no-cover-$@ $(LATEX_PANDOC_OPTIONS) $(BOOK_SOURCE)
+	pandoc -s -o no-cover-$@ $(LATEX_PANDOC_OPTIONS) $(BOOK_SOURCE)
 	uv run merger.py cover.pdf no-cover-$@ $@
 
 drops.epub: $(BOOK_DEPENDS)
-	uvx pandoc -s -o $@ $(EPUB_PANDOC_OPTIONS) $(BOOK_SOURCE)
+	pandoc -s -o $@ $(EPUB_PANDOC_OPTIONS) $(BOOK_SOURCE)
 
 clean:
 	rm drops.pdf drops.epub flashcards.pdf 9998.themed-index.md

@@ -1,8 +1,8 @@
 ---
 themes:
-    - iterables
-    - splat operator `*`
-    - asterisk `*`
+    - "iterables"
+    - "splat operator `*`"
+    - "asterisk `*`"
 ---
 
 ## 35 – Inline lists and tuples

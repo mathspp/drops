@@ -1,7 +1,7 @@
 ---
 themes:
-    - strings
-    - casing
+    - "strings"
+    - "casing"
     - "`str.casefold`"
 ---
 

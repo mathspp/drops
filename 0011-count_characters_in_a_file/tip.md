@@ -1,6 +1,6 @@
 ---
 themes:
-    - standard library
+    - "standard library"
     - "`collections` (module)"
     - "`collections.Counter`"
     - "`itertools`"

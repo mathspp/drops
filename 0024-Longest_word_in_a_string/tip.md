@@ -1,11 +1,12 @@
 ---
 themes:
-    - strings
-    - iterables
+    - "strings"
+    - "iterables"
     - "`key` (keyword argument)"
-    - builtins
+    - "built-ins"
     - "`max`"
     - "`min`"
+    - "`len`"
 ---
 
 ## 24 – Longest word in a string

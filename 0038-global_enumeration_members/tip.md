@@ -1,9 +1,9 @@
 ---
 themes:
-    - standard library
+    - "standard library"
     - "`enum` (module)"
     - "`enum.global_enum`"
-    - global names
+    - "global names"
 ---
 
 ## 38 – Global enumeration members

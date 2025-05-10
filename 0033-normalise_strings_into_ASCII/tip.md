@@ -1,12 +1,12 @@
 ---
 themes:
-    - strings
-    - standard library
+    - "strings"
+    - "standard library"
     - "`unicodedata` (module)"
     - "`unicodedata.normalize`"
     - "`unicodedata.category`"
-    - ASCII
-    - Unicode
+    - "ASCII"
+    - "Unicode"
 ---
 
 ## 33 – normalise strings by removing accents

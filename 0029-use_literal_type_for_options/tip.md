@@ -1,7 +1,7 @@
 ---
 themes:
-    - type hints
-    - standard library
+    - "type hints"
+    - "standard library"
     - "`typing` (module)"
     - "`typing.Literal`"
 ---

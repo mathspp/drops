@@ -1,10 +1,10 @@
 ---
 themes:
-    - strings
+    - "strings"
     - "`str.translate`"
     - "`str.replace`"
-    - punctuation
-    - "`string (module)`"
+    - "punctuation"
+    - "`string` (module)"
 ---
 
 ## 10 – Remove punctuation from a string

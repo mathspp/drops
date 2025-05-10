@@ -1,8 +1,8 @@
 ---
 themes:
-    - type hints
-    - type alias
-    - generics
+    - "type hints"
+    - "type alias"
+    - "generics"
 ---
 
 ## 16 – Type statements

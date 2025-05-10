@@ -1,10 +1,10 @@
 ---
 themes:
-    - standard library
-    - types (module)
+    - "standard library"
+    - "`types` (module)"
     - "`types.MappingProxyType`"
-    - dictionaries
-    - immutability
+    - "dictionaries"
+    - "immutability"
 ---
 
 ## 18 – Immutable dictionary

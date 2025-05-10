@@ -1,7 +1,7 @@
 ---
 themes:
-    - f-strings
-    - debugging
+    - "f-strings"
+    - "debugging"
 ---
 
 ## 19 – Self-debugging f-strings

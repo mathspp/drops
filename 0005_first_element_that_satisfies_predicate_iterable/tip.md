@@ -1,9 +1,9 @@
 ---
 themes:
-    - iterables
-    - builtins
+    - "iterables"
+    - "built-ins"
     - "`next`"
-    - generator expression
+    - "generator expression"
     - "`StopIteration`"
 ---
 

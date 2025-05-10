@@ -1,8 +1,8 @@
 ---
 themes:
-    - built-ins
+    - "built-ins"
     - "`int`"
-    - number bases
+    - "number bases"
 ---
 
 ## 4 – Parsing integers from different bases

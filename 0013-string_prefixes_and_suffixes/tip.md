@@ -1,6 +1,6 @@
 ---
 themes:
-    - strings
+    - "strings"
     - "`str.startswith`"
     - "`str.endswith`"
     - "`str.removeprefix`"

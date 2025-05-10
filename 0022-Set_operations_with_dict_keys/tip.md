@@ -1,7 +1,7 @@
 ---
 themes:
-    - sets
-    - dictionaries
+    - "sets"
+    - "dictionaries"
     - "`dict.keys`"
 ---
 

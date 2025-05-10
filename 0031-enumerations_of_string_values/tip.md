@@ -1,9 +1,9 @@
 ---
 themes:
-    - standard library
+    - "standard library"
     - "`enum` (module)"
     - "`enum.StrEnum`"
-    - strings
+    - "strings"
 ---
 
 ## 31 – Enumerations of string values

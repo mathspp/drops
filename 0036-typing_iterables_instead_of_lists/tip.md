@@ -1,12 +1,12 @@
 ---
 themes:
-    - type hints
-    - standard library
+    - "type hints"
+    - "standard library"
     - "`typing` (module)"
     - "`typing.Iterable`"
     - "`collections.abc`"
     - "`collections.abc.Iterable`"
-    - iterables
+    - "iterables"
 ---
 
 ## 36 – Typing iterables instead of lists

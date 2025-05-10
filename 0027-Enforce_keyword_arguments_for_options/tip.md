@@ -1,7 +1,7 @@
 ---
 themes:
-    - functions
-    - keyword arguments
+    - "functions"
+    - "keyword arguments"
     - "asterisk `*`"
 ---
 

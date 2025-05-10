@@ -1,6 +1,6 @@
 ---
 themes:
-    - match statement
+    - "match statement"
     - "vertical bar `|`"
 ---
 

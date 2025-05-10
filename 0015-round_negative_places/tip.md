@@ -1,7 +1,7 @@
 ---
 themes:
-    - integers
-    - builtins
+    - "integers"
+    - "built-ins"
     - "`round`"
 ---
 

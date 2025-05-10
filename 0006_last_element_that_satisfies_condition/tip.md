@@ -1,8 +1,8 @@
 ---
 themes:
-    - iterables
+    - "iterables"
     - "`collections.deque`"
-    - generation expression
+    - "generation expression"
 ---
 
 ## 6 – Last element that satisfies a condition
