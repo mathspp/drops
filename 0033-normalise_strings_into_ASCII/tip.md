@@ -9,7 +9,7 @@ themes:
     - "Unicode"
 ---
 
-## 33 – normalise strings by removing accents
+## 33 – Normalise strings by removing accents
 
 My name is “Rodrigo Girão Serrão” and the “~” on top of the As are standard in Portuguese…
 And just like the “~”, there are hundreds of other accents and weird marks used by hundreds of other languages!

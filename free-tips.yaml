@@ -1,0 +1,21 @@
+author: "Rodrigo Girão Serrão"
+
+keywords:
+  - programming
+  - python
+lang: en-GB
+
+toc: true
+documentclass: report
+fontfamily: atkinson
+fontfamilyoptions: default
+colorlinks: true
+margin-left: 1in
+margin-right: 1in
+header-includes: |
+  \usepackage{graphicx}
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[LE,RE,LO,RO]{}
+  \fancyfoot[CE,CO]{\small \url{https://mathspp.com/drops}}
+  \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}

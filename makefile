@@ -5,6 +5,24 @@ TIPS := $(shell find . -name "tip.md" | sort)
 BOOK_SOURCE := 0000.intro.md $(TIPS) 9998.themed-index.md 9999.outro.md
 BOOK_DEPENDS := $(PNG_FILES) $(BOOK_SOURCE) frontmatter.yaml cover.*
 
+BEGINNER_TIPS := 0001-zip_strict_true/tip.md \
+				0013-string_prefixes_and_suffixes/tip.md \
+				0019-self-debugging_f-strings/tip.md \
+				0027-Enforce_keyword_arguments_for_options/tip.md \
+				0044-format_specifier_!r/tip.md
+
+INTERMEDIATE_TIPS := 0008-schedule_cleanup_actions/tip.md \
+					0009-map_with_multiple_arguments/tip.md \
+					0012-run_length_encoding/tip.md \
+					0042-bounded_cache/tip.md \
+					0047-batching_API_calls/tip.md
+
+ADVANCED_TIPS := 0005_first_element_that_satisfies_predicate_iterable/tip.md \
+				0017-create_context_managers_with_contextmanager/tip.md \
+				0026-Notify_parent_class_when_subclassing/tip.md \
+				0041-longest_and_shortest/tip.md \
+				0046-dot_product/tip.md
+
 PANDOC_OPTIONS := --from markdown+fenced_divs --metadata-file=frontmatter.yaml
 LATEX_PANDOC_OPTIONS := $(PANDOC_OPTIONS) --pdf-engine=xelatex
 EPUB_PANDOC_OPTIONS := $(PANDOC_OPTIONS) --epub-cover-image=cover.webp
@@ -33,5 +51,29 @@ drops.pdf: $(BOOK_DEPENDS)
 drops.epub: $(BOOK_DEPENDS)
 	pandoc -s -o $@ $(EPUB_PANDOC_OPTIONS) $(BOOK_SOURCE)
 
+drops-beginner.pdf: $(BEGINNER_TIPS)
+	pandoc -s -o $@ \
+	-M title="Beginner Python drops" \
+	--from markdown+fenced_divs \
+	--metadata-file=free-tips.yaml \
+	--pdf-engine=xelatex \
+	$(BEGINNER_TIPS)
+
+drops-intermediate.pdf: $(INTERMEDIATE_TIPS)
+	pandoc -s -o $@ \
+	-M title="Intermediate Python drops" \
+	--from markdown+fenced_divs \
+	--metadata-file=free-tips.yaml \
+	--pdf-engine=xelatex \
+	$(INTERMEDIATE_TIPS)
+
+drops-advanced.pdf: $(ADVANCED_TIPS)
+	pandoc -s -o $@ \
+	-M title="Advanced Python drops" \
+	--from markdown+fenced_divs \
+	--metadata-file=free-tips.yaml \
+	--pdf-engine=xelatex \
+	$(ADVANCED_TIPS)
+
 clean:
-	rm drops.pdf drops.epub flashcards.pdf 9998.themed-index.md
+	rm drops-beginner.pdf drops-intermediate.pdf drops-advanced.pdf drops.pdf drops.epub flashcards.pdf 9998.themed-index.md
