@@ -1,6 +1,6 @@
 ---
 themes:
-    - "type hints"
+    - "typing/type hints"
     - "type alias"
     - "generics"
 ---
@@ -33,4 +33,5 @@ p: Pair[int] = (3, 4)
 
 
 Further reading:
+
  - [`type` statement and type aliases](https://mathspp.com/blog/til/type-statement-and-type-aliases)

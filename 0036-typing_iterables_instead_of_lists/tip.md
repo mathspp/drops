@@ -1,6 +1,6 @@
 ---
 themes:
-    - "type hints"
+    - "typing/type hints"
     - "standard library"
     - "`typing` (module)"
     - "`typing.Iterable`"

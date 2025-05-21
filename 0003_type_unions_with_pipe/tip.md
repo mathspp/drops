@@ -1,6 +1,6 @@
 ---
 themes:
-    - "typing"
+    - "typing/type hints"
     - "`isinstance`"
     - "vertical bar `|`"
     - "type unions"

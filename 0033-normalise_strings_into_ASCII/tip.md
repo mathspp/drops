@@ -40,6 +40,6 @@ The function `remove_accents` leverages the built-in module `unicodedata`, which
 (In case you are wondering, the call `unicodedata.normalize("NFD", string)` separates the accents from the letters:)
 
 ```py
-print(list(unicodedata.normalize("NFD", "äáàãñç")))
-# ['a', '̈', 'a', '́', 'a', '̀', 'a', '̃', 'n', '̃', 'c', '̧']
+print(list(unicodedata.normalize("NFD", "äáàãñ")))
+# ['a', '̈', 'a', '́', 'a', '̀', 'a', '̃', 'n', '̃']
 ```
