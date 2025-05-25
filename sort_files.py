@@ -16,7 +16,7 @@ themes:
     - ""
 ---
 
-## {num} – title
+## {num} – Title
 """
 
 
