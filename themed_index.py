@@ -62,14 +62,14 @@ for theme, references in theme_to_references.items():
         group_key = '#'
     grouped[group_key].append((theme, references))
 
-# Sort the groups and their contents
+# Sort the groups
 sorted_groups = sorted(grouped.items(), key=lambda x: (x[0] != '#', x[0]))
 output_lines = ["# Themed index\n"]
 
 for group_key, themes in sorted_groups:
     output_lines.append(f'## {group_key}\n')
     # Sort themes alphabetically
-    for theme, references in sorted(themes, key=lambda x: x[0].lower()):
+    for theme, references in sorted(themes, key=lambda x: x[0].lower().lstrip("`")):
         # Sort references by number
         references_sorted = sorted(references, key=lambda x: x[0])
         links = ', '.join(f'[{num}](#{slugify(title)})' for num, title in references_sorted)
