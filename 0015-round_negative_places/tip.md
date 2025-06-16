@@ -3,6 +3,7 @@ themes:
     - "integers"
     - "built-ins"
     - "`round`"
+    - "unexpected additional argument"
 ---
 
 ## 15 – Round to pretty whole numbers
