@@ -33,6 +33,6 @@ print(next(squares))
 However, if you pass a second argument to the built-in `next`, that's the result you get:
 
 ```py
-print(next(squares, "✨"))
-# ✨
+print(next(squares, "hey"))
+# hey
 ```

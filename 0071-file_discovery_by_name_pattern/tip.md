@@ -13,7 +13,7 @@ Note that `glob` doesn't support complex (regex) patterns, though.
 Suppose the filesystem contains the following folder `Downloads` and its given contents:
 
 ```txt
-📂 Downloads/
+= Downloads/
   - cat_and_dog.png
   - cute_cat.jpg
   - cute_dog.jpg

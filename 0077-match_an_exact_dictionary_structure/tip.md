@@ -28,8 +28,8 @@ match d:
 The two dictionaries below would match, even though the second one has a key `"age"` that is not mentioned in the pattern above.
 
 ```py
-{"name": "John"}  # ✅
-{"name": "John", "age": 42}  # ✅
+{"name": "John"}  # matches
+{"name": "John", "age": 42}  # matches
 ```
 
 To only match dictionaries that have exactly that structure, introduce a guard with `**kwargs` that asserts that there are no extra keys:
