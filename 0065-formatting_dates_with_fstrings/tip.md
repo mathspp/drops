@@ -4,6 +4,7 @@ themes:
     - "standard library"
     - "dates and times"
     - "`datetime` (module)"
+    - "date and time format specifiers"
 ---
 
 ## 65 – Formatting dates with f-strings

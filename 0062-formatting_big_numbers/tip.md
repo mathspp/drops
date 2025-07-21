@@ -2,6 +2,7 @@
 themes:
     - "strings"
     - "string formatting specification language"
+    - "string formatting"
     - "f-strings"
     - "readability"
     - "underscore `_`"

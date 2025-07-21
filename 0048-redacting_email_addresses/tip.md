@@ -3,6 +3,7 @@ themes:
     - "strings"
     - "f-strings"
     - "string formatting specification language"
+    - "string formatting"
     - "`str.partition`"
 ---
 

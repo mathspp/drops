@@ -3,6 +3,7 @@ themes:
     - "standard library"
     - "`atexit`"
     - "`atexit.register`"
+    - "automatic cleanup"
 ---
 
 ## 8 – Schedule cleanup actions

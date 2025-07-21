@@ -6,7 +6,7 @@ author: "Rodrigo Girão Serrão"
 # import datetime as dt
 # cog.outl(f"date: {dt.date.today():%d-%m-%Y}")
 # ]]]
-date: 25-06-2025
+date: 15-07-2025
 # [[[end]]]
 
 keywords:
@@ -21,6 +21,7 @@ fontfamilyoptions: default
 colorlinks: true
 margin-left: 1in
 margin-right: 1in
+margin-bottom: 1in
 header-includes: |
   \usepackage{graphicx}
   \usepackage{fancyhdr}
