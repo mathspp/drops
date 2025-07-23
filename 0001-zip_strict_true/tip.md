@@ -3,7 +3,7 @@ themes:
     - "built-ins"
     - "`zip`"
     - "`strict` (keyword argument)"
-    - "unexpected additional argument"
+    - "unexpected argument"
 ---
 
 ## 1 – `zip`'s keyword argument `strict`

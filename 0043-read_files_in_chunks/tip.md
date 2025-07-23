@@ -7,7 +7,7 @@ themes:
     - "`functools.partial`"
     - "iterables"
     - "file I/O"
-    - "unexpected additional argument"
+    - "unexpected argument"
 ---
 
 ## 43 – Read files in chunks

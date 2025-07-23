@@ -1,7 +1,7 @@
 ---
 themes:
     - "built-ins"
-    - "unexpected additional argument"
+    - "unexpected argument"
     - "`next`"
     - "iterables"
     - "`StopIteration`"
