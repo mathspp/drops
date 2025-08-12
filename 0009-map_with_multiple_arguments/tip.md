@@ -16,7 +16,7 @@ exps = [2, 2, 2, 3, 3, 3]
 
 for num in map(pow, bases, exps):
     print(num, end=" ")
-# 3 9 16 8 27 64
+# 4 9 16 8 27 64
 ```
 
 This can be more convenient to use than a list comprehension/generator expression in some situations:

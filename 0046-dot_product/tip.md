@@ -10,6 +10,7 @@ themes:
     - "`itertools`"
     - "`itertools.starmap`"
     - "`strict` (keyword argument)"
+    - "3.14 (new in Python 3.14)"
 ---
 
 ## 46 – Dot product idiom

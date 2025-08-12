@@ -5,6 +5,8 @@ themes:
     - "type variables"
     - "functions"
     - "OOP"
+    - "type parameter syntax"
+    - "3.12 (new in Python 3.12)"
 ---
 
 ## 84 – Generics syntax

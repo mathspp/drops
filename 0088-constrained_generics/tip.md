@@ -3,6 +3,8 @@ themes:
     - "typing/type hints"
     - "generics"
     - "type variables"
+    - "type parameter syntax"
+    - "3.12 (new in Python 3.12)"
 ---
 
 ## 88 – Constrained generics

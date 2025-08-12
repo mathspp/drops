@@ -3,6 +3,8 @@ themes:
     - "typing/type hints"
     - "type alias"
     - "generics"
+    - "3.12 (new in Python 3.12)"
+    - "type parameter syntax"
 ---
 
 ## 16 – Type statements

@@ -10,26 +10,30 @@ from collections import defaultdict
 import string
 from ruamel.yaml import YAML
 
+
 def slugify(title):
     unsafe_punctuation = str(set(string.punctuation) - set("-_."))
-    return title.lower().replace(" ", "-").translate(
-        str.maketrans("", "", unsafe_punctuation)
+    return (
+        title.lower()
+        .replace(" ", "-")
+        .translate(str.maketrans("", "", unsafe_punctuation))
     )
+
 
 # Initialize
 yaml = YAML()
 theme_to_references = defaultdict(list)
 
 # Find all `tip.md` files
-tip_files = list(Path('.').rglob('tip.md'))
+tip_files = list(Path(".").rglob("tip.md"))
 
 # Regex patterns
-frontmatter_pattern = re.compile(r'^---\n(.*?)\n---', re.DOTALL | re.MULTILINE)
-heading_pattern = re.compile(r'^##\s+(\d+)\s+–\s+(.*)', re.MULTILINE)
+frontmatter_pattern = re.compile(r"^---\n(.*?)\n---", re.DOTALL | re.MULTILINE)
+heading_pattern = re.compile(r"^##\s+(\d+)\s+–\s+(.*)", re.MULTILINE)
 
 # Parse each file
 for file in tip_files:
-    content = file.read_text(encoding='utf-8')
+    content = file.read_text(encoding="utf-8")
 
     # Extract frontmatter
     frontmatter_match = frontmatter_pattern.search(content)
@@ -46,7 +50,7 @@ for file in tip_files:
     title = heading_match.group(2)
 
     # Extract themes
-    themes = frontmatter.get('themes', [])
+    themes = frontmatter.get("themes", [])
     for theme in themes:
         theme_to_references[theme].append((int(number), title))
 
@@ -56,28 +60,30 @@ for theme, references in theme_to_references.items():
     first_char = theme[0].upper() if theme[0] != "`" else theme[1].upper()
     if first_char in string.ascii_uppercase:
         group_key = first_char
-    elif first_char == '_':
-        group_key = '_'
+    elif first_char == "_":
+        group_key = "_"
     else:
-        group_key = '#'
+        group_key = "#"
     grouped[group_key].append((theme, references))
 
 # Sort the groups
-sorted_groups = sorted(grouped.items(), key=lambda x: (x[0] != '#', x[0]))
+sorted_groups = sorted(grouped.items(), key=lambda x: (x[0] != "#", x[0]))
 output_lines = ["# Themed index\n"]
 
 for group_key, themes in sorted_groups:
-    output_lines.append(f'## {group_key}\n')
+    output_lines.append(f"## {group_key}\n")
     # Sort themes alphabetically
     for theme, references in sorted(themes, key=lambda x: x[0].lower().lstrip("`")):
         # Sort references by number
         references_sorted = sorted(references, key=lambda x: x[0])
-        links = ', '.join(f'[{num}](#{slugify(title)})' for num, title in references_sorted)
-        output_lines.append(f'- {theme}: {links}')
-    output_lines.append('')  # Blank line between groups
+        links = ", ".join(
+            f"[{num}](#{slugify(title)})" for num, title in references_sorted
+        )
+        output_lines.append(f"- {theme}: {links}")
+    output_lines.append("")  # Blank line between groups
 
 # Write the final output
-output_path = Path('9998.themed-index.md')
-output_path.write_text('\n'.join(output_lines), encoding='utf-8')
+output_path = Path("9998.themed-index.md")
+output_path.write_text("\n".join(output_lines), encoding="utf-8")
 
 print(f"Generated themed index at {output_path.resolve()}")

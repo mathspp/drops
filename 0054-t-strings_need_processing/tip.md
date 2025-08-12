@@ -3,6 +3,7 @@ themes:
     - "strings"
     - "t-strings"
     - "security"
+    - "3.14 (new in Python 3.14)"
 ---
 
 ## 54 – t-strings need processing
