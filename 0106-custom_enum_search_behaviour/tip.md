@@ -4,6 +4,7 @@ themes:
     - "`enum` (module)"
     - "`_missing_`"
     - "`classmethod`"
+    - "class methods"
 ---
 
 ## 106 – Custom `enum` search behaviour
