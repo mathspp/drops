@@ -35,3 +35,5 @@ my_list = [...]
 
 my_list = my_list + other_list
 ```
+
+CPython implementation detail: if you use augmented assignment `+=` then it's efficient again because it defers to the method `extend` at the C level.

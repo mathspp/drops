@@ -3,6 +3,7 @@ themes:
     - "functions"
     - "keyword arguments"
     - "asterisk `*`"
+    - "readability"
 ---
 
 ## 27 – Enforce keyword arguments for options

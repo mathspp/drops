@@ -34,4 +34,5 @@ BASE_PERMISSIONS = READ | WRITE
 Accessing members through the enumeration class still works, though.
 
 Further reading:
+
  - [Module `enum` overview](https://mathspp.com/blog/module-enum-overview)

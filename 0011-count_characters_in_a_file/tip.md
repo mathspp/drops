@@ -31,5 +31,6 @@ But this fun example helps you understand what `chain` can do, and `chain` is qu
 (**Note**: by default, line endings of the form `\r\n` will get turned into `\n`, so `\r` won't be counted. This may or may not be desirable.)
 
 Further reading:
+
  - [Overview of the module `collections`](https://mathspp.com/blog/module-collections-overview)
  - [Overview of the module `itertools`](https://mathspp.com/blog/module-itertools-overview)

@@ -5,6 +5,7 @@ themes:
     - "`itertools`"
     - "`itertools.batched`"
     - "performance optimisation"
+    - "3.12 (new in Python 3.12)"
 ---
 
 ## 47 – Batching API calls

@@ -20,4 +20,5 @@ def walk(direction):
 ```
 
 Further reading:
+
  - [Structural pattern matching tutorial](https://mathspp.com/blog/pydonts/structural-pattern-matching-tutorial)

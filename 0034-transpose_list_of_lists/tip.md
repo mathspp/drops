@@ -40,4 +40,5 @@ The only thing to note is that `zip` produces tuples, so the original variable `
 
 
 Further reading:
+
  - [Article about `zip`](https://mathspp.com/blog/pydonts/zip-up)
