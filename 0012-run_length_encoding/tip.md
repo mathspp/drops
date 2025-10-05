@@ -4,6 +4,7 @@ themes:
     - "iterables"
     - "`itertools`"
     - "`itertools.groupby`"
+    - "algorithms"
 ---
 
 ## 12 – Run-length encoding

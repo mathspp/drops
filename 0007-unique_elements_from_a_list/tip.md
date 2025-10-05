@@ -2,6 +2,7 @@
 themes:
     - "built-ins"
     - "`set`"
+    - "sets"
     - "uniqueness"
     - "`dict.fromkeys`"
 ---

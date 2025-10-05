@@ -2,7 +2,6 @@
 themes:
     - "built-ins"
     - "`zip`"
-    - "splat operator `*`"
     - "asterisk `*`"
 ---
 

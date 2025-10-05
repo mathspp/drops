@@ -1,7 +1,7 @@
 ---
 themes:
     - "unpacking"
-    - "splat operator `*`"
+    - "asterisk `*`"
     - "structural pattern matching"
 ---
 
