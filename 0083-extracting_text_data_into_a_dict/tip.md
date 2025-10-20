@@ -8,7 +8,7 @@ themes:
     - "named groups"
     - "dictionaries"
     - "standard library"
-    - "data extraction"
+    - "data processing"
     - "strings"
 ---
 

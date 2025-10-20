@@ -6,6 +6,7 @@ themes:
     - "f-strings"
     - "readability"
     - "underscore `_`"
+    - "integers"
 ---
 
 ## 62 – Formatting big numbers
@@ -32,7 +33,9 @@ print(f"Big money ${bignum:n}")
 # Big money $123541241234  # Might be different for you.
 ```
 
-Note that the locale-appropriate separator might be “nothing”, as seen above.
+Note that the locale-appropriate separator might be “nothing” if the locale isn't set appropriately beforehand, as seen above.
+
+Since Python 3.14, you can also [group digits in the fractional part](#grouping-digits-in-the-fractional-part) of a number.
 
 Further reading:
 
