@@ -2,7 +2,7 @@
 themes:
     - "filesystem"
     - "standard library"
-    - "`datetime`"
+    - "`datetime` (module)"
     - "`datetime.datetime.now`"
     - "dates and times"
     - "date and time format specifiers"

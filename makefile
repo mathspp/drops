@@ -1,4 +1,4 @@
-PNG_FILES := $(shell find . -name "*.png" | sort)
+PNG_FILES := $(shell find . -name "*-*.png" | sort)
 WEBP_FILES := $(shell find . -name "*.webp" | sort)
 TIPS := $(shell find . -name "tip.md" | sort)
 
