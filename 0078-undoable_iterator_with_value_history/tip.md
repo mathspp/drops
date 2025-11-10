@@ -2,7 +2,7 @@
 themes:
     - "iterables"
     - "standard library"
-    - "`collections`"
+    - "`collections` (module)"
     - "`collections.deque`"
     - "iterator protocol"
 ---
@@ -20,6 +20,8 @@ To undo a step, you take one element from the history `deque` and plop it into t
 This is a sample implementation of the iterator `undoable` with no validation/error-checking:
 
 ```py
+from collections import deque
+
 class undoable:
     def __init__(self, iterable, hist_size=100):
         self.iterator = iter(iterable)

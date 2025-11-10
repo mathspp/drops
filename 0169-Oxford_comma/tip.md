@@ -10,11 +10,11 @@ themes:
 The function below turns a list of strings into a Human-readable enumeration that uses the Oxford comma:
 
 ```py
-def oxford_comma(list_of_strings):
-    prefix = ", ".join(list_of_strings[:-1])
-    ox_comma = "," if len(list_of_strings) > 2 else ""
-    and_ = " and " if len(list_of_strings) > 1 else ""
-    last = list_of_strings[-1]
+def oxford_comma(strings):
+    prefix = ", ".join(strings[:-1])
+    ox_comma = "," if len(strings) > 2 else ""
+    and_ = " and " if len(strings) > 1 else ""
+    last = strings[-1] if strings else ""
     return prefix + ox_comma + and_ + last
 ```
 
