@@ -1,6 +1,6 @@
 ---
 themes:
-        - "`set`"
+    - "`set`"
     - "sets"
     - "uniqueness"
     - "`dict.fromkeys`"

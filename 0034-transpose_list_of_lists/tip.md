@@ -1,6 +1,6 @@
 ---
 themes:
-        - "`zip`"
+    - "`zip`"
     - "asterisk `*`"
 ---
 

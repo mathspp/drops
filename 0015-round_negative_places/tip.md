@@ -1,7 +1,7 @@
 ---
 themes:
     - "integers"
-        - "`round`"
+    - "`round`"
     - "unexpected argument"
 ---
 

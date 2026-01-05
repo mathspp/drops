@@ -1,6 +1,6 @@
 ---
 themes:
-        - "`filter`"
+    - "`filter`"
     - "unexpected argument"
     - "truthy/falsy"
     - "falsy/truthy"

@@ -1,7 +1,7 @@
 ---
 themes:
     - "`strict` (keyword argument)"
-        - "`map`"
+    - "`map`"
     - "3.14 (new in Python 3.14)"
     - "unexpected argument"
 ---

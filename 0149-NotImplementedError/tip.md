@@ -1,6 +1,6 @@
 ---
 themes:
-        - "exceptions"
+    - "exceptions"
     - "OOP"
     - "abstract base classes"
     - "inheritance"

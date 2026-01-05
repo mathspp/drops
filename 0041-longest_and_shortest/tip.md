@@ -4,7 +4,7 @@ themes:
     - "`functools`"
     - "`functools.partial`"
     - "`key` (keyword argument)"
-        - "`max`"
+    - "`max`"
     - "`min`"
     - "`len`"
 ---

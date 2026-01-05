@@ -1,6 +1,6 @@
 ---
 themes:
-        - "`int`"
+    - "`int`"
     - "number bases"
 ---
 

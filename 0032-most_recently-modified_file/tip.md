@@ -1,7 +1,7 @@
 ---
 themes:
     - "`key` (keyword argument)"
-        - "standard library"
+    - "standard library"
     - "`pathlib`"
     - "`pathlib.Path.iterdir`"
     - "`pathlib.Path.isfile`"

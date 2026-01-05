@@ -3,7 +3,7 @@ themes:
     - "dunder methods"
     - "hashing"
     - "`__hash__`"
-        - "`hash`"
+    - "`hash`"
 ---
 
 ## 96 – Common `__hash__` implementation

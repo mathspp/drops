@@ -1,7 +1,7 @@
 ---
 themes:
     - "OOP"
-        - "decorators"
+    - "decorators"
     - "`property`"
 ---
 

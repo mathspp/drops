@@ -1,6 +1,6 @@
 ---
 themes:
-        - "`zip`"
+    - "`zip`"
     - "`strict` (keyword argument)"
     - "unexpected argument"
 ---

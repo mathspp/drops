@@ -1,7 +1,7 @@
 ---
 themes:
     - "dynamic code"
-        - "`getattr`"
+    - "`getattr`"
     - "`setattr`"
     - "`delattr`"
 ---

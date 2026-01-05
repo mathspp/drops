@@ -1,6 +1,6 @@
 ---
 themes:
-        - "standard library"
+    - "standard library"
     - "`operator` (module)"
     - "`operator.mul`"
     - "`zip`"

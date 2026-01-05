@@ -3,7 +3,7 @@ themes:
     - "strings"
     - "iterables"
     - "`key` (keyword argument)"
-        - "`max`"
+    - "`max`"
     - "`min`"
     - "`len`"
 ---

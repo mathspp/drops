@@ -3,7 +3,7 @@ themes:
     - "`classmethod`"
     - "class methods"
     - "OOP"
-        - "decorators"
+    - "decorators"
     - "unpacking"
     - "asterisk `*`"
 ---

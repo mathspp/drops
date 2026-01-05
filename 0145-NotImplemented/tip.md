@@ -1,6 +1,6 @@
 ---
 themes:
-        - "`NotImplemented`"
+    - "`NotImplemented`"
     - "dunder methods"
     - "OOP"
 ---
