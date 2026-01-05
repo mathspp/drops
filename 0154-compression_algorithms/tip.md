@@ -27,3 +27,7 @@ print(ratio)  # 0.1  # <- 10 times smaller!
 ```
 
 The algorithms `bz2`, `gzip`, `lzma`, and `zlib`, were already standalone modules in Python 3.13 and earlier, so they continue to be so, but you can also access them through the unified interface of the module `compress`.
+
+Further reading:
+
+ - [Module `compression` overview](https://mathspp.com/blog/module-compression-overview)

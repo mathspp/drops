@@ -1,8 +1,7 @@
 ---
 themes:
     - "`map`"
-    - "built-ins"
----
+    ---
 
 ## 9 – `map` with multiple arguments
 

@@ -1,7 +1,6 @@
 ---
 themes:
-    - "built-ins"
-    - "`sum`"
+        - "`sum`"
     - "`map`"
     - "generator expressions"
 ---

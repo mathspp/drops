@@ -1,8 +1,7 @@
 ---
 themes:
     - "strings"
-    - "built-ins"
-    - "`repr`"
+        - "`repr`"
     - "debugging"
     - "`print`"
     - "I/O"

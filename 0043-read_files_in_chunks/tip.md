@@ -1,8 +1,7 @@
 ---
 themes:
     - "standard library"
-    - "built-ins"
-    - "`iter`"
+        - "`iter`"
     - "`functools`"
     - "`functools.partial`"
     - "iterables"

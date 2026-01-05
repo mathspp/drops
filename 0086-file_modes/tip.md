@@ -1,8 +1,7 @@
 ---
 themes:
     - "file I/O"
-    - "built-ins"
----
+    ---
 
 ## 86 – File modes
 

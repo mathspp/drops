@@ -1,7 +1,6 @@
 ---
 themes:
-    - "built-ins"
-    - "`int`"
+        - "`int`"
     - "number bases"
 ---
 

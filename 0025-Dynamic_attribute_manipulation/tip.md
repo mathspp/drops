@@ -1,8 +1,7 @@
 ---
 themes:
     - "dynamic code"
-    - "built-ins"
-    - "`getattr`"
+        - "`getattr`"
     - "`setattr`"
     - "`delattr`"
 ---

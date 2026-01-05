@@ -1,7 +1,6 @@
 ---
 themes:
-    - "built-ins"
-    - "exceptions"
+        - "exceptions"
     - "OOP"
     - "abstract base classes"
     - "inheritance"

@@ -2,8 +2,7 @@
 themes:
     - "generators"
     - "`next`"
-    - "built-ins"
-    - "iterables"
+        - "iterables"
 ---
 
 ## 116 – Send data into generators

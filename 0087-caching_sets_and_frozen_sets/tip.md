@@ -9,8 +9,7 @@ themes:
     - "sets"
     - "`set`"
     - "`frozenset`"
-    - "built-ins"
----
+    ---
 
 ## 87 – Caching sets and frozen sets
 

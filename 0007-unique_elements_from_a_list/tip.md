@@ -1,7 +1,6 @@
 ---
 themes:
-    - "built-ins"
-    - "`set`"
+        - "`set`"
     - "sets"
     - "uniqueness"
     - "`dict.fromkeys`"

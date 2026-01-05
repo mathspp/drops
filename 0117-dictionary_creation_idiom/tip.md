@@ -5,8 +5,7 @@ themes:
     - "`dict`"
     - "`zip`"
     - "iterables"
-    - "built-ins"
----
+    ---
 
 ## 117 – Dictionary creation idiom
 

@@ -1,8 +1,7 @@
 ---
 themes:
     - "iterables"
-    - "built-ins"
-    - "`next`"
+        - "`next`"
     - "generator expression"
     - "`StopIteration`"
 ---

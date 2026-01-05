@@ -2,8 +2,7 @@
 themes:
     - "`property`"
     - "OOP"
-    - "built-ins"
-    - "decorators"
+        - "decorators"
 ---
 
 ## 137 – Read-only attributes

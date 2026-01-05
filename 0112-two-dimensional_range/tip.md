@@ -1,8 +1,7 @@
 ---
 themes:
     - "standard library"
-    - "built-ins"
-    - "`itertools`"
+        - "`itertools`"
     - "`itertools.product`"
     - "`range`"
     - "iterables"

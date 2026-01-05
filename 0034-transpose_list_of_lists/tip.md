@@ -1,7 +1,6 @@
 ---
 themes:
-    - "built-ins"
-    - "`zip`"
+        - "`zip`"
     - "asterisk `*`"
 ---
 
