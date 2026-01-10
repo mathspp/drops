@@ -35,6 +35,9 @@ _toc.yml: $(BOOK_SOURCE) build_toc.py
 html: _toc.yml
 	uv run jb build --all . -W
 
+pdf: _toc.yml
+	uv run jb build --all --builder pdflatex . -W
+
 .PHONY: frontmatter.yaml
 frontmatter.yaml:
 	cog -r $@

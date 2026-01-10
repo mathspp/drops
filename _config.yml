@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Python drops 🐍💧
+title: Python drops
 author: Rodrigo Girão Serrão
 # logo: imgs/decs.webp
 
@@ -32,5 +32,22 @@ html:
 sphinx:
   config:
     language: en
+    latex_elements:
+      extraclassoptions: "openany"
+      preamble: |
+        % Simplify chapter openings: title then content on same page
+        \usepackage{titlesec}
+
+        % Option A: keep the chapter number (e.g., "1") but remove the "Chapter" word
+        \titleformat{\chapter}[hang]
+          {\normalfont\huge\bfseries}
+          {\thechapter\quad}
+          {0pt}
+          {}
+        \titlespacing*{\chapter}{0pt}{0pt}{1.5ex}
+
+        % If you want absolutely minimal whitespace:
+        % \titlespacing*{\chapter}{0pt}{0pt}{0.75ex}
+
 
 exclude_patterns: [.*]

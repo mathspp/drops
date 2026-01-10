@@ -24,7 +24,7 @@ data = ("Hello, world!" * 1000).encode()
 compressed = zstd.compress(data)
 ```
 
-You can see this compresses the data to only occupy $0.2%$ of its original size:
+You can see this compresses the data to only occupy $0.2\%$ of its original size:
 
 ```py
 print(len(compressed))  # 31
