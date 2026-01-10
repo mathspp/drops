@@ -43,9 +43,9 @@ def main() -> None:
             "# Learn more at https://jupyterbook.org/customize/toc.html",
             "",
             "format: jb-book",
-            "root: 0000.intro",
+            f"root: {chapters[0]}",
             "chapters:",
-            *[f"- file: {ch}" for ch in chapters],
+            *[f"- file: {ch}" for ch in chapters[1:]],
             "",
         ]
     )
