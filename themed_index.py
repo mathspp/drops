@@ -59,7 +59,10 @@ for theme, references in theme_to_references.items():
 
 # Sort the groups
 sorted_groups = sorted(grouped.items(), key=lambda x: (x[0] != "`#`", x[0]))
-output_lines = ["# Themed index\n"]
+output_lines = [
+    "# Themed index\n",
+    "```{raw} latex\n\\begin{multicols}{2}\n```\n",
+]
 
 for group_key, themes in sorted_groups:
     output_lines.append(f"## {group_key}\n")
@@ -70,6 +73,8 @@ for group_key, themes in sorted_groups:
         links = ", ".join(f"[{num}]({num})" for num, _ in references_sorted)
         output_lines.append(f"- {theme}: {links}")
     output_lines.append("")  # Blank line between groups
+
+output_lines.append("```{raw} latex\n\\end{multicols}\n```\n")
 
 # Write the final output
 output_path = Path("9998.themed-index.md")

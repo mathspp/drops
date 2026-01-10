@@ -35,6 +35,7 @@ sphinx:
     latex_elements:
       extraclassoptions: "openany"
       preamble: |
+        \usepackage{multicol}  % Used to set the themed index layout to 2 columns
         \setcounter{secnumdepth}{-1}  % Don't number chapters, sections, subsections, etc
         % Simplify chapter openings: title then content on same page
         \usepackage{titlesec}
