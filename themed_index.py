@@ -11,15 +11,6 @@ import string
 from ruamel.yaml import YAML
 
 
-def slugify(title):
-    unsafe_punctuation = str(set(string.punctuation) - set("-_."))
-    return (
-        title.lower()
-        .replace(" ", "-")
-        .translate(str.maketrans("", "", unsafe_punctuation))
-    )
-
-
 # Initialize
 yaml = YAML()
 theme_to_references = defaultdict(list)
@@ -61,13 +52,13 @@ for theme, references in theme_to_references.items():
     if first_char in string.ascii_uppercase:
         group_key = first_char
     elif first_char == "_":
-        group_key = "_"
+        group_key = "`_`"
     else:
-        group_key = "#"
+        group_key = "`#`"
     grouped[group_key].append((theme, references))
 
 # Sort the groups
-sorted_groups = sorted(grouped.items(), key=lambda x: (x[0] != "#", x[0]))
+sorted_groups = sorted(grouped.items(), key=lambda x: (x[0] != "`#`", x[0]))
 output_lines = ["# Themed index\n"]
 
 for group_key, themes in sorted_groups:

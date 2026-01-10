@@ -3,6 +3,8 @@
 
 format: jb-book
 root: 0000.intro
+options:
+  numbered: false
 chapters:
 - file: 0001-zip_strict_true/tip
 - file: 0002-string_casefold_case-insensitive_comparison/tip

@@ -44,6 +44,8 @@ def main() -> None:
             "",
             "format: jb-book",
             f"root: {chapters[0]}",
+            "options:",
+            "  numbered: false",
             "chapters:",
             *[f"- file: {ch}" for ch in chapters[1:]],
             "",
