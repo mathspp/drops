@@ -6,11 +6,12 @@ themes:
     - "`StopIteration`"
 ---
 
-## 76 – Built-in `next` with a default value
+(76)=
+# 76 – Built-in `next` with a default value
 
 The built-in `next` can be given a second argument which is the default return value used when the given iterator is empty.
 A default value (of `None`, for example) tends to be more useful in idioms that use next.
-(For example, see [this tip about the first element of an iterable that satisfies a condition](#first-element-that-satisfies-a-condition).)
+(For example, see [this tip about the first element of an iterable that satisfies a condition](5).)
 
 As an example, consider the generator expression assigned to `squares` and that is exhausted by calling the built-in `next` repeatedly:
 

@@ -6,7 +6,8 @@ themes:
     - "string formatting"
 ---
 
-## 156 – Custom t-string processing
+(156)=
+# 156 – Custom t-string processing
 
 t-strings, introduced in Python 3.14, offer a flexible and safe way of doing string formatting in contexts where care must be taken with the interpolated values.
 

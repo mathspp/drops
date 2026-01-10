@@ -5,7 +5,8 @@ themes:
     - "`re`"
 ---
 
-## 110 – Non-greedy regex quantifiers
+(110)=
+# 110 – Non-greedy regex quantifiers
 
 The quantifiers `*`, `+`, and `?`, in regular expressions, are all greedy.
 This means that they will try to match as much as possible, while still allowing the full pattern to match:

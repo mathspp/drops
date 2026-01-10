@@ -5,10 +5,11 @@ themes:
     - "number bases"
 ---
 
-## 130 – Make numbers more readable
+(130)=
+# 130 – Make numbers more readable
 
 You can use the character underscore `_` in number literals (integers, floats, and complex numbers), to separate groups of digits.
-This works for [any base that Python supports](#integer-literals-in-multiple-bases):
+This works for [any base that Python supports](126):
 
  - grouping digits by thousands in base 10;
  - grouping bits by 4 or 8 bits in base 2; and

@@ -6,7 +6,8 @@ themes:
     - "`StopIteration`"
 ---
 
-## 5 – First element that satisfies a condition
+(5)=
+# 5 – First element that satisfies a condition
 
 When you have an iterable and need to find the first element that satisfies a condition, you can use a generator expression and the built-in `next` to fetch that first element.
 

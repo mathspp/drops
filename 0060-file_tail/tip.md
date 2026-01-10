@@ -7,7 +7,8 @@ themes:
     - "iterables"
 ---
 
-## 60 – File tail
+(60)=
+# 60 – File tail
 
 You can get the last few lines of a file with `collections.deque`.
 You just have to set `maxlen` to the number of lines you want from the end of the file:

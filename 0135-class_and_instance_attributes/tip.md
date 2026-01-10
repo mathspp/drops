@@ -6,7 +6,8 @@ themes:
     - "`typing.ClassVar`"
 ---
 
-## 135 – Class and instance attributes
+(135)=
+# 135 – Class and instance attributes
 
 In a typed project, you can specify the types of (instance) attributes by declaring them all in the body of the class (just like dataclasses do):
 

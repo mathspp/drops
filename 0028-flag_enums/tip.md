@@ -5,7 +5,8 @@ themes:
     - "`enum.Flag`"
 ---
 
-## 28 – Flag enumerations
+(28)=
+# 28 – Flag enumerations
 
 The module `enum` contains a type `Flag` that you can use for enumerations that should support the Boolean operations `&` (AND), `|` (OR), `^` (XOR), and `~` (INVERT):
 

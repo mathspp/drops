@@ -7,7 +7,8 @@ themes:
     - "iterator protocol"
 ---
 
-## 78 – Undoable iterator with value history
+(78)=
+# 78 – Undoable iterator with value history
 
 You can use a `deque` from the module `collections` to create an undoable iterator that keeps track of the history of seen values.
 

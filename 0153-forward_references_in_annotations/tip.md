@@ -5,7 +5,8 @@ themes:
     - "3.14 (new in Python 3.14)"
 ---
 
-## 153 – Forward references in annotations
+(153)=
+# 153 – Forward references in annotations
 
 Forward/cyclic references in Python type hints raise a `NameError` up until Python 3.13:
 

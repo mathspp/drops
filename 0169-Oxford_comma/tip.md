@@ -5,7 +5,8 @@ themes:
     - "text processing"
 ---
 
-## 169 – Oxford comma
+(169)=
+# 169 – Oxford comma
 
 The function below turns a list of strings into a Human-readable enumeration that uses the Oxford comma:
 

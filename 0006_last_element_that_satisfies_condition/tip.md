@@ -5,7 +5,8 @@ themes:
     - "generation expression"
 ---
 
-## 6 – Last element that satisfies a condition
+(6)=
+# 6 – Last element that satisfies a condition
 
 If you have a condition, you can get the last element of an iterable that satisfies that condition with `collections.deque` and a generator expression:
 

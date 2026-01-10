@@ -7,7 +7,8 @@ themes:
     - "dates and times"
 ---
 
-## 21 – Current date and time
+(21)=
+# 21 – Current date and time
 
 The modue `datetime` has data types that you can use to represent pure dates or dates with times:
 

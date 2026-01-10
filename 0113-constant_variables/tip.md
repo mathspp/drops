@@ -8,7 +8,8 @@ themes:
     - "casing"
 ---
 
-## 113 – Constant variables
+(113)=
+# 113 – Constant variables
 
 There is no way to create a true constant in Python.
 Instead, you can use other mechanisms to signal to people that some values shouldn't change.

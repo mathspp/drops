@@ -5,7 +5,8 @@ themes:
     - "`dict.keys`"
 ---
 
-## 22 – Set operations with `dict.keys()`
+(22)=
+# 22 – Set operations with `dict.keys()`
 
 Dictionaries have a method `keys` that returns a view over the keys of the dictionary.
 These objects support set operations, which means you can manipulate dictionary keys very efficiently and conveniently.

@@ -9,7 +9,8 @@ themes:
     - "`pathlib.Path.rglob`"
 ---
 
-## 32 – Most recently-modified file
+(32)=
+# 32 – Most recently-modified file
 
 Due to flexibility of the built-in `max`, it takes one single line of code to find the most recently-modified file in a directory:
 

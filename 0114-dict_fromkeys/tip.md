@@ -6,7 +6,8 @@ themes:
     - "class methods"
 ---
 
-## 114 – `dict.fromkeys`
+(114)=
+# 114 – `dict.fromkeys`
 
 If you have an iterable of keys you can initialise a dictionary by using the class method `dict.fromkeys`, which creates a dictionary where all keys map to the value `None`:
 

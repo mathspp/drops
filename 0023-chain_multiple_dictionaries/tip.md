@@ -6,7 +6,8 @@ themes:
     - "`collections.ChainMap`"
 ---
 
-## 23 – Chain multiple dictionaries
+(23)=
+# 23 – Chain multiple dictionaries
 
 You can use the object `ChainMap` from the module `collections` to create a unified view over a hierarchy of dictionaries.
 The `ChainMap` object accesses the underlying dictionaries in order, stopping once it finds the key you are looking for:

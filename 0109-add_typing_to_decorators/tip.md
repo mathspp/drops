@@ -11,7 +11,8 @@ themes:
     - "type parameter syntax"
 ---
 
-## 109 – Add typing to decorators
+(109)=
+# 109 – Add typing to decorators
 
 Decorators used to be nasty to type.
 How do you create an inner, general function that you then type in a way that depends on the function(s) you will be decorating?!

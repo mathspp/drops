@@ -6,7 +6,8 @@ themes:
     - "`hash`"
 ---
 
-## 96 – Common `__hash__` implementation
+(96)=
+# 96 – Common `__hash__` implementation
 
 The [dunder method](https://mathspp.com/blog/pydonts/dunder-methods) can be implemented to make your instances hashable.
 This will let you use your instances of your custom class in dictionaries, sets, caches, and other situations.

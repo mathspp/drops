@@ -8,7 +8,8 @@ themes:
     - "`contextlib.suppress`"
 ---
 
-## 122 – Ignore exceptions
+(122)=
+# 122 – Ignore exceptions
 
 The module `contextlib` provides a context manager `suppress` that you can use to suppress (ignore) a given exception.
 Very helpful when you want to run some code, hoping it works, but when you really don’t care if it ends up failing.

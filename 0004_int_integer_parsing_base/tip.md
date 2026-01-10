@@ -4,7 +4,8 @@ themes:
     - "number bases"
 ---
 
-## 4 – Parsing integers from different bases
+(4)=
+# 4 – Parsing integers from different bases
 
 The built-in `int` can be used to parse integers from binary, octal, hexadecimal, and many other bases.
 To do this, you need to specify the base you want as the second argument of `int`.

@@ -6,7 +6,8 @@ themes:
     - "standard library"
 ---
 
-## 49 – Random choices
+(49)=
+# 49 – Random choices
 
 Predictability is usually helpful, but it can also be quite boring.
 On the other hand, randomness isn't always helpful, but sometimes it's the only way to get something done.

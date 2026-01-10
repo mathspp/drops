@@ -11,7 +11,8 @@ themes:
     - "backslash `\\`"
 ---
 
-## 82 – Verbose regular expressions
+(82)=
+# 82 – Verbose regular expressions
 
 This is the best thing you can do for your regular expressions: use the verbose flag.
 Verbose regular expressions can be split across multiple lines and you can add comments to it.

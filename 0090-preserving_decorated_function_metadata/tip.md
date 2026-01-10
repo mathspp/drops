@@ -6,7 +6,8 @@ themes:
     - "`functools.wraps`"
 ---
 
-## 90 – Preserving decorated function metadata
+(90)=
+# 90 – Preserving decorated function metadata
 
 The standard way of writing a decorator involves creating a wrapper function for the decorated function, like so:
 
@@ -37,7 +38,7 @@ print(add)  # <function my_decorator.<locals>.wrapper at 0x102cb4510>
 
 Similarly, using the built-in `help(add)` will reveal a cryptic help message:
 
-```py
+```text
 Help on function wrapper in module __main__:
 
 wrapper(*args, **kwargs)
@@ -65,7 +66,7 @@ print(add)  # <function add at 0x102db19b0>
 
 And using `help(add)` reveals:
 
-```py
+```text
 Help on function add in module __main__:
 
 add(a, b)

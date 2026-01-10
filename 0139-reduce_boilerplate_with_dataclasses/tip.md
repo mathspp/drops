@@ -12,7 +12,8 @@ themes:
     - "decorators"
 ---
 
-## 139 – Reduce boilerplate with dataclasses
+(139)=
+# 139 – Reduce boilerplate with dataclasses
 
 The module `dataclasses` provides a decorator `dataclass` that you're supposed to use on classes.
 The decorator `dataclass` reduces the need to write boilerplate code by adding the dunder methods `__init__`, `__eq__`, and `__repr__`, to the class that is decorated.

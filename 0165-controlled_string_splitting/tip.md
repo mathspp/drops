@@ -5,7 +5,8 @@ themes:
     - "unexpected argument"
 ---
 
-## 165 – Controlled string splitting
+(165)=
+# 165 – Controlled string splitting
 
 The string method `str.split` has a parameter `maxsplit` that determines the maximum number of splits that will be performed:
 

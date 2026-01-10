@@ -12,7 +12,8 @@ themes:
     - "3.14 (new in Python 3.14)"
 ---
 
-## 46 – Dot product idiom
+(46)=
+# 46 – Dot product idiom
 
 The [dot product](https://en.wikipedia.org/wiki/Dot_product) is a mathematical operation that can be computed with a simple Python idiom using the module `operator`:
 

@@ -6,7 +6,8 @@ themes:
     - "data structures"
 ---
 
-## 132 – Efficiently count characters in a string
+(132)=
+# 132 – Efficiently count characters in a string
 
 Python has a specialised dictionary for whenever you need to count things or represent counts: `collections.Counter`.
 The only restriction you need to keep in mind is that `Counter` can only count hashable objects, since it's dictionary-like.

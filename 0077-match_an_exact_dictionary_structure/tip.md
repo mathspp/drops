@@ -8,7 +8,8 @@ themes:
     - "kwargs"
 ---
 
-## 77 – Match an exact dictionary structure
+(77)=
+# 77 – Match an exact dictionary structure
 
 Structural pattern matching can be used to match dictionaries with given keys and values.
 

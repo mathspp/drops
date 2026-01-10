@@ -8,7 +8,8 @@ themes:
     - "`str.rpartition`"
 ---
 
-## 175 – Split from both sides
+(175)=
+# 175 – Split from both sides
 
 The string method `split` has a counterpart `rsplit` that starts splitting from the end of the string.
 If you split without restrictions, they behave the same way:

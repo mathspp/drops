@@ -5,7 +5,8 @@ themes:
     - "`reversed`"
 ---
 
-## 59 – Idiomatic sequence slicing
+(59)=
+# 59 – Idiomatic sequence slicing
 
 There are five slicing patterns that are fairly common and that have simple interpretations, and that's what an idiom is: a piece of code that you recognise for its meaning as a whole.
 

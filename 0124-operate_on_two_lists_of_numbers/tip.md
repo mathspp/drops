@@ -9,7 +9,8 @@ themes:
     - "`map`"
 ---
 
-## 124 – Operate on two lists of numbers
+(124)=
+# 124 – Operate on two lists of numbers
 
 If you combine the module `operator` with `itertools.starmap` and `itertools.zip_longest`, you can write any function that merges two lists by operating on respective pairs of elements.
 

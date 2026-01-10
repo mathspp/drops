@@ -6,7 +6,8 @@ themes:
     - "automatic cleanup"
 ---
 
-## 8 – Schedule cleanup actions
+(8)=
+# 8 – Schedule cleanup actions
 
 If you need to clean up resources when your Python program terminates, (for example, disconnect from a server or database), you can use the function `register` from the module `atexit`.
 

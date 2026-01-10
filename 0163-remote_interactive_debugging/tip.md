@@ -5,7 +5,8 @@ themes:
     - "3.14 (new in Python 3.14)"
 ---
 
-## 163 – Remote interactive debugging
+(163)=
+# 163 – Remote interactive debugging
 
 Since Python 3.14 that the module `pdb` has a CLI option that allows you to attach to a running Python process to debug interactively while it's running.
 
@@ -29,7 +30,7 @@ Once you do, the debugger attaches to your program _while_ it's running.
 Here, you can see you attached to the program as it was about to run the line `acc += 1`.
 Before you do, you may want to **_p_**rint the value of the variable `acc`:
 
-```txt
+```text
 > /path/to/script.py(4)<module>()
 -> acc += 1
 (Pdb) p acc
@@ -38,7 +39,7 @@ Before you do, you may want to **_p_**rint the value of the variable `acc`:
 
 Now, you may want to go to the next line of the function and print the value of the variable `acc` again:
 
-```txt
+```text
 (Pdb) next
 > /path/to/script.py(3)<module>()
 -> while True:

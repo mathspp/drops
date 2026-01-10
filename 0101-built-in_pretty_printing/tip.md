@@ -7,7 +7,8 @@ themes:
     - "`pprint.pprint`"
 ---
 
-## 101 – Pretty-printing nested data structures
+(101)=
+# 101 – Pretty-printing nested data structures
 
 The module `pprint` from the standard library provides pretty-printing functionality.
 The most straightforward way of using it is through the function `pprint.pprint`, which pretty-prints its arguments.

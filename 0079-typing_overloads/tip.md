@@ -6,7 +6,8 @@ themes:
     - "overloads"
 ---
 
-## 79 – Typing overloads
+(79)=
+# 79 – Typing overloads
 
 The usage of typing overloads allows you to declare relationships between the types of arguments and/or the return type of a function.
 This allows the type checker to use information that otherwise couldn't be inferred from the function signature alone.

@@ -7,7 +7,8 @@ themes:
     - "immutability"
 ---
 
-## 18 – Immutable dictionary
+(18)=
+# 18 – Immutable dictionary
 
 The module `types` exposes `MappingProxyType`, a type that's essentially an immutable dictionary.
 

@@ -9,7 +9,8 @@ themes:
     - "3.12 (new in Python 3.12)"
 ---
 
-## 84 – Generics syntax
+(84)=
+# 84 – Generics syntax
 
 Python 3.12 introduced many typing improvements, namely an improved syntax to define generic functions and generic classes.
 Instead of having to define type variables beforehand, the type variables needed for the generic function/class can be defined with the object, making it more concise.

@@ -6,9 +6,10 @@ themes:
     - "standard library"
 ---
 
-## 143 – Decimals
+(143)=
+# 143 – Decimals
 
-[Fractions are very useful](#using-fractions) but sometimes it is not very helpful to compute `1 / 7` and get `1/7` as a result...
+[Fractions are very useful](142) but sometimes it is not very helpful to compute `1 / 7` and get `1/7` as a result...
 
 Instead, you may want to use the module `decimal` and its class `decimal.Decimal` to compute fast, correctly-rounded floating-point arithmetic:
 

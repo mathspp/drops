@@ -5,7 +5,8 @@ themes:
     - "`str.casefold`"
 ---
 
-## 2 – Case-insensitive string comparisons
+(2)=
+# 2 – Case-insensitive string comparisons
 
 To perform case-insensitive string comparisons in Python, use the method `str.casefold`.
 This method exists precisely to let you perform case-insensitive comparisons.

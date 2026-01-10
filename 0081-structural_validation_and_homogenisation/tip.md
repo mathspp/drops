@@ -7,7 +7,8 @@ themes:
     - "vertical bar `|`"
 ---
 
-## 81 – Structural validation and homogenisation
+(81)=
+# 81 – Structural validation and homogenisation
 
 Some functions can accept arguments in many different formats.
 In that case, structural pattern matching can be used to validate the argument and to homogenise it.

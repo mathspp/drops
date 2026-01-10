@@ -6,7 +6,8 @@ themes:
     - "standard library"
 ---
 
-## 52 – Case-insensitive regular expressions
+(52)=
+# 52 – Case-insensitive regular expressions
 
 Regular expressions can start with the flag `(?i)`, marking them as case-insensitive:
 

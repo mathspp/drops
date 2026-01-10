@@ -6,7 +6,8 @@ themes:
     - "`delattr`"
 ---
 
-## 25 – Dynamic attribute manipulation
+(25)=
+# 25 – Dynamic attribute manipulation
 
 The built-ins `getattr`, `setattr`, and `delattr`, can be used to manipulate attributes dynamically.
 

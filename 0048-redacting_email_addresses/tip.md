@@ -7,7 +7,8 @@ themes:
     - "`str.partition`"
 ---
 
-## 48 – Redacting email addresses
+(48)=
+# 48 – Redacting email addresses
 
 You can use f-strings and the string formatting specification language to create an effect of redacted or private data.
 For example, the function below redacts part of your email address:

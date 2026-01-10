@@ -8,7 +8,8 @@ themes:
     - "`operator.is_not_none`"
 ---
 
-## 162 – Check for `None` functionally
+(162)=
+# 162 – Check for `None` functionally
 
 Typically you use the expressions `... is None` and `... is not None` to check whether an object is or isn't `None`, respectively.
 

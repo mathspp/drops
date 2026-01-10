@@ -7,7 +7,8 @@ themes:
     - "decorators"
 ---
 
-## 129 – Prevent subclassing/overriding
+(129)=
+# 129 – Prevent subclassing/overriding
 
 The decorator `typing.final` (lowercase **f**) can be used to mark classes that shouldn't be subclassed:
 

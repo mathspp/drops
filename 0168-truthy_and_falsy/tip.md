@@ -4,7 +4,8 @@ themes:
     - "`bool`"
 ---
 
-## 168 – Truthy and Falsy
+(168)=
+# 168 – Truthy and Falsy
 
 All Python objects have a Truthy/Falsy value which dictates how that object will behaving in a Boolean context.
 

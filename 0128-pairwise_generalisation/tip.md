@@ -10,7 +10,8 @@ themes:
     - "`collections.deque`"
 ---
 
-## 128 – `pairwise` generalisation
+(128)=
+# 128 – `pairwise` generalisation
 
 `itertools.pairwise` accepts an iterable and produces overlapping pairs of consecutive elements:
 

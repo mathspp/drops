@@ -7,7 +7,8 @@ themes:
     - "`str.removesuffix`"
 ---
 
-## 13 – String prefixes and suffixes
+(13)=
+# 13 – String prefixes and suffixes
 
 Strings have four convenience methods to replace some slicing: `startswith`, `endswith`, `removeprefix`, and `removesuffix`.
 

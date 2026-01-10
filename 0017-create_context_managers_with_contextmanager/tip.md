@@ -7,7 +7,8 @@ themes:
     - "context managers"
 ---
 
-## 17 – Create context managers with `contextlib.contextmanager`
+(17)=
+# 17 – Create context managers with `contextlib.contextmanager`
 
 The module `contextlib` provides a decorator `contextmanager` that you can use to implement your own context managers.
 

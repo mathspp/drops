@@ -5,7 +5,8 @@ themes:
     - "backslash `\\`"
 ---
 
-## 97 – Match word boundaries
+(97)=
+# 97 – Match word boundaries
 
 The special character `\b` can be used to match word boundaries in regular expressions.
 The special character `\B`, on the other hand, only matches inside words.

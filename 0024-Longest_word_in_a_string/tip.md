@@ -8,7 +8,8 @@ themes:
     - "`len`"
 ---
 
-## 24 – Longest word in a string
+(24)=
+# 24 – Longest word in a string
 
 The built-in `max` has a keyword parameter `key` that determines how objects are compared, allowing flexible comparisons.
 

@@ -8,7 +8,8 @@ themes:
     - "performance optimisation"
 ---
 
-## 42 – Bounded cache
+(42)=
+# 42 – Bounded cache
 
 If you have a deterministic function with no side-effects that gets called very often, consider caching its results.
 If said function lives in a long-running application (e.g., a web server), make sure you don't run out of memory by ensuring the cache has a maximum sizes.

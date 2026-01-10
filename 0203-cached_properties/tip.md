@@ -9,7 +9,8 @@ themes:
     - "decorators"
 ---
 
-## 203 – Cached properties
+(203)=
+# 203 – Cached properties
 
 You can use `functools.cached_property` to create a property that is computed once and then cached for the lifetime of the instance where it is defined.
 This is a good approach for attributes that are expensive to compute because it defers the cost of computing them to as late as possible.

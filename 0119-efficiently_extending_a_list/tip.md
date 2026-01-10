@@ -5,7 +5,8 @@ themes:
     - "performance optimisation"
 ---
 
-## 119 – Efficiently extending a list
+(119)=
+# 119 – Efficiently extending a list
 
 The method `extend` is the efficient way of adding multiple elements to a list in one go:
 

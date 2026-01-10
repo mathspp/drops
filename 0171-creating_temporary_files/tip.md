@@ -8,7 +8,8 @@ themes:
     - "automatic cleanup"
 ---
 
-## 171 – Creating temporary files
+(171)=
+# 171 – Creating temporary files
 
 You can use `tempfile.TemporaryFile` as a context manager that opens a temporary file that you can write to and read from:
 

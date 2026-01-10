@@ -6,7 +6,8 @@ themes:
     - "inheritance"
 ---
 
-## 173 – Using a list as a stack
+(173)=
+# 173 – Using a list as a stack
 
 When working with stacks, use the built-in `list` as the base class:
 

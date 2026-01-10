@@ -9,7 +9,8 @@ themes:
     - "iterables"
 ---
 
-## 36 – Typing iterables instead of lists
+(36)=
+# 36 – Typing iterables instead of lists
 
 Setting the type of function arguments to `list` when all you need is to be able to iterate over that value is a mistake:
 

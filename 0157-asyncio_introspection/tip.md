@@ -7,7 +7,8 @@ themes:
     - "3.14 (new in Python 3.14)"
 ---
 
-## 157 – `asyncio` introspection
+(157)=
+# 157 – `asyncio` introspection
 
 You can use the `asyncio` CLI (new in Python 3.14) to inspect/debug running Python processes that use asynchronous tasks.
 For example, take this tiny example of an asynchronous program in the file `my_code.py`:

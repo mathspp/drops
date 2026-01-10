@@ -9,7 +9,8 @@ themes:
     - "3.14 (new in Python 3.14)"
 ---
 
-## 151 – copy files
+(151)=
+# 151 – copy files
 
 You can copy files and directories to new locations by using `pathlib.Path.copy`.
 

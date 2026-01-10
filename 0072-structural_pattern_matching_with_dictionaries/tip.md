@@ -6,7 +6,8 @@ themes:
     - "validation"
 ---
 
-## 72 – Structural pattern matching with dictionaries
+(72)=
+# 72 – Structural pattern matching with dictionaries
 
 The `match` statement can be used to match keys and values in a dictionary, effectively matching the structure of the dictionary.
 

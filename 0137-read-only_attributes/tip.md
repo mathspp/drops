@@ -5,7 +5,8 @@ themes:
     - "decorators"
 ---
 
-## 137 – Read-only attributes
+(137)=
+# 137 – Read-only attributes
 
 The standard way of creating read-only attributes in Python is by creating a “private” attribute and then exposing it through a property:
 

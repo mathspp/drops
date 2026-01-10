@@ -7,7 +7,8 @@ themes:
     - "bitwise operators"
 ---
 
-## 134 – Invertible flags
+(134)=
+# 134 – Invertible flags
 
 The special values `True` and `False` are tightly connected: they mean the opposite of each other and you can negate one to get the other:
 

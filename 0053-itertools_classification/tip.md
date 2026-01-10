@@ -3,7 +3,8 @@ themes:
     - "`itertools`"
 ---
 
-## 53 – Module `itertools` categorisation
+(53)=
+# 53 – Module `itertools` categorisation
 
 A good way to think about the module `itertools` is to remember it has five categories of iterables:
 

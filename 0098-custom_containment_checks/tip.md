@@ -4,7 +4,8 @@ themes:
     - "`__contains__`"
 ---
 
-## 98 – Custom containment checks
+(98)=
+# 98 – Custom containment checks
 
 The [dunder method](https://mathspp.com/blog/pydonts/dunder-methods) `__contains__` can be used to implement custom containment checks in your classes.
 This will allow instances of your classes to be used with the keywords `in` and `not in`.

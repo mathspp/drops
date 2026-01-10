@@ -8,7 +8,8 @@ themes:
     - "`str.isalpha`"
 ---
 
-## 131 – Efficiently count words in a string
+(131)=
+# 131 – Efficiently count words in a string
 
 You can efficiently count how many words a string has by using `itertools.groupby`:
 

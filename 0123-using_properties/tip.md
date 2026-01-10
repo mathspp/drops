@@ -5,7 +5,8 @@ themes:
     - "`property`"
 ---
 
-## 123 – Using properties
+(123)=
+# 123 – Using properties
 
 The built-in decorator `property` can be used to turn a method into an attribute.
 This means that properties look like attributes but actually run methods that compute the values that must be returned.

@@ -8,7 +8,8 @@ themes:
     - "3.12 (new in Python 3.12)"
 ---
 
-## 47 – Batching API calls
+(47)=
+# 47 – Batching API calls
 
 Since Python 3.12 that the module `itertools` has `batched`: it accepts an iterable and it produces batches of values from that iterable.
 

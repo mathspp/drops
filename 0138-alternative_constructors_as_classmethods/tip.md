@@ -8,10 +8,11 @@ themes:
     - "asterisk `*`"
 ---
 
-## 138 – Alternative constructors as class methods
+(138)=
+# 138 – Alternative constructors as class methods
 
 A common use case for class methods is to provide alternative constructors for classes.
-([An example from the built-ins is `dict.fromkeys`](#dict.fromkeys).)
+([An example from the built-ins is `dict.fromkeys`](114).)
 
 A class method accepts the class as its first argument, not `self`.
 (Otherwise, it would be an instance method and not a class method.)

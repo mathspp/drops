@@ -4,7 +4,8 @@ themes:
     - "`StopIteration`"
 ---
 
-## 30 – Return value of a generator
+(30)=
+# 30 – Return value of a generator
 
 Generators can return a final value once they're finished:
 

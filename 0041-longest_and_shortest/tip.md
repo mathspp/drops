@@ -9,7 +9,8 @@ themes:
     - "`len`"
 ---
 
-## 41 – Longest and shortest
+(41)=
+# 41 – Longest and shortest
 
 The built-ins `max` and `min` have a keyword argument `key` that lets you change the frame of reference for comparisons.
 

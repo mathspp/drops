@@ -9,7 +9,8 @@ themes:
     - "decorators"
 ---
 
-## 121 – Paginate results
+(121)=
+# 121 – Paginate results
 
 You can use `itertools.batched` to paginate an arbitrary iterable.
 For example, you can take a generator that produces single values and turn it into a generator that produces “pages” of results.

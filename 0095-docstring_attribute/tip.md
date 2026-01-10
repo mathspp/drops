@@ -7,7 +7,8 @@ themes:
     - "`help`"
 ---
 
-## 95 – Docstring `__doc__` attribute
+(95)=
+# 95 – Docstring `__doc__` attribute
 
 Docstrings are saved as an attribute `__doc__` on the objects they were defined in.
 (Both functions and classes.)

@@ -7,7 +7,8 @@ themes:
     - "`pathlib.Path.write_text`"
 ---
 
-## 61 – One-shot file I/O
+(61)=
+# 61 – One-shot file I/O
 
 For one-shot file I/O, like simply reading the full contents of a file or writing some text to a file, you can use the methods `read_text` and `write_text` from `pathlib.Path`.
 

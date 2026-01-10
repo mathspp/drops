@@ -7,7 +7,8 @@ themes:
     - "`itertools.chain`"
 ---
 
-## 85 – Add lists together, fast
+(85)=
+# 85 – Add lists together, fast
 
 Adding (concatenating) two lists together is a “slow” operation because it requires creating a new list and “copying” the values from the two source lists to the third resulting list.
 In performance-sensitive scenarios, it may be better to use `itertools.chain` to chain the two lists together, instead.

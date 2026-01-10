@@ -6,7 +6,8 @@ themes:
     - "comparison operators"
 ---
 
-## 164 – Chaining comparison operators
+(164)=
+# 164 – Chaining comparison operators
 
 Python has plenty of comparison operators:
 

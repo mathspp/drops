@@ -25,11 +25,11 @@ yaml = YAML()
 theme_to_references = defaultdict(list)
 
 # Find all `tip.md` files
-tip_files = list(Path(".").rglob("tip.md"))
+tip_files = list(Path(".").glob("[0-9][0-9][0-9][0-9]*/tip.md"))
 
 # Regex patterns
 frontmatter_pattern = re.compile(r"^---\n(.*?)\n---", re.DOTALL | re.MULTILINE)
-heading_pattern = re.compile(r"^##\s+(\d+)\s+–\s+(.*)", re.MULTILINE)
+heading_pattern = re.compile(r"^#\s+(\d+)\s+–\s+(.*)", re.MULTILINE)
 
 # Parse each file
 for file in tip_files:
@@ -76,9 +76,7 @@ for group_key, themes in sorted_groups:
     for theme, references in sorted(themes, key=lambda x: x[0].lower().lstrip("`")):
         # Sort references by number
         references_sorted = sorted(references, key=lambda x: x[0])
-        links = ", ".join(
-            f"[{num}](#{slugify(title)})" for num, title in references_sorted
-        )
+        links = ", ".join(f"[{num}]({num})" for num, _ in references_sorted)
         output_lines.append(f"- {theme}: {links}")
     output_lines.append("")  # Blank line between groups
 

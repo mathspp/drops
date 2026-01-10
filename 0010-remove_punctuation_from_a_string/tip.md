@@ -7,7 +7,8 @@ themes:
     - "`string` (module)"
 ---
 
-## 10 – Remove punctuation from a string
+(10)=
+# 10 – Remove punctuation from a string
 
 Don't use the method `replace` to remove punctuation from a string.
 Instead, use the method `translate`.

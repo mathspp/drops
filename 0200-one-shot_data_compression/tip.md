@@ -8,10 +8,11 @@ themes:
     - "bytes"
 ---
 
-## 200 – One-shot data compression
+(200)=
+# 200 – One-shot data compression
 
 The module `compression`, new in Python 3.14, provides a convenient way to do one-shot data compression.
-There are [5 different algorithms to choose from](#compression-algorithms), but you can default to the Zstd if you don't have any particular reason to pick one over another.
+There are [5 different algorithms to choose from](154), but you can default to the Zstd if you don't have any particular reason to pick one over another.
 
 To compress data, make sure you're working with bytes and call the function `compress`:
 

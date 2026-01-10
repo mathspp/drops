@@ -6,7 +6,8 @@ themes:
     - "modulo operator"
 ---
 
-## 146 – Cycling over an iterable
+(146)=
+# 146 – Cycling over an iterable
 
 Whenever you need to cycle over an iterable use `itertools.cycle`:
 

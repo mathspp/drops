@@ -6,7 +6,8 @@ themes:
     - "strings"
 ---
 
-## 31 – Enumerations of string values
+(31)=
+# 31 – Enumerations of string values
 
 You shouldn't use random, loose string values in Python:
 

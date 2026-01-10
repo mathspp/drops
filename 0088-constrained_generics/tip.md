@@ -7,7 +7,8 @@ themes:
     - "3.12 (new in Python 3.12)"
 ---
 
-## 88 – Constrained generics
+(88)=
+# 88 – Constrained generics
 
 Generics (functions and classes) can be constrained.
 This means that the variable type must be one of two (or more) specified types.

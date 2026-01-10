@@ -6,7 +6,8 @@ themes:
     - "`typing.Literal`"
 ---
 
-## 29 – Use `Literal` for options
+(29)=
+# 29 – Use `Literal` for options
 
 Use the type `Literal` from the module `typing` when a function accepts a small number of specific values that represent configurations or options.
 

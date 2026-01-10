@@ -12,7 +12,8 @@ themes:
     - "strings"
 ---
 
-## 83 – Extracting text data into a dict
+(83)=
+# 83 – Extracting text data into a dict
 
 Regular expression matches from the module `re` have a method `groupdict` that allow you to create a dictionary with the named groups that your regular expression defines.
 
@@ -40,7 +41,7 @@ pattern = r"""(?x)
 ```
 
 Then, you can use the module `re` and any of its functions to search/find text.
-If you get a match, you can use the method `groupdict` to create a dictionary with key/value pairs for every [named group](#named-groups-in-regex) you defined.
+If you get a match, you can use the method `groupdict` to create a dictionary with key/value pairs for every [named group](63) you defined.
 In the example above, that would be a dictionary with keys `"title"` and `"author"`:
 
 ```py

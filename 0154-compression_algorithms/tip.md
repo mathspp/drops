@@ -5,7 +5,8 @@ themes:
     - "3.14 (new in Python 3.14)"
 ---
 
-## 154 – Compression algorithms
+(154)=
+# 154 – Compression algorithms
 
 Python 3.14 introduced a new module `compression` that provides a unified interface to access the five compression algorithms that Python supports:
 

@@ -6,7 +6,8 @@ themes:
     - "bytes"
 ---
 
-## 202 – Base64 encoding
+(202)=
+# 202 – Base64 encoding
 
 Base64 encodes binary data in a way that makes it safe to send over email, use on URL parameters, as HTTP POST requests, and more.
 Python provides the module `base64` to work with it:

@@ -1,9 +1,10 @@
 ---
 themes:
     - "file I/O"
-    ---
+---
 
-## 86 – File modes
+(86)=
+# 86 – File modes
 
 There are 16 different file modes.
 The four base modes are

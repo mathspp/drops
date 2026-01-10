@@ -5,7 +5,8 @@ themes:
     - "generator expressions"
 ---
 
-## 45 – Counting values that satisfy a predicate
+(45)=
+# 45 – Counting values that satisfy a predicate
 
 (This is my favourite line of Python code. Really.)
 

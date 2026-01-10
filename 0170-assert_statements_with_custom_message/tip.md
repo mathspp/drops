@@ -5,7 +5,8 @@ themes:
     - "debugging"
 ---
 
-## 170 – `assert` statements with custom message
+(170)=
+# 170 – `assert` statements with custom message
 
 The keyword `assert` takes an expression on its right and then raises an `AssertionError` if that expression doesn't evaluate to `True` (or Truthy):
 
@@ -15,7 +16,7 @@ y = 42
 
 assert y > x
 ```
-```txt
+```text
 ...
 AssertionError
 ```
@@ -28,7 +29,7 @@ y = 42
 
 assert y > x, f"{y=} isn't > {x=}..."
 ```
-```txt
+```text
 ...
 AssertionError: y=42 isn't > x=73...
 ```

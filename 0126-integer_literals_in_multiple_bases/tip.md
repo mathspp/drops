@@ -5,7 +5,8 @@ themes:
     - "readability"
 ---
 
-## 126 – Integer literals in multiple bases
+(126)=
+# 126 – Integer literals in multiple bases
 
 Python integer literals are base 10 by default.
 But you can also use the prefixes `0b`, `0o`, and `0x`, to write integer literals in binary, octal, and hexadecimal, respectively:

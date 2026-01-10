@@ -7,7 +7,8 @@ themes:
     - "iterables"
 ---
 
-## 112 – Two-dimensional range
+(112)=
+# 112 – Two-dimensional range
 
 You can build a two-dimensional range using the built-in `range` and `itertools.product`.
 This is useful when traversing 2D structures like grids.

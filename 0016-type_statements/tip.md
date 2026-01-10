@@ -7,7 +7,8 @@ themes:
     - "type parameter syntax"
 ---
 
-## 16 – Type statements
+(16)=
+# 16 – Type statements
 
 Since Python 3.12 that you can use type statements to create type aliases, which can also be generic.
 

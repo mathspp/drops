@@ -7,7 +7,8 @@ themes:
     - "mix-ins"
 ---
 
-## 115 – Double leading underscore
+(115)=
+# 115 – Double leading underscore
 
 Name mangling is a Python feature that mangles the names of attributes and methods of functions that start with a leading double underscore, like `__value`.
 

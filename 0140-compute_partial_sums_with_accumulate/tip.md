@@ -6,7 +6,8 @@ themes:
     - "algorithms"
 ---
 
-## 140 – Compute partial sums with `accumulate`
+(140)=
+# 140 – Compute partial sums with `accumulate`
 
 `itertools.accumulate` computes partial sums of the given iterable.
 Or, in other words, `accumulate` computes prefix sums.

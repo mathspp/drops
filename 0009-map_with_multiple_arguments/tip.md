@@ -1,9 +1,10 @@
 ---
 themes:
     - "`map`"
-    ---
+---
 
-## 9 – `map` with multiple arguments
+(9)=
+# 9 – `map` with multiple arguments
 
 The Python built-in `map` can be used with 2 or more iterable arguments.
 

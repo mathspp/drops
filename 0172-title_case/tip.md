@@ -6,7 +6,8 @@ themes:
     - "text processing"
 ---
 
-## 172 – Title case
+(172)=
+# 172 – Title case
 
 Use the string method `title` to change a string's casing to title case:
 

@@ -5,7 +5,8 @@ themes:
     - "OOP"
 ---
 
-## 145 – `NotImplemented`
+(145)=
+# 145 – `NotImplemented`
 
 The singleton built-in `NotImplemented` has one and only one very specific use case: binary dunder methods return this value when they don't know how to compute the result of the operation between the two given arguments.
 
@@ -45,4 +46,4 @@ print(Person("John") == Employee("John"))  # True
 Give it a try.
 Replace the final `return` of `Person.__eq__` with `return False` and note how the value that is printed becomes `False` instead of `True`.
 
-`NotImplemented` should not be confused with [the built-in exception `NotImplementedError`](#notimplementederror).
+`NotImplemented` should not be confused with [the built-in exception `NotImplementedError`](149).

@@ -3,7 +3,8 @@ themes:
     - "generators"
 ---
 
-## 67 – Generator recipe
+(67)=
+# 67 – Generator recipe
 
 Generators are an awesome Python feature because their potential upside in terms of memory and time savings is infinite.
 

@@ -7,7 +7,8 @@ themes:
     - "`itertools.chain`"
 ---
 
-## 11 – Count characters in a file
+(11)=
+# 11 – Count characters in a file
 
 You can use `chain` from the module `itertools` to iterate over the characters of a file, with `chain.from_iterable(f)`.
 

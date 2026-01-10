@@ -5,14 +5,15 @@ themes:
     - "`pathlib.Path.glob`"
 ---
 
-## 71 – File discovery by name pattern
+(71)=
+# 71 – File discovery by name pattern
 
 When you need to find files based on a name pattern, you can use the method `glob` from `pathlib.Path`.
 Note that `glob` doesn't support complex (regex) patterns, though.
 
 Suppose the filesystem contains the following folder `Downloads` and its given contents:
 
-```txt
+```text
 = Downloads/
   - cat_and_dog.png
   - cute_cat.jpg

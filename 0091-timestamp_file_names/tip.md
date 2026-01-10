@@ -9,7 +9,8 @@ themes:
     - "string formatting"
 ---
 
-## 91 – Timestamp file names
+(91)=
+# 91 – Timestamp file names
 
 You can combine `datetime.datetime.now` with string formatting to add a timestamp to a file name.
 This is very helpful to create unique file names dynamically.

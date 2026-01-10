@@ -7,7 +7,8 @@ themes:
     - "filesystem"
 ---
 
-## 64 – Resolving paths
+(64)=
+# 64 – Resolving paths
 
 When working with paths, and especially if user input is involved, you often want to normalise and resolve your paths so you have absolute paths that are expanded.
 

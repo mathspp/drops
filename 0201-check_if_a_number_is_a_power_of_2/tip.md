@@ -5,7 +5,8 @@ themes:
     - "`assert`"
 ---
 
-## 201 – Check if a number is a power of 2
+(201)=
+# 201 – Check if a number is a power of 2
 
 You can use a clever bitwise AND (`&`) to quickly and efficiently check if a number is a power of 2:
 

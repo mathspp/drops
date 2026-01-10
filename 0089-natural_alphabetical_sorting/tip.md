@@ -8,7 +8,8 @@ themes:
     - "Unicode"
 ---
 
-## 89 – Natural alphabetical sorting
+(89)=
+# 89 – Natural alphabetical sorting
 
 Strings can be sorted in Python and the default behaviour is to sort lexicographically, character by character.
 However, characters are compared by their Unicode codepoint (which you can check with the built-in `ord`), which means upper case letters and lower case letters are separated because their codepoints are “far” apart:

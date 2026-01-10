@@ -8,7 +8,8 @@ themes:
     - "`enumerate`"
 ---
 
-## 80 – Bulk renaming files
+(80)=
+# 80 – Bulk renaming files
 
 To change the name of a file while preserving its extension you can use the method `pathlib.PurePath.with_stem`.
 Note that this creates a new path object and doesn't do any file renaming automatically.

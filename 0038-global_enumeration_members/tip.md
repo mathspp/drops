@@ -6,7 +6,8 @@ themes:
     - "global names"
 ---
 
-## 38 – Global enumeration members
+(38)=
+# 38 – Global enumeration members
 
 The module `enum` has a lot of little-known useful tools.
 For example, you can use the decorator `enum.global_enum` to automatically export your enumeration members to the global namespace of your module.

@@ -9,7 +9,8 @@ themes:
     - "debugging"
 ---
 
-## 102 – methods `__str__` and `__repr__`
+(102)=
+# 102 – methods `__str__` and `__repr__`
 
 Objects can use two different dunder methods to create string representations for themselves:
 

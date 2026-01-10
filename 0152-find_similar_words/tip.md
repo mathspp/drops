@@ -7,7 +7,8 @@ themes:
     - "3.14 (new in Python 3.14)"
 ---
 
-## 152 – Find similar words
+(152)=
+# 152 – Find similar words
 
 You can use the function `get_close_matches` from the module `difflib` to find words that are similar to another given word, for example in the context of an auto-correct feature.
 

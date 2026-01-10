@@ -6,7 +6,8 @@ themes:
     - "`dict.fromkeys`"
 ---
 
-## 7 – Unique elements from a list
+(7)=
+# 7 – Unique elements from a list
 
 The built-in type `set` can be used if you need to compute the unique values from an iterable, like a list.
 

@@ -6,7 +6,8 @@ themes:
     - "standard library"
 ---
 
-## 142 – Using fractions
+(142)=
+# 142 – Using fractions
 
 Floats are a bit annoying when you have to do computations because of the inaccuracies inherent to their representation.
 

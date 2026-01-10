@@ -5,7 +5,8 @@ themes:
     - "string formatting"
 ---
 
-## 94 – Dynamic width string formatting
+(94)=
+# 94 – Dynamic width string formatting
 
 String formatting accepts formatting specifiers dynamically if you specify them within an extra set of curly braces `{}`.
 This is useful, for example, to compute the maximum width of a column from a list of strings to format them neatly:

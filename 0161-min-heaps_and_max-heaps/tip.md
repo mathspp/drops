@@ -6,7 +6,8 @@ themes:
     - "3.14 (new in Python 3.14)"
 ---
 
-## 161 – min-heaps and max-heaps
+(161)=
+# 161 – min-heaps and max-heaps
 
 The module `heapq` has support for min-heaps and max-heaps, providing a number of functions to work efficiently with priority queues:
 

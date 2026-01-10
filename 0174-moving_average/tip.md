@@ -11,7 +11,8 @@ themes:
     - "mathematics"
 ---
 
-## 174 – Moving average
+(174)=
+# 174 – Moving average
 
 To compute the moving average of an iterable of values, use `collections.deque` to manage the window.
 The parameter `maxlen` that the `deque` has makes it very easy to manage the window and its elements:

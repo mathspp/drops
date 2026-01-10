@@ -8,7 +8,8 @@ themes:
     - "slicing"
 ---
 
-## 73 – Slicing generators for debugging
+(73)=
+# 73 – Slicing generators for debugging
 
 When debugging with generators, you may want to use `itertools.islice`.
 This allows you to easily take a look at the first few elements of the generator.

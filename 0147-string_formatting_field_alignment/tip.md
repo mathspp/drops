@@ -6,7 +6,8 @@ themes:
     - "string formatting"
 ---
 
-## 147 – String formatting field alignment
+(147)=
+# 147 – String formatting field alignment
 
 There are three main alignment options in string formatting:
 

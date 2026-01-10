@@ -5,7 +5,8 @@ themes:
     - "unpacking"
 ---
 
-## 35 – Inline lists and tuples
+(35)=
+# 35 – Inline lists and tuples
 
 The splat operator `*` can be used to inline iterables inside other iterables.
 Just use the asterisk `*` when writingh out a comma-separated list of values and whatever iterable the asterisk is next to will be “flattened” or unpacked in that position.

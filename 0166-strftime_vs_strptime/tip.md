@@ -7,7 +7,8 @@ themes:
     - "dates and times"
 ---
 
-## 166 – `strftime` vs `strptime`
+(166)=
+# 166 – `strftime` vs `strptime`
 
 The methods `strftime` and `strptime` can be used to convert dates/times into strings and vice-versa.
 Here's a mnemonic to help you remember which is which:

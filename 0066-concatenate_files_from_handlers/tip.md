@@ -8,7 +8,8 @@ themes:
     - "`file.writelines`"
 ---
 
-## 66 – Concatenate files from handlers
+(66)=
+# 66 – Concatenate files from handlers
 
 Suppose you need to concatenate multiple files together, for example to write a long file composed of multiple other files or to search for a pattern across all files.
 
@@ -20,21 +21,21 @@ For example, suppose you have three files:
 
  1. `log1.log`:
 
-```txt
+```text
 08:12:03 [INFO] Starting the data sync process
 08:12:04 [DEBUG] Loaded 142 user records from cache
 ```
 
  2. `log2.log`:
 
-```txt
+```text
 08:12:06 [INFO] Connection to remote server established
 08:12:08 [WARN] Response time exceeded threshold: 534ms
 ```
 
  3. `log3.log`:
 
-```txt
+```text
 08:12:09 [DEBUG] Retry attempt #1 initiated
 08:12:11 [INFO] Data sync completed successfully
 ```
@@ -52,7 +53,7 @@ with open("full_log.log", "w") as f:
 
 This produces the file `full_log.log` with the contents of all three files:
 
-```txt
+```text
 08:12:03 [INFO] Starting the data sync process
 08:12:04 [DEBUG] Loaded 142 user records from cache
 08:12:06 [INFO] Connection to remote server established

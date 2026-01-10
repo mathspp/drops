@@ -6,7 +6,8 @@ themes:
     - "readability"
 ---
 
-## 27 – Enforce keyword arguments for options
+(27)=
+# 27 – Enforce keyword arguments for options
 
 You can use a single asterisk `*` in a function definition to force all following arguments to be keyword-only.
 

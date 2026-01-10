@@ -3,7 +3,8 @@ themes:
     - "sets"
 ---
 
-## 148 – Set operations with operators
+(148)=
+# 148 – Set operations with operators
 
 Many set operations, like containment checks, can be written with Python's operators instead of method calls.
 This allows for succinct but expressive code:

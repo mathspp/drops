@@ -6,7 +6,8 @@ themes:
     - "`itertools.chain`"
 ---
 
-## 74 – Peek at an iterable
+(74)=
+# 74 – Peek at an iterable
 
 To know the first element of a list, you index with `[0]`.
 However, not all iterables can be indexed.

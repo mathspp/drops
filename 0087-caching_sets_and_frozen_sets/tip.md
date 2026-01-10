@@ -11,7 +11,8 @@ themes:
     - "`frozenset`"
 ---
 
-## 87 – Caching sets and frozen sets
+(87)=
+# 87 – Caching sets and frozen sets
 
 The built-in type `set` has a variant `frozenset` that is immutable and that you can use as a dictionary key, for caching purposes, or in other contexts where you require a hashable value.
 

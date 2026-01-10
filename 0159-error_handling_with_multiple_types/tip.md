@@ -4,7 +4,8 @@ themes:
     - "exception handling"
 ---
 
-## 159 – Error handling with multiple types
+(159)=
+# 159 – Error handling with multiple types
 
 When doing error handling with a `try: ... except: ...` block, you can handle different exception types in two different ways.
 

@@ -5,9 +5,10 @@ themes:
     - "`dict`"
     - "`zip`"
     - "iterables"
-    ---
+---
 
-## 117 – Dictionary creation idiom
+(117)=
+# 117 – Dictionary creation idiom
 
 Dictionaries can be created from iterables of key/value pairs, which naturally gives rise to a useful idiom to create dictionaries using the built-ins `zip` and `dict`.
 

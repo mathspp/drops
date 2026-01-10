@@ -7,7 +7,8 @@ themes:
     - "class methods"
 ---
 
-## 106 – Custom `enum` search behaviour
+(106)=
+# 106 – Custom `enum` search behaviour
 
 Similar to the dunder method `__missing__`, enumerations can have a class method `_missing_` (with a single underscore).
 

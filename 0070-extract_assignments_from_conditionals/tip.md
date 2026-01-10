@@ -3,7 +3,8 @@ themes:
     - "conditional expressions"
 ---
 
-## 70 – Extract assignments from conditionals
+(70)=
+# 70 – Extract assignments from conditionals
 
 Instead of using a conditional to make an assignment, use a conditional expression.
 This extracts the important operation (the assignment) out of the nesting of the `if: ... else: ...` statement, making it easier to spot the relevant part of the code.

@@ -7,7 +7,8 @@ themes:
     - "algorithms"
 ---
 
-## 12 – Run-length encoding
+(12)=
+# 12 – Run-length encoding
 
 The module `itertools` has a very funky iterable called `groupby`.
 If you're imaginative, you can use it for all sorts of things.

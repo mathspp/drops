@@ -4,7 +4,8 @@ themes:
     - "underscore `_`"
 ---
 
-## 57 – Underscore in the REPL
+(57)=
+# 57 – Underscore in the REPL
 
 When working in the REPL, the result of the last non-`None` expression is saved in the special variable `_` (underscore).
 

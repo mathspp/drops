@@ -6,7 +6,8 @@ themes:
     - "newlines"
 ---
 
-## 56 – Ergonomic multiline strings
+(56)=
+# 56 – Ergonomic multiline strings
 
 When I'm writing multiline strings I like to have the `"""` by themselves, for readability.
 However, this creates an extra empty line at the beginning and end of the string:

@@ -5,7 +5,8 @@ themes:
     - "`__init_subclass__`"
 ---
 
-## 26 – Notify parent class when subclassing
+(26)=
+# 26 – Notify parent class when subclassing
 
 The dunder class method `__init_subclass__` can be used to notify a class when it's subclassed.
 This is effective for some metaprogramming without having to resort to metaclasses.

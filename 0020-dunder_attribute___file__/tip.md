@@ -3,7 +3,8 @@ themes:
     - "`__file__`"
 ---
 
-## 20 – Dunder attribute `__file__`
+(20)=
+# 20 – Dunder attribute `__file__`
 
 The dunder attribute `__file__` can be used to get the full path of your Python script or module.
 

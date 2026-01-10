@@ -6,7 +6,8 @@ themes:
     - "security"
 ---
 
-## 144 – Safe random tokens
+(144)=
+# 144 – Safe random tokens
 
 To create a URL-safe token in your web server, use `secrets.token_urlsafe`:
 

@@ -6,7 +6,8 @@ themes:
     - "`pathlib.Path.iterdir`"
 ---
 
-## 133 – Find files in a directory
+(133)=
+# 133 – Find files in a directory
 
 You can use `pathlib.Path` together with the methods `iterdir` and `is_file` to find and list all files inside a directory:
 

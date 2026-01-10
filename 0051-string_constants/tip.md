@@ -8,7 +8,8 @@ themes:
     - "`string.punctuation`"
 ---
 
-## 51 – String constants
+(51)=
+# 51 – String constants
 
 The module `string` defines many useful constants that you can, and should, use!
 These will save you the time of defining the constants yourself and prevent plenty of easily-avoidable bugs.

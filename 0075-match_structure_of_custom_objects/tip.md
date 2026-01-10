@@ -5,7 +5,8 @@ themes:
     - "OOP"
 ---
 
-## 75 – Match the structure of custom objects
+(75)=
+# 75 – Match the structure of custom objects
 
 Custom objects can have their structure matched by specifying the relevant attribute names in the dunder attribute `__match_args__`.
 

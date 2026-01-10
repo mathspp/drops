@@ -4,7 +4,8 @@ themes:
     - "vertical bar `|`"
 ---
 
-## 14 – Multiple options in a single `case` statement
+(14)=
+# 14 – Multiple options in a single `case` statement
 
 Structural pattern matching lets you specify multiple options in the same `case` statement.
 

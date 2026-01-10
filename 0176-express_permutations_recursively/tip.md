@@ -10,7 +10,8 @@ themes:
     - "iterables"
 ---
 
-## 176 – Express permutations recursively
+(176)=
+# 176 – Express permutations recursively
 
 Recursion is disregarded by many as useless or “too fancy and theoretical to be practical”, but that's very far from the truth.
 Recursion is a very natural way to express some algorithms and relationships and understanding it has many benefits.

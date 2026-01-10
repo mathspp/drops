@@ -11,7 +11,8 @@ themes:
     - "standard library"
 ---
 
-## 160 – Parse dates from strings
+(160)=
+# 160 – Parse dates from strings
 
 You can use the class method `datetime.date.strptime` to parse a date from a string with the given format:
 

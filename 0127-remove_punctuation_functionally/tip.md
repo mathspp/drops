@@ -13,9 +13,10 @@ themes:
     - "3.14 (new in Python 3.14)"
 ---
 
-## 127 – Remove punctuation functionally
+(127)=
+# 127 – Remove punctuation functionally
 
-You [already know how to remove punctuation from a string](#remove-punctuation-from-a-string), but you can leverage `functools.Placeholder` (new in Python 3.14) and `functools.partial` to turn that into a function:
+You [already know how to remove punctuation from a string](10), but you can leverage `functools.Placeholder` (new in Python 3.14) and `functools.partial` to turn that into a function:
 
 ```py
 from functools import Placeholder as _P, partial

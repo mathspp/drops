@@ -6,7 +6,8 @@ themes:
     - "`collections.defaultdict`"
 ---
 
-## 37 – Multi-dictionary
+(37)=
+# 37 – Multi-dictionary
 
 You can create a multi-dictionary in Python with `collections.defaultdict` and the built-in `list` with `multidict = collections.defaultdict(list)`:
 

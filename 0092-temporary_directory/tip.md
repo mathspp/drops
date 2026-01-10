@@ -8,7 +8,8 @@ themes:
     - "automatic cleanup"
 ---
 
-## 92 – Temporary directories
+(92)=
+# 92 – Temporary directories
 
 Use the module `tempfile` from the standard library to create a temporary directory.
 The context manager `TemporaryDirectory` cleans up the directory and its contents when closed.

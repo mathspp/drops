@@ -8,7 +8,8 @@ themes:
     - "f-strings"
 ---
 
-## 44 – Format specifier `!r`
+(44)=
+# 44 – Format specifier `!r`
 
 When you're using f-strings, you can use the format specifier `!r` to use a value's debugging representation instead of pretty-printing it.
 

@@ -7,7 +7,8 @@ themes:
     - "strings"
 ---
 
-## 50 – Dynamic regex replacements
+(50)=
+# 50 – Dynamic regex replacements
 
 The module `re` allows you to do dynamic string replacements.
 That is, search and replace for certain patterns and then replace them with _other_ things that are not constant.

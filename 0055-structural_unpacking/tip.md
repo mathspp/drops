@@ -5,7 +5,8 @@ themes:
     - "structural pattern matching"
 ---
 
-## 55 – Structural unpacking
+(55)=
+# 55 – Structural unpacking
 
 When doing an assignment, if the value on the right is an iterable (list, tuple, ...), you can unpack it.
 On the left, you can write as many variables as elements you expect to have on the right.

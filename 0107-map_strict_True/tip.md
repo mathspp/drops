@@ -6,7 +6,8 @@ themes:
     - "unexpected argument"
 ---
 
-## 107 – `map`'s keyword argument `strict`
+(107)=
+# 107 – `map`'s keyword argument `strict`
 
 Akin to `zip`’s keyword argument `strict`, in Python 3.14 the built-in `map` got a keyword argument `strict`.
 By setting `strict=True`, you get a `ValueError` if the iterables have different lengths:
@@ -21,4 +22,4 @@ for num in map(pow, bases, exps, strict=True):
 # ValueError
 ```
 
-In 99% of the situations where you use [`map` with multiple arguments](#map-with-multiple-arguments) you’ll want to set this, so don’t forget it!
+In 99% of the situations where you use [`map` with multiple arguments](9) you’ll want to set this, so don’t forget it!

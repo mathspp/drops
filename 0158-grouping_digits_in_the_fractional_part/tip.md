@@ -10,9 +10,10 @@ themes:
     - "comma (`,`)"
 ---
 
-## 158 – Grouping digits in the fractional part
+(158)=
+# 158 – Grouping digits in the fractional part
 
-You can [group digits in integers with underscores or commas](#formatting-big-numbers), but since Python 3.14 that you can also do the same to the digits of the fractional part of a number.
+You can [group digits in integers with underscores or commas](62), but since Python 3.14 that you can also do the same to the digits of the fractional part of a number.
 
 ```py
 x = 12345.09876543
@@ -27,7 +28,7 @@ The grouping can be specified independently for the digits before and after the 
 f"{x:_.,}"  # '12_345.098,765,43'
 ```
 
-Remember that if you only specify the grouping character, it will only group the digits of the integral part (see [“Formatting big numbers”](#formatting-big-numbers)):
+Remember that if you only specify the grouping character, it will only group the digits of the integral part (see [“Formatting big numbers”](62)):
 
 ```py
 f"{x:_}"  # '12_345.09876543'

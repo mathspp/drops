@@ -6,7 +6,8 @@ themes:
     - "introspection"
 ---
 
-## 39 – Automatic enumeration values
+(39)=
+# 39 – Automatic enumeration values
 
 The module `enum` provides a function `auto` that you can use to automatically generate values for your enumeration members.
 

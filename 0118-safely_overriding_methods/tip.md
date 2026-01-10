@@ -7,7 +7,8 @@ themes:
     - "standard library"
 ---
 
-## 118 – Safely overriding methods
+(118)=
+# 118 – Safely overriding methods
 
 The decorator `typing.overrides` can be used to mark that a method is overriding a method from a parent class.
 If it isn't, type checkers will complain.

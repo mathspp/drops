@@ -6,7 +6,8 @@ themes:
     - "unpacking"
 ---
 
-## 199 – `typing.NewType`
+(199)=
+# 199 – `typing.NewType`
 
 Sometimes you are dealing with lots of data of the same type (e.g., strings) but they all have different meanings.
 For example, a person's name is very different from their email.

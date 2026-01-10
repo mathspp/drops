@@ -8,7 +8,8 @@ themes:
     - "namespaces"
 ---
 
-## 108 – Dynamic module attribute look-up
+(108)=
+# 108 – Dynamic module attribute look-up
 
 Modules can implement the dunder method `__getattr__`, which can be used to dynamically load names into a module.
 This can be useful to create lazy imports or to issue warnings when certain things are imported.

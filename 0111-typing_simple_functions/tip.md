@@ -8,7 +8,8 @@ themes:
     - "standard library"
 ---
 
-## 111 – Type hints that refer to functions
+(111)=
+# 111 – Type hints that refer to functions
 
 When dealing with higher-order functions (functions that accept functions as arguments or that return functions), you can use `collections.abc.Callable` to add a type hint to the function that is an argument/the return value.
 

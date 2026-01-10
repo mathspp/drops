@@ -8,7 +8,8 @@ themes:
     - "`itertools.islice`"
 ---
 
-## 120 – All equal
+(120)=
+# 120 – All equal
 
 To check if all values of an iterable are equal (up to a `key` function), you can use `itertools.groupby` and check how many groups are found (under the same `key` function):
 

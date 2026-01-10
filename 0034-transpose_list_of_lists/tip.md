@@ -4,7 +4,8 @@ themes:
     - "asterisk `*`"
 ---
 
-## 34 – Transpose a list of lists
+(34)=
+# 34 – Transpose a list of lists
 
 The built-in `zip` can be used with the splat operator `*` to transpose a list of iterables.
 

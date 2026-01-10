@@ -6,7 +6,8 @@ themes:
     - "inheritance"
 ---
 
-## 149 – `NotImplementedError`
+(149)=
+# 149 – `NotImplementedError`
 
 The built-in exception `NotImplementedError` is supposed to be used in base classes to indicate that a given method must be implemented by the derived class:
 
@@ -30,4 +31,4 @@ class MyParser(Parser):
 
 The documentation also notes that you should **not** use `NotImplementedError` to indicate that a method isn't supposed to be supported at all by a (sub)class.
 
-`NotImplementedError` should not be confused with [the built-in singleton `NotImplemented`](#notimplemented).
+`NotImplementedError` should not be confused with [the built-in singleton `NotImplemented`](145).

@@ -5,7 +5,8 @@ themes:
     - "unexpected argument"
 ---
 
-## 1 – `zip`'s keyword argument `strict`
+(1)=
+# 1 – `zip`'s keyword argument `strict`
 
 The Python built-in `zip` has a keyword argument `strict` that will raise an error if the 2 (or more) iterables that you pass to `zip` don't have the same length.
 

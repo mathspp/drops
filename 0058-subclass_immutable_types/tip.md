@@ -7,7 +7,8 @@ themes:
     - "OOP"
 ---
 
-## 58 – Subclassing immutable types
+(58)=
+# 58 – Subclassing immutable types
 
 How do you subclass immutable types?
 (For example, how would you subclass floats?)

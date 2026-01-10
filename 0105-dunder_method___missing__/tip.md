@@ -7,7 +7,8 @@ themes:
     - "`collections.defaultdict`"
 ---
 
-## 105 – Dunder method `__missing__`
+(105)=
+# 105 – Dunder method `__missing__`
 
 The dunder method `__missing__` is part of the `dict` data model.
 If you look up a key that isn’t in the dictionary, `__missing__` is called to let you handle the missing key.

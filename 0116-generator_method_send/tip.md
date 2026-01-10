@@ -5,7 +5,8 @@ themes:
     - "iterables"
 ---
 
-## 116 – Send data into generators
+(116)=
+# 116 – Send data into generators
 
 Generators have a method `send` that you can use to send data into the generator.
 Inside the generator, that data comes from the expression `yield`, that evaluates to the value that was sent into the generator.

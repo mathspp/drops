@@ -6,7 +6,8 @@ themes:
     - "type unions"
 ---
 
-## 3 – Type unions with the vertical bar in `isinstance`
+(3)=
+# 3 – Type unions with the vertical bar in `isinstance`
 
 The vertical bar `|` can be used to combine types (to create type unions) since Python 3.10.
 This lets you create type unions in a very ergonomic way.

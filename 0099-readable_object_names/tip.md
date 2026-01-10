@@ -6,7 +6,8 @@ themes:
     - "OOP"
 ---
 
-## 99 – Readable object names
+(99)=
+# 99 – Readable object names
 
 Functions and classes have a dunder attribute `__name__` that is a string with the readable/user-defined name of that object:
 

@@ -4,7 +4,8 @@ themes:
     - "debugging"
 ---
 
-## 19 – Self-debugging f-strings
+(19)=
+# 19 – Self-debugging f-strings
 
 f-strings have an awesome feature: if you include an equals sign `=` at the end of the formatted value, the f-string will show you the code and the value that you're formatting.
 

@@ -6,7 +6,8 @@ themes:
     - "falsy/truthy"
 ---
 
-## 100 – Filtering Truthy values
+(100)=
+# 100 – Filtering Truthy values
 
 The built-in `filter` accepts the special value `None` as its first argument, instead of a predicate function.
 When `None` is the first argument, `filter` will remove all Falsy values from the iterable passed as the second argument.

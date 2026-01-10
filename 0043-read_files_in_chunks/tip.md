@@ -9,7 +9,8 @@ themes:
     - "unexpected argument"
 ---
 
-## 43 – Read files in chunks
+(43)=
+# 43 – Read files in chunks
 
 The built-in `iter` can be used to turn functions into iterables.
 In its not-so-well-known form, `iter(f, sentinel)` creates an iterable that calls the function `f` until the function returns the value `sentinel`.

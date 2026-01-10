@@ -8,7 +8,8 @@ themes:
     - "scoping"
 ---
 
-## 93 – Non-local variables
+(93)=
+# 93 – Non-local variables
 
 To access non-local variables in closures, use the keyword `nonlocal`.
 Non-local variables are variables that are neither local, nor global.

@@ -7,7 +7,8 @@ themes:
     - "`itertools.batched`"
 ---
 
-## 136 – Strict batching
+(136)=
+# 136 – Strict batching
 
 When using `itertools.batched` with the purpose of reshaping a one-dimensional iterable into sections of a fixed size, set `strict=True` if you expect the iterable to contain a whole number of sections.
 

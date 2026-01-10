@@ -6,7 +6,8 @@ themes:
     - "OOP"
 ---
 
-## 167 – Private members
+(167)=
+# 167 – Private members
 
 Python has a very well-known naming convention: names that start with a leading underscore `_` are considered “private”.
 

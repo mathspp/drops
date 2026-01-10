@@ -6,7 +6,8 @@ themes:
     - "multiline strings"
 ---
 
-## 69 – Regex multiline flag
+(69)=
+# 69 – Regex multiline flag
 
 Regular expressions have a multiline flag that can be used to change the behaviour of the special characters `^` and `$`.
 By default, `^` and `$` match the beginning and end of the string, respectively; with the multiline flag, they match the beginning and end of each line, respectively.
@@ -15,7 +16,7 @@ The flag can be used inline with `(?m)`, or passed in to the relevant functions 
 
 As an example, take the following string that spans across two lines:
 
-```txt
+```text
 The quick brown fox jumps over
 the lazy dog.
 ```

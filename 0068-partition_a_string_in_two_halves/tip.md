@@ -8,7 +8,8 @@ themes:
     - "falsy/truthy"
 ---
 
-## 68 – Split strings in two halves
+(68)=
+# 68 – Split strings in two halves
 
 Sometimes you'll need to split the string in two halves.
 When that's the case, you'll want to use the method `partition`:

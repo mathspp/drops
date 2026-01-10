@@ -7,7 +7,8 @@ themes:
     - "date and time format specifiers"
 ---
 
-## 65 – Formatting dates with f-strings
+(65)=
+# 65 – Formatting dates with f-strings
 
 Dates, times, and datetime objects, from the module `datetime`, can be formatted directly in f-strings.
 

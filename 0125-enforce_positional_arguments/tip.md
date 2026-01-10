@@ -6,14 +6,15 @@ themes:
     - "readability"
 ---
 
-## 125 – Enforce positional arguments
+(125)=
+# 125 – Enforce positional arguments
 
 You can use the forward slash `/` in a function signature to force arguments to be passed in as positional only.
 In other words, use `/` to disallow arguments from being passed as keyword arguments.
 
 This useful when the names of the arguments are inconsequential.
 For example, in a mathematics context, `p` and `q` are very common names for polynomials, but the names themselves have no meaning.
-So, if you're defining a function that adds two polynomials (using [the idiom to operate on two lists of numbers](#operate-on-two-lists-of-numbers)), you might want `p` and `q` to only be passed in positionally:
+So, if you're defining a function that adds two polynomials (using [the idiom to operate on two lists of numbers](124)), you might want `p` and `q` to only be passed in positionally:
 
 ```py
 from itertools import starmap, zip_longest

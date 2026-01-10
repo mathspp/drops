@@ -9,7 +9,8 @@ themes:
     - "integers"
 ---
 
-## 62 – Formatting big numbers
+(62)=
+# 62 – Formatting big numbers
 
 When doing string formatting with big integers, you may want to include thousands separators to make numbers easier to read.
 You can add
@@ -35,7 +36,7 @@ print(f"Big money ${bignum:n}")
 
 Note that the locale-appropriate separator might be “nothing” if the locale isn't set appropriately beforehand, as seen above.
 
-Since Python 3.14, you can also [group digits in the fractional part](#grouping-digits-in-the-fractional-part) of a number.
+Since Python 3.14, you can also [group digits in the fractional part](158) of a number.
 
 Further reading:
 
