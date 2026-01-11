@@ -32,8 +32,11 @@ all: drops.pdf drops.epub flashcards.pdf
 _toc.yml: $(BOOK_SOURCE) build_toc.py
 	uv run build_toc.py
 
-html: _toc.yml
+html:
 	uv run jb build --all . -W
+
+publish:
+	ghp-import -npf _build/html -c drops.mathspp.com
 
 pdf: _toc.yml
 	uv run jb build --all --builder pdflatex . -W
@@ -88,3 +91,4 @@ drops-advanced.pdf: $(ADVANCED_TIPS)
 
 clean:
 	rm drops-beginner.pdf drops-intermediate.pdf drops-advanced.pdf drops.pdf drops.epub flashcards.pdf 9998.themed-index.md
+	rm -rf _build

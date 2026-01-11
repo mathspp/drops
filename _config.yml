@@ -29,10 +29,17 @@ html:
   use_issues_button: true
   use_repository_button: true
 
+
 sphinx:
   config:
     language: en
+    html_extra_path:
+      - extras
     latex_elements:
+      # Set the colours for internal and external links.
+      sphinxsetup: |
+        InnerLinkColor={HTML}{A02F6F},
+        OuterLinkColor={HTML}{A02F6F}
       extraclassoptions: "openany"
       preamble: |
         \usepackage{multicol}  % Used to set the themed index layout to 2 columns
