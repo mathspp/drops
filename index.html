@@ -1,1 +1,130 @@
-<meta http-equiv="Refresh" content="0; url=0000.intro.html" />
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Python drops</title>
+    <meta name="description"
+        content="Become smarter about Python in just 3 min / day. Receive a practical Python tip in your inbox every weekday." />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            color: var(--fg);
+            background: var(--bg);
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+                "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.45;
+        }
+
+        /* Single-screen layout */
+        .page {
+            min-height: 100dvh;
+            display: grid;
+            place-items: center;
+            padding: clamp(18px, 4vw, 48px);
+        }
+
+        .card {
+            width: min(920px, 100%);
+            border: 1px solid var(--ui);
+            border-radius: 18px;
+            padding: clamp(18px, 4vw, 40px);
+            background:
+                radial-gradient(1000px 500px at 10% -10%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 60%),
+                radial-gradient(900px 480px at 90% 0%, color-mix(in srgb, var(--accent-2) 20%, transparent), transparent 60%);
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            font-size: clamp(28px, 3.6vw, 52px);
+        }
+
+        .sub {
+            margin: 0 0 22px 0;
+            font-size: clamp(16px, 1.6vw, 20px);
+            opacity: 0.9;
+            max-width: 60ch;
+        }
+
+        .rule {
+            height: 1px;
+            background: var(--ui);
+            margin: 18px 0 22px;
+        }
+
+        /* Beehiiv embed container */
+        .embed-wrap {
+            width: min(560px, 100%);
+            margin: 0;
+        }
+
+        /* Make the iframe responsive and centered */
+        .beehiiv-embed {
+            width: 100% !important;
+            max-width: 560px;
+            margin: 0 auto;
+            display: block;
+            border: 0;
+            border-radius: 12px !important;
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        /* Improve small-screen spacing */
+        @media (max-width: 480px) {
+            .card {
+                border-radius: 16px;
+            }
+
+            .rule {
+                margin: 14px 0 18px;
+            }
+        }
+
+        /* Optional: subtle accent underline on heading */
+        .accent {
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="_static/custom.css">
+</head>
+
+<body>
+    <main class="page">
+        <section class="card" aria-label="Python drops newsletter signup">
+            <h1>
+                Become smarter about Python in just <span class="accent">3 min / day</span>
+            </h1>
+
+            <p class="sub">Receive a practical Python tip in your inbox every weekday.</p>
+
+            <div class="rule" role="presentation"></div>
+
+            <div class="embed-wrap">
+                <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+                <iframe src="https://subscribe-forms.beehiiv.com/b99aef7d-26ad-4755-ac01-4c96c5b99bad"
+                    class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no"
+                    style="height: 207px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"></iframe>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
