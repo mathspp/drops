@@ -187,5 +187,10 @@ chapters:
 - file: 0201-check_if_a_number_is_a_power_of_2/tip
 - file: 0202-base64_encoding/tip
 - file: 0203-cached_properties/tip
+- file: 0204-reading_and_writing_JSON/tip
+- file: 0205-parse_dont_validate/tip
+- file: 0206-typing_Self/tip
+- file: 0207-regex_groups_with_default_values/tip
+- file: 0208-itertools_pairwise/tip
 - file: 9998.themed-index
 - file: 9999.outro

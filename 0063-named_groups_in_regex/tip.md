@@ -4,7 +4,7 @@ themes:
     - "standard library"
     - "`re`"
     - "`re.match`"
-    - "`re.group`"
+    - "`re.Match.group`"
     - "named groups"
 ---
 

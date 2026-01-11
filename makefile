@@ -32,7 +32,7 @@ all: drops.pdf drops.epub flashcards.pdf
 _toc.yml: $(BOOK_SOURCE) build_toc.py
 	uv run build_toc.py
 
-html:
+html: _toc.yml
 	uv run jb build --all . -W
 
 publish:
