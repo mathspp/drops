@@ -192,5 +192,8 @@ chapters:
 - file: 0206-typing_Self/tip
 - file: 0207-regex_groups_with_default_values/tip
 - file: 0208-itertools_pairwise/tip
+- file: 0209-tee_splits_iterators/tip
+- file: 0210-convert_data_to_a_JSON_string/tip
+- file: 0211-typealias_vs_newtype/tip
 - file: 9998.themed-index
 - file: 9999.outro
