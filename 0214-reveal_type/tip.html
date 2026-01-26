@@ -1,0 +1,701 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>214 – reveal_type &#8212; Python drops</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=44dec17f" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '0214-reveal_type/tip';</script>
+    <link rel="canonical" href="https://drops.mathspp.com/0214-reveal_type/tip.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Themed index" href="../9998.themed-index.html" />
+    <link rel="prev" title="213 – Expanding regex matches" href="../0213-expanding_regex_matches/tip.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../0000.intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Python drops</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../0000.intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../0001-zip_strict_true/tip.html">1 – <code class="docutils literal notranslate"><span class="pre">zip</span></code>’s keyword argument <code class="docutils literal notranslate"><span class="pre">strict</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0002-string_casefold_case-insensitive_comparison/tip.html">2 – Case-insensitive string comparisons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0003_type_unions_with_pipe/tip.html">3 – Type unions with the vertical bar in <code class="docutils literal notranslate"><span class="pre">isinstance</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0004_int_integer_parsing_base/tip.html">4 – Parsing integers from different bases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0005_first_element_that_satisfies_predicate_iterable/tip.html">5 – First element that satisfies a condition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0006_last_element_that_satisfies_condition/tip.html">6 – Last element that satisfies a condition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0007-unique_elements_from_a_list/tip.html">7 – Unique elements from a list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0008-schedule_cleanup_actions/tip.html">8 – Schedule cleanup actions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0009-map_with_multiple_arguments/tip.html">9 – <code class="docutils literal notranslate"><span class="pre">map</span></code> with multiple arguments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0010-remove_punctuation_from_a_string/tip.html">10 – Remove punctuation from a string</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0011-count_characters_in_a_file/tip.html">11 – Count characters in a file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0012-run_length_encoding/tip.html">12 – Run-length encoding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0013-string_prefixes_and_suffixes/tip.html">13 – String prefixes and suffixes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0014-match_multiple_options/tip.html">14 – Multiple options in a single <code class="docutils literal notranslate"><span class="pre">case</span></code> statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0015-round_negative_places/tip.html">15 – Round to pretty whole numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0016-type_statements/tip.html">16 – Type statements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0017-create_context_managers_with_contextmanager/tip.html">17 – Create context managers with <code class="docutils literal notranslate"><span class="pre">contextlib.contextmanager</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0018-immutable_dictionary/tip.html">18 – Immutable dictionary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0019-self-debugging_f-strings/tip.html">19 – Self-debugging f-strings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0020-dunder_attribute___file__/tip.html">20 – Dunder attribute <code class="docutils literal notranslate"><span class="pre">__file__</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0021-current_date_and_time/tip.html">21 – Current date and time</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0022-set_operations_with_dict_keys/tip.html">22 – Set operations with <code class="docutils literal notranslate"><span class="pre">dict.keys()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0023-chain_multiple_dictionaries/tip.html">23 – Chain multiple dictionaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0024-Longest_word_in_a_string/tip.html">24 – Longest word in a string</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0025-Dynamic_attribute_manipulation/tip.html">25 – Dynamic attribute manipulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0026-Notify_parent_class_when_subclassing/tip.html">26 – Notify parent class when subclassing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0027-Enforce_keyword_arguments_for_options/tip.html">27 – Enforce keyword arguments for options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0028-flag_enums/tip.html">28 – Flag enumerations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0029-use_literal_type_for_options/tip.html">29 – Use <code class="docutils literal notranslate"><span class="pre">Literal</span></code> for options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0030-return_value_of_a_generator/tip.html">30 – Return value of a generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0031-enumerations_of_string_values/tip.html">31 – Enumerations of string values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0032-most_recently-modified_file/tip.html">32 – Most recently-modified file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0033-normalise_strings_into_ASCII/tip.html">33 – Normalise strings by removing accents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0034-transpose_list_of_lists/tip.html">34 – Transpose a list of lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0035-inline_lists_and_tuples_with__/tip.html">35 – Inline lists and tuples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0036-typing_iterables_instead_of_lists/tip.html">36 – Typing iterables instead of lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0037-multi-dictionary/tip.html">37 – Multi-dictionary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0038-global_enumeration_members/tip.html">38 – Global enumeration members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0039-automatic_enumeration_values/tip.html">39 – Automatic enumeration values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0040-os-agnostic_line_splitting/tip.html">40 – OS-agnostic line splitting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0041-longest_and_shortest/tip.html">41 – Longest and shortest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0042-bounded_cache/tip.html">42 – Bounded cache</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0043-read_files_in_chunks/tip.html">43 – Read files in chunks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0044-format_specifier_%21r/tip.html">44 – Format specifier <code class="docutils literal notranslate"><span class="pre">!r</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0045-counting_values/tip.html">45 – Counting values that satisfy a predicate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0046-dot_product/tip.html">46 – Dot product idiom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0047-batching_API_calls/tip.html">47 – Batching API calls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0048-redacting_email_addresses/tip.html">48 – Redacting email addresses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0049-random_choices/tip.html">49 – Random choices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0050-dynamic_regex_replacements/tip.html">50 – Dynamic regex replacements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0051-string_constants/tip.html">51 – String constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0052-case-insensitive_regex/tip.html">52 – Case-insensitive regular expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0053-itertools_classification/tip.html">53 – Module <code class="docutils literal notranslate"><span class="pre">itertools</span></code> categorisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0054-t-strings_need_processing/tip.html">54 – t-strings need processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0055-structural_unpacking/tip.html">55 – Structural unpacking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0056-ergonomic_multiline_strings/tip.html">56 – Ergonomic multiline strings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0057-underscore_in_the_REPL/tip.html">57 – Underscore in the REPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0058-subclass_immutable_types/tip.html">58 – Subclassing immutable types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0059-idiomatic_sequence_slicing/tip.html">59 – Idiomatic sequence slicing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0060-file_tail/tip.html">60 – File tail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0061-one-shot_file_I_O/tip.html">61 – One-shot file I/O</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0062-formatting_big_numbers/tip.html">62 – Formatting big numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0063-named_groups_in_regex/tip.html">63 – Named groups in regex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0064-resolving_paths/tip.html">64 – Resolving paths</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0065-formatting_dates_with_fstrings/tip.html">65 – Formatting dates with f-strings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0066-concatenate_files_from_handlers/tip.html">66 – Concatenate files from handlers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0067-generator_recipe/tip.html">67 – Generator recipe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0068-partition_a_string_in_two_halves/tip.html">68 – Split strings in two halves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0069-regex_multiline_flag/tip.html">69 – Regex multiline flag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0070-extract_assignments_from_conditionals/tip.html">70 – Extract assignments from conditionals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0071-file_discovery_by_name_pattern/tip.html">71 – File discovery by name pattern</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0072-structural_pattern_matching_with_dictionaries/tip.html">72 – Structural pattern matching with dictionaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0073-slicing_generators_for_debugging/tip.html">73 – Slicing generators for debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0074-peek_at_an_iterable/tip.html">74 – Peek at an iterable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0075-match_structure_of_custom_objects/tip.html">75 – Match the structure of custom objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0076-next_with_default_value/tip.html">76 – Built-in <code class="docutils literal notranslate"><span class="pre">next</span></code> with a default value</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0077-match_an_exact_dictionary_structure/tip.html">77 – Match an exact dictionary structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0078-undoable_iterator_with_value_history/tip.html">78 – Undoable iterator with value history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0079-typing_overloads/tip.html">79 – Typing overloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0080-bulk_renaming_files/tip.html">80 – Bulk renaming files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0081-structural_validation_and_homogenisation/tip.html">81 – Structural validation and homogenisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0082-verbose_regular_expressions/tip.html">82 – Verbose regular expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0083-extracting_text_data_into_a_dict/tip.html">83 – Extracting text data into a dict</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0084-generics_syntax/tip.html">84 – Generics syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0085-add_lists_together_fast/tip.html">85 – Add lists together, fast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0086-file_modes/tip.html">86 – File modes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0087-caching_sets_and_frozen_sets/tip.html">87 – Caching sets and frozen sets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0088-constrained_generics/tip.html">88 – Constrained generics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0089-natural_alphabetical_sorting/tip.html">89 – Natural alphabetical sorting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0090-preserving_decorated_function_metadata/tip.html">90 – Preserving decorated function metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0091-timestamp_file_names/tip.html">91 – Timestamp file names</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0092-temporary_directory/tip.html">92 – Temporary directories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0093-non-local_variables/tip.html">93 – Non-local variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0094-dynamic_width_string_formatting/tip.html">94 – Dynamic width string formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0095-docstring_attribute/tip.html">95 – Docstring <code class="docutils literal notranslate"><span class="pre">__doc__</span></code> attribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0096-common_hash_implementation/tip.html">96 – Common <code class="docutils literal notranslate"><span class="pre">__hash__</span></code> implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0097-match_word_boundaries/tip.html">97 – Match word boundaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0098-custom_containment_checks/tip.html">98 – Custom containment checks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0099-readable_object_names/tip.html">99 – Readable object names</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0100-filtering_truthy_values/tip.html">100 – Filtering Truthy values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0101-built-in_pretty_printing/tip.html">101 – Pretty-printing nested data structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0102-__str___vs___repr__/tip.html">102 – methods <code class="docutils literal notranslate"><span class="pre">__str__</span></code> and <code class="docutils literal notranslate"><span class="pre">__repr__</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0103-typing_args_and_kwargs/tip.html">103 – Typing <code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0104-ast_parse/tip.html">104 – AST parsing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0105-dunder_method___missing__/tip.html">105 – Dunder method <code class="docutils literal notranslate"><span class="pre">__missing__</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0106-custom_enum_search_behaviour/tip.html">106 – Custom <code class="docutils literal notranslate"><span class="pre">enum</span></code> search behaviour</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0107-map_strict_True/tip.html">107 – <code class="docutils literal notranslate"><span class="pre">map</span></code>’s keyword argument <code class="docutils literal notranslate"><span class="pre">strict</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0108-dynamic_module_attribute_look-up/tip.html">108 – Dynamic module attribute look-up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0109-add_typing_to_decorators/tip.html">109 – Add typing to decorators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0110-non-greedy_regex_quantifiers/tip.html">110 – Non-greedy regex quantifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0111-typing_simple_functions/tip.html">111 – Type hints that refer to functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0112-two-dimensional_range/tip.html">112 – Two-dimensional range</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0113-constant_variables/tip.html">113 – Constant variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0114-dict_fromkeys/tip.html">114 – <code class="docutils literal notranslate"><span class="pre">dict.fromkeys</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0115-double_leading_underscore/tip.html">115 – Double leading underscore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0116-generator_method_send/tip.html">116 – Send data into generators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0117-dictionary_creation_idiom/tip.html">117 – Dictionary creation idiom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0118-safely_overriding_methods/tip.html">118 – Safely overriding methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0119-efficiently_extending_a_list/tip.html">119 – Efficiently extending a list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0120-all_equal/tip.html">120 – All equal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0121-paginate_results/tip.html">121 – Paginate results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0122-ignore_exceptions/tip.html">122 – Ignore exceptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0123-using_properties/tip.html">123 – Using properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0124-operate_on_two_lists_of_numbers/tip.html">124 – Operate on two lists of numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0125-enforce_positional_arguments/tip.html">125 – Enforce positional arguments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0126-integer_literals_in_multiple_bases/tip.html">126 – Integer literals in multiple bases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0127-remove_punctuation_functionally/tip.html">127 – Remove punctuation functionally</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0128-pairwise_generalisation/tip.html">128 – <code class="docutils literal notranslate"><span class="pre">pairwise</span></code> generalisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0129-prevent_subclassing_overriding/tip.html">129 – Prevent subclassing/overriding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0130-make_numbers_more_readable/tip.html">130 – Make numbers more readable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0131-efficiently_count_words_in_a_string/tip.html">131 – Efficiently count words in a string</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0132-efficiently_count_characters_in_a_string/tip.html">132 – Efficiently count characters in a string</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0133-find_files_in_a_directory/tip.html">133 – Find files in a directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0134-invertible_flags/tip.html">134 – Invertible flags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0135-class_and_instance_attributes/tip.html">135 – Class and instance attributes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0136-strict_batching/tip.html">136 – Strict batching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0137-read-only_attributes/tip.html">137 – Read-only attributes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0138-alternative_constructors_as_classmethods/tip.html">138 – Alternative constructors as class methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0139-reduce_boilerplate_with_dataclasses/tip.html">139 – Reduce boilerplate with dataclasses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0140-compute_partial_sums_with_accumulate/tip.html">140 – Compute partial sums with <code class="docutils literal notranslate"><span class="pre">accumulate</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0141-regex_matches_across_newlines/tip.html">141 – Regex matches across newlines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0142-using_fractions/tip.html">142 – Using fractions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0143-decimals/tip.html">143 – Decimals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0144-safe_random_tokens/tip.html">144 – Safe random tokens</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0145-NotImplemented/tip.html">145 – <code class="docutils literal notranslate"><span class="pre">NotImplemented</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0146-cycling_over_an_iterable/tip.html">146 – Cycling over an iterable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0147-string_formatting_field_alignment/tip.html">147 – String formatting field alignment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0148-set_operations_with_operators/tip.html">148 – Set operations with operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0149-NotImplementedError/tip.html">149 – <code class="docutils literal notranslate"><span class="pre">NotImplementedError</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0150-colour_in_the_REPL/tip.html">150 – Colour in the REPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0151-copy_files/tip.html">151 – copy files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0152-find_similar_words/tip.html">152 – Find similar words</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0153-forward_references_in_annotations/tip.html">153 – Forward references in annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0154-compression_algorithms/tip.html">154 – Compression algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0155-json_CLI/tip.html">155 – <code class="docutils literal notranslate"><span class="pre">json</span></code> CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0156-custom_t-string_processing/tip.html">156 – Custom t-string processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0157-asyncio_introspection/tip.html">157 – <code class="docutils literal notranslate"><span class="pre">asyncio</span></code> introspection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0158-grouping_digits_in_the_fractional_part/tip.html">158 – Grouping digits in the fractional part</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0159-error_handling_with_multiple_types/tip.html">159 – Error handling with multiple types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0160-parse_dates_from_strings/tip.html">160 – Parse dates from strings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0161-min-heaps_and_max-heaps/tip.html">161 – min-heaps and max-heaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0162-check_for_None_functionally/tip.html">162 – Check for <code class="docutils literal notranslate"><span class="pre">None</span></code> functionally</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0163-remote_interactive_debugging/tip.html">163 – Remote interactive debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0164-chaining_comparison_operators/tip.html">164 – Chaining comparison operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0165-controlled_string_splitting/tip.html">165 – Controlled string splitting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0166-strftime_vs_strptime/tip.html">166 – <code class="docutils literal notranslate"><span class="pre">strftime</span></code> vs <code class="docutils literal notranslate"><span class="pre">strptime</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0167-private_members/tip.html">167 – Private members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0168-truthy_and_falsy/tip.html">168 – Truthy and Falsy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0169-Oxford_comma/tip.html">169 – Oxford comma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0170-assert_statements_with_custom_message/tip.html">170 – <code class="docutils literal notranslate"><span class="pre">assert</span></code> statements with custom message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0171-creating_temporary_files/tip.html">171 – Creating temporary files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0172-title_case/tip.html">172 – Title case</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0173-using_a_list_as_a_stack/tip.html">173 – Using a list as a stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0174-moving_average/tip.html">174 – Moving average</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0175-split_from_both_sides/tip.html">175 – Split from both sides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0176-express_permutations_recursively/tip.html">176 – Express permutations recursively</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0199-newtype/tip.html">199 – <code class="docutils literal notranslate"><span class="pre">typing.NewType</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0200-one-shot_data_compression/tip.html">200 – One-shot data compression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0201-check_if_a_number_is_a_power_of_2/tip.html">201 – Check if a number is a power of 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0202-base64_encoding/tip.html">202 – Base64 encoding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0203-cached_properties/tip.html">203 – Cached properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0204-reading_and_writing_JSON/tip.html">204 – Reading and writing JSON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0205-parse_dont_validate/tip.html">205 – Parse, don’t validate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0206-typing_Self/tip.html">206 – <code class="docutils literal notranslate"><span class="pre">typing.Self</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0207-regex_groups_with_default_values/tip.html">207 – Regex groups with default values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0208-itertools_pairwise/tip.html">208 – <code class="docutils literal notranslate"><span class="pre">itertools.pairwise</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0209-tee_splits_iterators/tip.html">209 – <code class="docutils literal notranslate"><span class="pre">itertools.tee</span></code> splits iterators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0210-convert_data_to_a_JSON_string/tip.html">210 – Convert data to a JSON string</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0211-typealias_vs_newtype/tip.html">211 – <code class="docutils literal notranslate"><span class="pre">TypeAlias</span></code> vs <code class="docutils literal notranslate"><span class="pre">NewType</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0212-character_ranges_in_glob_search/tip.html">212 – Patterns in <code class="docutils literal notranslate"><span class="pre">glob</span></code> search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0213-expanding_regex_matches/tip.html">213 – Expanding regex matches</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">214 – <code class="docutils literal notranslate"><span class="pre">reveal_type</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../9998.themed-index.html">Themed index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../9999.outro.html">Conclusion</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F0214-reveal_type/tip.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/0214-reveal_type/tip.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>214 – reveal_type</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="reveal-type">
+<span id="id1"></span><h1>214 – <code class="docutils literal notranslate"><span class="pre">reveal_type</span></code><a class="headerlink" href="#reveal-type" title="Link to this heading">#</a></h1>
+<p>The module <code class="docutils literal notranslate"><span class="pre">typing</span></code> provides a debugging aid, the function <code class="docutils literal notranslate"><span class="pre">reveal_type</span></code>.
+When a static type checker encounters it, the static type checker emits a note with the <em>inferred</em> type of the expression passed into <code class="docutils literal notranslate"><span class="pre">reveal_type</span></code>:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">s</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">3</span>
+
+<span class="n">reveal_type</span><span class="p">(</span><span class="n">s</span><span class="p">())</span>
+<span class="c1"># Revealed type is &quot;builtins.str&quot;</span>
+</pre></div>
+</div>
+<p>The function <code class="docutils literal notranslate"><span class="pre">reveal_type</span></code> doesn’t even need to be imported and the static type checker infers that <code class="docutils literal notranslate"><span class="pre">s()</span></code> is a string because of the return type <code class="docutils literal notranslate"><span class="pre">-&gt;</span> <span class="pre">str</span></code>.
+(The static type checker also complains about the fact that we’re returning an integer from inside <code class="docutils literal notranslate"><span class="pre">s</span></code> while the function should return a string, but you’ll see why I’m doing that in a second.)</p>
+<p>At runtime, the function <code class="docutils literal notranslate"><span class="pre">reveal_type</span></code> prints the runtime type of the argument to <code class="docutils literal notranslate"><span class="pre">sys.stderr</span></code> and returns the argument unchanged:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">reveal_type</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">s</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">3</span>
+
+<span class="n">reveal_type</span><span class="p">(</span><span class="n">s</span><span class="p">())</span>
+<span class="c1"># Runtime type is &#39;int&#39;</span>
+</pre></div>
+</div>
+<p>At runtime, the type of <code class="docutils literal notranslate"><span class="pre">s()</span></code> is <code class="docutils literal notranslate"><span class="pre">int</span></code> because the function <code class="docutils literal notranslate"><span class="pre">s</span></code> returns the integer 3.
+For the code to work at runtime, <code class="docutils literal notranslate"><span class="pre">typing.reveal_type</span></code> <em>must</em> be imported since it’s not a built-in.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./0214-reveal_type"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../0213-expanding_regex_matches/tip.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">213 – Expanding regex matches</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../9998.themed-index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Themed index</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Rodrigo Girão Serrão
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
