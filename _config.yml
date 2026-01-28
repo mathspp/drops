@@ -61,5 +61,13 @@ sphinx:
         \usepackage{fontspec}
         \setmonofont{FiraCode NF}
 
+    epub_exclude_files:
+      - "index.html"
+    epub_basename: "drops"
+    epub_title: "Python Drops – Become Smarter About Python in Just 3 Minutes"
+    version: "2026.01.28"
+    language: en
+
+
 
 exclude_patterns: [.*]
