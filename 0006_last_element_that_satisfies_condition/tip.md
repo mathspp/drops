@@ -2,7 +2,7 @@
 themes:
     - "iterables"
     - "`collections.deque`"
-    - "generation expression"
+    - "generator expressions"
 ---
 
 (6)=

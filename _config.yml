@@ -57,6 +57,9 @@ sphinx:
 
         % If you want absolutely minimal whitespace:
         % \titlespacing*{\chapter}{0pt}{0pt}{0.75ex}
+      fontpkg: |
+        \usepackage{fontspec}
+        \setmonofont{FiraCode NF}
 
 
 exclude_patterns: [.*]

@@ -40,6 +40,7 @@ publish:
 
 pdf: _toc.yml
 	uv run jb build --all --builder pdflatex . -W
+	uv run merger.py cover.pdf _build/latex/book.pdf drops.pdf
 
 .PHONY: frontmatter.yaml
 frontmatter.yaml:
