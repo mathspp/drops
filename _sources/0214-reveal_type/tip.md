@@ -5,6 +5,7 @@ themes:
     - "`typing.reveal_type`"
     - "debugging"
     - "`sys.stderr`"
+    - "3.11 (new in Python 3.11)"
 ---
 
 (214)=

@@ -2,7 +2,7 @@
 themes:
     - "iterables"
     - "`next`"
-    - "generator expression"
+    - "generator expressions"
     - "`StopIteration`"
 ---
 
