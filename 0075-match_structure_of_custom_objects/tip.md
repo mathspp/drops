@@ -42,4 +42,4 @@ It is valid code for the purposes of structural pattern matching, though.
 Further reading:
 
  - [Structural pattern matching tutorial](https://mathspp.com/blog/pydonts/structural-pattern-matching-tutorial).
- - [Structural pattern matching cheatsheet](https://mathspp.gumroad.com/l/cheatsheet_match_statement?layout=profile).
+ - [Structural pattern matching cheatsheet](https://mathspp.gumroad.com/l/cheatsheet_match_statement).

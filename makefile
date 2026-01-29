@@ -42,7 +42,7 @@ pdf: _toc.yml
 	uv run jb build --all --builder pdflatex . -W
 	uv run merger.py cover.pdf _build/latex/book.pdf drops.pdf
 
-epub:
+epub: _toc.yml
 	uv run jb build --all --builder=custom --custom-builder=epub -W .
 	cp _build/epub/drops.epub drops.epub
 

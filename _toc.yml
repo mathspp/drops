@@ -49,7 +49,7 @@ chapters:
 - file: 0041-longest_and_shortest/tip
 - file: 0042-bounded_cache/tip
 - file: 0043-read_files_in_chunks/tip
-- file: 0044-format_specifier_!r/tip
+- file: 0044-format_specifier_r/tip
 - file: 0045-counting_values/tip
 - file: 0046-dot_product/tip
 - file: 0047-batching_API_calls/tip
@@ -222,5 +222,6 @@ chapters:
 - file: 0214-reveal_type/tip
 - file: 0215-implementing_pairwise_with_tee/tip
 - file: 0216-setting_the_exit_code/tip
+- file: 0217-JSON_string_into_object/tip
 - file: 9998.themed-index
 - file: 9999.outro
