@@ -27,7 +27,7 @@ PANDOC_OPTIONS := --from markdown+fenced_divs --metadata-file=frontmatter.yaml
 LATEX_PANDOC_OPTIONS := $(PANDOC_OPTIONS) --pdf-engine=xelatex
 EPUB_PANDOC_OPTIONS := $(PANDOC_OPTIONS) --epub-cover-image=cover.webp
 
-all: drops.pdf drops.epub flashcards.pdf
+all: pdf epub html publish flashcards.pdf
 
 _toc.yml: $(BOOK_SOURCE) build_toc.py
 	uv run build_toc.py
@@ -59,16 +59,6 @@ frontmatter.yaml:
 
 flashcards.pdf: $(PNG_FILES)
 	@uv run files_to_pdf.py $@ $(PNG_FILES)
-
-drops.tex: $(BOOK_DEPENDS)
-	pandoc -s -o $@ $(LATEX_PANDOC_OPTIONS) $(BOOK_SOURCE)
-
-drops.pdf: $(BOOK_DEPENDS)
-	pandoc -s -o no-cover-$@ $(LATEX_PANDOC_OPTIONS) $(BOOK_SOURCE)
-	uv run merger.py cover.pdf no-cover-$@ $@
-
-drops.epub: $(BOOK_DEPENDS)
-	pandoc -s -o $@ $(EPUB_PANDOC_OPTIONS) $(BOOK_SOURCE)
 
 drops-beginner.pdf: $(BEGINNER_TIPS)
 	pandoc -s -o $@ \
