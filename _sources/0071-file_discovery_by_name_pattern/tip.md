@@ -43,4 +43,4 @@ Note that the method `glob` produces the file paths in an arbitrary order.
 
 Further reading:
 
- - [Module `pathlib` overview](https://mathspp.com/blog/module-pathlib-overview).
+ - Module `pathlib` overview, <https://mathspp.com/blog/module-pathlib-overview>.

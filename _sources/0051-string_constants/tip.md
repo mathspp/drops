@@ -34,4 +34,4 @@ These bugs could have been avoided by using `string.ascii_lowercase`...
 
 Further reading:
 
- - [Finding and fixing over 10,000 bugs on GitHub](https://mathspp.com/blog/finding-and-fixing-over-10000-bugs-on-github) blog article.
+ - Finding and fixing over 10,000 bugs on GitHub, <https://mathspp.com/blog/finding-and-fixing-over-10000-bugs-on-github> blog article.

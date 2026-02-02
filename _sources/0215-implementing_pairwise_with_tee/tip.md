@@ -6,6 +6,7 @@ themes:
     - "`itertools.tee`"
     - "algorithms"
     - "`zip`"
+    - "`yield from`"
 ---
 
 (215)=

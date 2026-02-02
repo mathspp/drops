@@ -53,4 +53,4 @@ print(my_dict["c"])  # ['Hello', 'there']
 
 Further reading:
 
- - [Custom value in `dict.fromkeys`](https://mathspp.com/blog/til/custom-value-in-dictfromkeys).
+ - Custom value in `dict.fromkeys`, <https://mathspp.com/blog/til/custom-value-in-dictfromkeys>.

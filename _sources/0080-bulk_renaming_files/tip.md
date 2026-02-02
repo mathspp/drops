@@ -36,4 +36,4 @@ for idx, report in enumerate(report_folder.iterdir(), start=1):
 
 Further reading:
 
- - [Module `pathlib` overview](https://mathspp.com/blog/module-pathlib-overview).
+ - Module `pathlib` overview, <https://mathspp.com/blog/module-pathlib-overview>.

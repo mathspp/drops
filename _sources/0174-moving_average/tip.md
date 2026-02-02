@@ -38,4 +38,4 @@ When you append to the window inside the `for` loop, the window will automatical
 
 Further reading:
 
- - [Python `deque` tutorial](https://mathspp.com/blog/python-deque-tutorial)
+ - Python `deque` tutorial, <https://mathspp.com/blog/python-deque-tutorial>

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>15 – Round to pretty whole numbers &#8212; Python drops</title>
+    <title>15 – Round to pretty whole numbers &#8212; Practical Python tips</title>
   
   
   
@@ -58,8 +58,6 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '0015-round_negative_places/tip';</script>
     <link rel="canonical" href="https://drops.mathspp.com/0015-round_negative_places/tip.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -153,7 +151,7 @@
   
   
   
-    <p class="title logo__title">Python drops</p>
+    <p class="title logo__title">Practical Python tips</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -173,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../0000.intro.html">
-                    Introduction
+                    Welcome
                 </a>
             </li>
         </ul>
@@ -395,6 +393,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../0215-implementing_pairwise_with_tee/tip.html">215 – Implementing <code class="docutils literal notranslate"><span class="pre">pairwise</span></code> with <code class="docutils literal notranslate"><span class="pre">tee</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0216-setting_the_exit_code/tip.html">216 – Setting the exit code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0217-JSON_string_into_object/tip.html">217 – Parse JSON string into object</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0218-pretty_dumping_JSON/tip.html">218 – Pretty dumping JSON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0219-print_to_standard_error/tip.html">219 – Print to standard error</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0220-orderable_dataclasses/tip.html">220 – Orderable dataclasses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0221-generalise_pairwise_with_tee/tip.html">221 – Generalise <code class="docutils literal notranslate"><span class="pre">pairwise</span></code> with <code class="docutils literal notranslate"><span class="pre">tee</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../9998.themed-index.html">Themed index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../9999.outro.html">Conclusion</a></li>
 </ul>
@@ -598,15 +600,33 @@ document.write(`
 <span id="id1"></span><h1>15 – Round to pretty whole numbers<a class="headerlink" href="#round-to-pretty-whole-numbers" title="Link to this heading">#</a></h1>
 <p>The built-in <code class="docutils literal notranslate"><span class="pre">round</span></code> can be used to round numbers to nice, pretty integers.
 More concretely, you can use <code class="docutils literal notranslate"><span class="pre">round</span></code> to round numbers to powers of 10.</p>
-<p>For example, to round <span class="math notranslate nohighlight">\(1374 to \)</span>1400 you would do <code class="docutils literal notranslate"><span class="pre">round(1374,</span> <span class="pre">-2)</span></code>.</p>
+<p>For example, to round <code class="docutils literal notranslate"><span class="pre">1374</span></code> to the nearest hundreds, to <code class="docutils literal notranslate"><span class="pre">1400</span></code>, you would do <code class="docutils literal notranslate"><span class="pre">round(1374,</span> <span class="pre">-2)</span></code>.</p>
 <p>The second argument of <code class="docutils literal notranslate"><span class="pre">round</span></code>, which must be an integer, will give you the power of <code class="docutils literal notranslate"><span class="pre">0.1</span></code> that the number will be rounded to:</p>
-<p>| <code class="docutils literal notranslate"><span class="pre">n</span></code> | <code class="docutils literal notranslate"><span class="pre">0.1</span> <span class="pre">**</span> <span class="pre">n</span></code> |
-| | |
-| <code class="docutils literal notranslate"><span class="pre">2</span></code> | <code class="docutils literal notranslate"><span class="pre">0.01</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">1</span></code> | <code class="docutils literal notranslate"><span class="pre">0.1</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">0</span></code> | <code class="docutils literal notranslate"><span class="pre">1</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">-1</span></code> | <code class="docutils literal notranslate"><span class="pre">10</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">-2</span></code> | <code class="docutils literal notranslate"><span class="pre">100</span></code> |</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><code class="docutils literal notranslate"><span class="pre">n</span></code></p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">0.1</span> <span class="pre">**</span> <span class="pre">n</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">2</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.01</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">10</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">-2</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">100</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 
     <script type="text/x-thebe-config">

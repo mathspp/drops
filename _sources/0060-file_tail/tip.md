@@ -32,4 +32,4 @@ If the file has fewer lines than the ones you asked for, you get the full file.
 
 Further reading:
 
- - [`deque` tutorial](https://mathspp.com/blog/python-deque-tutorial).
+ - `deque` tutorial, <https://mathspp.com/blog/python-deque-tutorial>.

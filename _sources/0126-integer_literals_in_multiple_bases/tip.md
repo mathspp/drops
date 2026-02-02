@@ -27,4 +27,4 @@ magenta = 0xCE5D97  # accent colour used on my site
 
 Further reading:
 
- - [Base conversion in Python](https://mathspp.com/blog/base-conversion-in-python)
+ - Base conversion in Python, <https://mathspp.com/blog/base-conversion-in-python>

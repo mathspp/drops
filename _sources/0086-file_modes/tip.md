@@ -37,4 +37,4 @@ Finally, you can also append a `+` to any mode to enable writing and reading at 
 
 Further reading:
 
- - [File modes in Python](https://www.pythonmorsels.com/file-modes-in-python/).
+ - File modes in Python, <https://www.pythonmorsels.com/file-modes-in-python/>.

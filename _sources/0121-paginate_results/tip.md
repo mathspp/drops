@@ -7,6 +7,7 @@ themes:
     - "3.12 (new in Python 3.12)"
     - "iterables"
     - "decorators"
+    - "`yield from`"
 ---
 
 (121)=

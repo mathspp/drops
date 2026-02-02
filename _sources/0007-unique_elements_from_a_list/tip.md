@@ -33,4 +33,4 @@ These two options are very efficient and only work with hashable values.
 
 Further reading:
 
- - [Itertools recipes for `unique_justseen`, `unique_everseen`, and `unique`](https://docs.python.org/3/library/itertools.html#itertools-recipes)
+ - Itertools recipes for `unique_justseen`, `unique_everseen`, and `unique`, <https://docs.python.org/3/library/itertools.html#itertools-recipes>

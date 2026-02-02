@@ -49,4 +49,4 @@ The only operations that frozen sets do not support are the set operations that 
 
 Further reading:
 
- - [Sets and frozensets](https://mathspp.com/blog/pydonts/set-and-frozenset).
+ - Sets and frozensets, <https://mathspp.com/blog/pydonts/set-and-frozenset>.

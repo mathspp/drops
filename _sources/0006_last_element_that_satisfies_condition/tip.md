@@ -52,5 +52,5 @@ except IndexError:
 
 Further reading:
 
- - [Overview of the module `collections`](https://mathspp.com/blog/module-collections-overview)
- - [`deque` tutorial](https://mathspp.com/blog/python-deque-tutorial)
+ - Overview of the module `collections`, <https://mathspp.com/blog/module-collections-overview>
+ - `deque` tutorial, <https://mathspp.com/blog/python-deque-tutorial>

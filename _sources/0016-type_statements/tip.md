@@ -37,4 +37,4 @@ p: Pair[int] = (3, 4)
 
 Further reading:
 
- - [`type` statement and type aliases](https://mathspp.com/blog/til/type-statement-and-type-aliases)
+ - `type` statement and type aliases, <https://mathspp.com/blog/til/type-statement-and-type-aliases>

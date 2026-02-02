@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction &#8212; Python drops</title>
+    <title>Welcome &#8212; Practical Python tips</title>
   
   
   
@@ -154,7 +154,7 @@
   
   
   
-    <p class="title logo__title">Python drops</p>
+    <p class="title logo__title">Practical Python tips</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -174,7 +174,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Introduction
+                    Welcome
                 </a>
             </li>
         </ul>
@@ -396,6 +396,10 @@
 <li class="toctree-l1"><a class="reference internal" href="0215-implementing_pairwise_with_tee/tip.html">215 – Implementing <code class="docutils literal notranslate"><span class="pre">pairwise</span></code> with <code class="docutils literal notranslate"><span class="pre">tee</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="0216-setting_the_exit_code/tip.html">216 – Setting the exit code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0217-JSON_string_into_object/tip.html">217 – Parse JSON string into object</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0218-pretty_dumping_JSON/tip.html">218 – Pretty dumping JSON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0219-print_to_standard_error/tip.html">219 – Print to standard error</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0220-orderable_dataclasses/tip.html">220 – Orderable dataclasses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0221-generalise_pairwise_with_tee/tip.html">221 – Generalise <code class="docutils literal notranslate"><span class="pre">pairwise</span></code> with <code class="docutils literal notranslate"><span class="pre">tee</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="9998.themed-index.html">Themed index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="9999.outro.html">Conclusion</a></li>
 </ul>
@@ -570,9 +574,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -583,20 +585,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction</h1>
+    <h1>Welcome</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-this-book">What is this book?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-read-this-book">How to read this book?</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -606,20 +599,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
-<section id="what-is-this-book">
-<h2>What is this book?<a class="headerlink" href="#what-is-this-book" title="Link to this heading">#</a></h2>
-<p>This book collects the daily Python tips that I send to the mathspp drops newsletter.
-Short and actionable tips to make you smarter about Python.</p>
-</section>
-<section id="how-to-read-this-book">
-<h2>How to read this book?<a class="headerlink" href="#how-to-read-this-book" title="Link to this heading">#</a></h2>
-<p>Browse it.
-Open it in a random page.
-Pick a random number and read the tip corresponding to that number.
-Do whatever you want, the book is yours!</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="welcome">
+<h1>Welcome<a class="headerlink" href="#welcome" title="Link to this heading">#</a></h1>
+<p>I’m really glad you’re here!
+This is the book I wish I had after I started writing Python frequently.
+It’s a book that collects many useful and practical Python tips that help you write expressive, elegant, and clean Python code.</p>
+<p>The tips in this book don’t have any particular order.
+You may want to check <a class="reference internal" href="9998.themed-index.html#themed-index"><span class="std std-ref">the themed index</span></a> to look up tips of specific topics, or just browse through the book until you find something that catches your eye.</p>
+<p>For any feedback, reach out to me at <a class="reference external" href="mailto:rodrigo&#37;&#52;&#48;mathspp&#46;com">rodrigo<span>&#64;</span>mathspp<span>&#46;</span>com</a> and if you want to become the smartest Python developer in the room, join my newsletter at <a class="reference external" href="https://mathspp.com/insider">https://mathspp.com/insider</a>.</p>
+<p>— Rodrigo Girão Serrão, <a class="reference external" href="https://mathspp.com">https://mathspp.com</a></p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -669,22 +657,6 @@ Do whatever you want, the book is yours!</p>
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-this-book">What is this book?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-read-this-book">How to read this book?</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

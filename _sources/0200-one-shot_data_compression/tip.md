@@ -39,4 +39,4 @@ print(zstd.decompress(compressed) == data) # True
 
 Further reading:
 
- - [Module `compression` overview](https://mathspp.com/blog/module-compression-overview)
+ - Module `compression` overview, <https://mathspp.com/blog/module-compression-overview>

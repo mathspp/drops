@@ -37,4 +37,4 @@ print(re.sub(bad_words, replace, text))
 
 Further reading:
 
- - [Dynamic string replacements with regex blog article](https://mathspp.com/blog/dynamic-string-replacements-with-regex)
+ - Dynamic string replacements with regex blog article, <https://mathspp.com/blog/dynamic-string-replacements-with-regex>

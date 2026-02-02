@@ -37,4 +37,4 @@ hould be able to
 
 Further reading:
 
- - [Making an iterator out of a function](https://mathspp.com/blog/til/making-an-iterator-out-of-a-function)
+ - Making an iterator out of a function, <https://mathspp.com/blog/til/making-an-iterator-out-of-a-function>

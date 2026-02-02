@@ -30,4 +30,4 @@ permissions = "full" if logged_in else "guest"
 
 Further reading:
 
- - [Conditional expressions](https://mathspp.com/blog/pydonts/conditional-expressions).
+ - Conditional expressions, <https://mathspp.com/blog/pydonts/conditional-expressions>.

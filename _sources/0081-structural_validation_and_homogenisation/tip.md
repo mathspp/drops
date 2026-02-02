@@ -39,5 +39,5 @@ def unpack_padding(pad) -> tuple[int, int, int, int]:
 
 Further reading:
 
- - [Structural pattern matching tutorial](https://mathspp.com/blog/pydonts/structural-pattern-matching-tutorial).
- - [`match` statement cheatsheet](https://mathspp.gumroad.com/l/cheatsheet_match_statement).
+ - Structural pattern matching tutorial, <https://mathspp.com/blog/pydonts/structural-pattern-matching-tutorial>.
+ - `match` statement cheatsheet, <https://mathspp.gumroad.com/l/cheatsheet_match_statement>.

@@ -37,4 +37,4 @@ You're just leveraging the fact that lists can store multiple values in them to.
 
 Further reading:
 
- - [Module `collections` overview](https://mathspp.com/blog/module-collections-overview)
+ - Module `collections` overview, <https://mathspp.com/blog/module-collections-overview>

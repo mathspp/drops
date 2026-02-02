@@ -56,4 +56,4 @@ print(repr(Direction.NORTH))
 
 Further reading:
 
- - [Module `enum` overview](https://mathspp.com/blog/module-enum-overview)
+ - Module `enum` overview, <https://mathspp.com/blog/module-enum-overview>

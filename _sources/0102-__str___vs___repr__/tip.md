@@ -52,4 +52,4 @@ I personally rarely implement `__str__`, and when `__repr__` is present, `__str_
 
 Further reading:
 
- - [`str` and `repr`](https://mathspp.com/blog/pydonts/str-and-repr)
+ - `str` and `repr`, <https://mathspp.com/blog/pydonts/str-and-repr>

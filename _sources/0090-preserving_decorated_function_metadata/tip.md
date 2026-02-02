@@ -76,4 +76,4 @@ add(a, b)
 
 Further reading:
 
- - [Decorators article](https://mathspp.com/blog/pydonts/decorators).
+ - Decorators article, <https://mathspp.com/blog/pydonts/decorators>.

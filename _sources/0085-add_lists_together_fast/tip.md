@@ -39,5 +39,5 @@ This piece of advice is generally applicable but if you're writing truly perform
 
 Further reading:
 
- - [Module `itertools` overview](https://mathspp.com/blog/module-itertools-overview).
- - [CPython pull request #112406](https://github.com/python/cpython/pull/112406).
+ - Module `itertools` overview, <https://mathspp.com/blog/module-itertools-overview>.
+ - CPython pull request #112406, <https://github.com/python/cpython/pull/112406>.

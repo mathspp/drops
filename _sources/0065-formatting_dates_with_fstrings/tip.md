@@ -30,4 +30,4 @@ print(f"{date.today():%Y---%m :: %d}")
 
 Further reading:
 
- - [Datetime objects and f-strings](https://mathspp.com/blog/twitter-threads/datetime-objects-and-f-strings).
+ - Datetime objects and f-strings, <https://mathspp.com/blog/twitter-threads/datetime-objects-and-f-strings>.

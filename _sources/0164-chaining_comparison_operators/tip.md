@@ -29,4 +29,4 @@ For example, `value in mylist == True` looks like `(value in mylist) == True`, b
 
 Further reading:
 
- - [Chaining comparison operators](https://mathspp.com/blog/pydonts/chaining-comparison-operators)
+ - Chaining comparison operators, <https://mathspp.com/blog/pydonts/chaining-comparison-operators>

@@ -51,4 +51,4 @@ print(immutable["url"])  # example.com
 
 Further reading:
 
- - [How to make an Immutable Dict in Python](https://adamj.eu/tech/2022/01/05/how-to-make-immutable-dict-in-python/)
+ - How to make an Immutable Dict in Python, <https://adamj.eu/tech/2022/01/05/how-to-make-immutable-dict-in-python/>

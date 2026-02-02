@@ -32,4 +32,4 @@ print(string[::-1])  # !ysae si gnicilS
 
 Further reading:
 
- - [Idiomatic sequence slicing blog article](https://mathspp.com/blog/pydonts/idiomatic-sequence-slicing).
+ - Idiomatic sequence slicing blog article, <https://mathspp.com/blog/pydonts/idiomatic-sequence-slicing>.

@@ -35,5 +35,5 @@ Note that functions that return `None` do not update the value stored in `_`.
 
 Further reading:
 
- - [The appearing built-in](https://mathspp.com/blog/til/the-appearing-builtin).
- - [Usages of the underscore](https://mathspp.com/blog/pydonts/usages-of-underscore).
+ - The appearing built-in, <https://mathspp.com/blog/til/the-appearing-builtin>.
+ - Usages of the underscore, <https://mathspp.com/blog/pydonts/usages-of-underscore>.
