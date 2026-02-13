@@ -48,4 +48,4 @@ Hermione Ron
 
 Further reading:
 
-- [Module `itertools` overview](https://mathspp.com/blog/module-itertools-overview)
+- Module `itertools` overview, <https://mathspp.com/blog/module-itertools-overview>

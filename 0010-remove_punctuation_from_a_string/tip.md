@@ -30,4 +30,4 @@ print(s.translate(punctuation_removal))
 
 Further reading:
 
- - [String `translate` and `maketrans` methods](https://mathspp.com/blog/pydonts/string-translate-and-maketrans-methods)
+ - String `translate` and `maketrans` methods, <https://mathspp.com/blog/pydonts/string-translate-and-maketrans-methods>

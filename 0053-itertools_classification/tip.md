@@ -20,4 +20,4 @@ Knowing these five categories should help you remember what tools you have avail
 
 Further reading:
 
- - [Module `itertools` overview](https://mathspp.com/blog/module-itertools-overview) blog article.
+ - Module `itertools` overview, <https://mathspp.com/blog/module-itertools-overview> blog article.

@@ -56,4 +56,4 @@ print(
 
 Further reading:
 
- - [`re.Match.groupdict`](https://mathspp.com/blog/til/re-match-groupdict).
+ - `re.Match.groupdict`, <https://mathspp.com/blog/til/re-match-groupdict>.

@@ -40,6 +40,6 @@ This wouldn't have been possible without `Placeholder` because `str.translate` o
 
 Further reading:
 
- - [`functools.Placeholder`](https://mathspp.com/blog/how-to-use-functools-placeholder)
- - [`functools.partial`](https://mathspp.com/blog/functools-partial)
- - [String `translate` and `maketrans` methods](https://mathspp.com/blog/pydonts/string-translate-and-maketrans-methods)
+ - `functools.Placeholder`, <https://mathspp.com/blog/how-to-use-functools-placeholder>
+ - `functools.partial`, <https://mathspp.com/blog/functools-partial>
+ - String `translate` and `maketrans` methods, <https://mathspp.com/blog/pydonts/string-translate-and-maketrans-methods>

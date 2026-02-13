@@ -43,4 +43,4 @@ Note how `Person.age` is implemented as a method, but because of the decorator `
 
 Further reading:
 
- - [Properties](https://mathspp.com/blog/pydonts/properties)
+ - Properties, <https://mathspp.com/blog/pydonts/properties>

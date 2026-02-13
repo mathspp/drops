@@ -223,5 +223,11 @@ chapters:
 - file: 0215-implementing_pairwise_with_tee/tip
 - file: 0216-setting_the_exit_code/tip
 - file: 0217-JSON_string_into_object/tip
+- file: 0218-pretty_dumping_JSON/tip
+- file: 0219-print_to_standard_error/tip
+- file: 0220-orderable_dataclasses/tip
+- file: 0221-generalise_pairwise_with_tee/tip
+- file: 0222-command_line_arguments/tip
+- file: 0223-protocols/tip
 - file: 9998.themed-index
 - file: 9999.outro

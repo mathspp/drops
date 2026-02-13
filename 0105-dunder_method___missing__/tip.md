@@ -46,4 +46,4 @@ print(olympic_medals["me"])  # 0 :(
 
 Further reading:
 
- - [Module `collections` overview](https://mathspp.com/blog/module-collections-overview)
+ - Module `collections` overview, <https://mathspp.com/blog/module-collections-overview>

@@ -38,4 +38,4 @@ print(sorted(fruits, key=str.casefold))
 
 Further reading:
 
- - [How to work with case-insensitive strings](https://mathspp.com/blog/how-to-work-with-case-insensitive-strings)
+ - How to work with case-insensitive strings, <https://mathspp.com/blog/how-to-work-with-case-insensitive-strings>

@@ -47,4 +47,4 @@ But when used in Boolean contexts, like `if` statements or in expressions with t
 
 Further reading:
 
- - [Truthy, Falsy, and `bool`](https://mathspp.com/blog/pydonts/truthy-falsy-and-bool)
+ - Truthy, Falsy, and `bool`, <https://mathspp.com/blog/pydonts/truthy-falsy-and-bool>

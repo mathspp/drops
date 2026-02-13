@@ -35,4 +35,4 @@ ValueError: zip() argument 2 is shorter than argument 1
 
 Further reading:
 
- - [Article about `zip`](https://mathspp.com/blog/pydonts/zip-up)
+ - Article about `zip`, <https://mathspp.com/blog/pydonts/zip-up>

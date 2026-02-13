@@ -42,5 +42,5 @@ The list comprehension above
 
 Further reading:
 
- - [List comprehensions 101](https://mathspp.com/blog/pydonts/list-comprehensions-101)
- - [List comprehensions cheatsheet](https://mathspp.gumroad.com/l/comprehending-comprehensions-poster)
+ - List comprehensions 101, <https://mathspp.com/blog/pydonts/list-comprehensions-101>
+ - List comprehensions cheatsheet, <https://mathspp.gumroad.com/l/comprehending-comprehensions-poster>

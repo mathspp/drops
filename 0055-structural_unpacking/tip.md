@@ -35,4 +35,4 @@ for name, (*rgb, alpha) in colours:
 
 Further reading:
 
- - [Structural unpacking blog article](https://mathspp.com/blog/pydonts/deep-unpacking).
+ - Structural unpacking blog article, <https://mathspp.com/blog/pydonts/deep-unpacking>.

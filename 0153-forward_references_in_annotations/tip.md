@@ -39,4 +39,4 @@ class Node:
 
 Further reading:
 
- - [PEP 649 – Deferred Evaluation of Annotations Using Descriptors](https://peps.python.org/pep-0649/)
+ - PEP 649 – Deferred Evaluation of Annotations Using Descriptors, <https://peps.python.org/pep-0649/>

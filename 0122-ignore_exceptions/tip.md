@@ -33,4 +33,4 @@ except SomeException:
 
 Further reading:
 
- - [Ignoring exceptions with `contextlib.suppress`](https://mathspp.com/blog/ignoring-exceptions-with-contextlib-suppress)
+ - Ignoring exceptions with `contextlib.suppress`, <https://mathspp.com/blog/ignoring-exceptions-with-contextlib-suppress>

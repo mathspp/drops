@@ -46,4 +46,4 @@ print(settings["lan"])  # pt
 
 Further reading:
 
- - [Module `collections` overview](https://mathspp.com/blog/module-collections-overview)
+ - Module `collections` overview, <https://mathspp.com/blog/module-collections-overview>

@@ -40,4 +40,4 @@ print(f"{one_third}, {one_third!r}")
 
 Further reading:
 
- - [`str` and `repr`](https://mathspp.com/blog/pydonts/str-and-repr)
+ - `str` and `repr`, <https://mathspp.com/blog/pydonts/str-and-repr>

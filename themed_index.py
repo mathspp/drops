@@ -60,6 +60,7 @@ for theme, references in theme_to_references.items():
 # Sort the groups
 sorted_groups = sorted(grouped.items(), key=lambda x: (x[0] != "`#`", x[0]))
 output_lines = [
+    "(themed-index)=",
     "# Themed index\n",
     "```{raw} latex\n\\begin{multicols}{2}\n```\n",
 ]

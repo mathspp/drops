@@ -33,5 +33,5 @@ But this fun example helps you understand what `chain` can do, and `chain` is qu
 
 Further reading:
 
- - [Overview of the module `collections`](https://mathspp.com/blog/module-collections-overview)
- - [Overview of the module `itertools`](https://mathspp.com/blog/module-itertools-overview)
+ - Overview of the module `collections`, <https://mathspp.com/blog/module-collections-overview>
+ - Overview of the module `itertools`, <https://mathspp.com/blog/module-itertools-overview>

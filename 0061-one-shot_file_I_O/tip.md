@@ -31,4 +31,4 @@ If you use a context manager and the built-in `open` you get more control, but t
 
 Further reading:
 
- - [Module `pathlib` overview](https://mathspp.com/blog/module-pathlib-overview).
+ - Module `pathlib` overview, <https://mathspp.com/blog/module-pathlib-overview>.

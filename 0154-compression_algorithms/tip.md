@@ -31,4 +31,4 @@ The algorithms `bz2`, `gzip`, `lzma`, and `zlib`, were already standalone module
 
 Further reading:
 
- - [Module `compression` overview](https://mathspp.com/blog/module-compression-overview)
+ - Module `compression` overview, <https://mathspp.com/blog/module-compression-overview>

@@ -38,4 +38,4 @@ print(x)  # 4.5 <- looks like a float.
 
 Further reading:
 
- - [Customising object creation with `__new__`](https://mathspp.com/blog/customising-object-creation-with-__new__).
+ - Customising object creation with `__new__`, <https://mathspp.com/blog/customising-object-creation-with-__new__>.

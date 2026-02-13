@@ -40,4 +40,4 @@ Since Python 3.14, you can also [group digits in the fractional part](158) of a 
 
 Further reading:
 
- - [Thousands separators](https://mathspp.com/blog/til/thousands-separators).
+ - Thousands separators, <https://mathspp.com/blog/til/thousands-separators>.
