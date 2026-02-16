@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>107 – map’s keyword argument strict &#8212; Practical Python tips</title>
+    <title>230 – Addition isn’t commutative &#8212; Practical Python tips</title>
   
   
   
@@ -58,12 +58,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '0107-map_strict_True/tip';</script>
-    <link rel="canonical" href="https://drops.mathspp.com/0107-map_strict_True/tip.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = '0230-addition_isnt_commutative/tip';</script>
+    <link rel="canonical" href="https://drops.mathspp.com/0230-addition_isnt_commutative/tip.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="108 – Dynamic module attribute look-up" href="../0108-dynamic_module_attribute_look-up/tip.html" />
-    <link rel="prev" title="106 – Custom enum search behaviour" href="../0106-custom_enum_search_behaviour/tip.html" />
+    <link rel="next" title="231 – Built-ins any and all" href="../0231-built-ins_any_and_all/tip.html" />
+    <link rel="prev" title="229 – Split file header from the body" href="../0229-split_file_header_from_the_body/tip.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -282,7 +282,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../0104-ast_parse/tip.html">104 – AST parsing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0105-dunder_method___missing__/tip.html">105 – Dunder method <code class="docutils literal notranslate"><span class="pre">__missing__</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0106-custom_enum_search_behaviour/tip.html">106 – Custom <code class="docutils literal notranslate"><span class="pre">enum</span></code> search behaviour</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">107 – <code class="docutils literal notranslate"><span class="pre">map</span></code>’s keyword argument <code class="docutils literal notranslate"><span class="pre">strict</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0107-map_strict_True/tip.html">107 – <code class="docutils literal notranslate"><span class="pre">map</span></code>’s keyword argument <code class="docutils literal notranslate"><span class="pre">strict</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0108-dynamic_module_attribute_look-up/tip.html">108 – Dynamic module attribute look-up</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0109-add_typing_to_decorators/tip.html">109 – Add typing to decorators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0110-non-greedy_regex_quantifiers/tip.html">110 – Non-greedy regex quantifiers</a></li>
@@ -405,7 +405,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../0227-chaining_conditional_expressions/tip.html">227 – Chaining conditional expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0228-filter_with_a_predicate/tip.html">228 – Filter with a predicate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0229-split_file_header_from_the_body/tip.html">229 – Split file header from the body</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../0230-addition_isnt_commutative/tip.html">230 – Addition isn’t commutative</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">230 – Addition isn’t commutative</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0231-built-ins_any_and_all/tip.html">231 – Built-ins <code class="docutils literal notranslate"><span class="pre">any</span></code> and <code class="docutils literal notranslate"><span class="pre">all</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0232-map_to_simplify_loops/tip.html">232 – <code class="docutils literal notranslate"><span class="pre">map</span></code> to simplify loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0233-tracking_generator_expression_progress/tip.html">233 – Tracking generator expression progress</a></li>
@@ -482,7 +482,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F0107-map_strict_True/tip.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F0230-addition_isnt_commutative/tip.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -512,7 +512,7 @@
       
       
       
-      <li><a href="../_sources/0107-map_strict_True/tip.md" target="_blank"
+      <li><a href="../_sources/0230-addition_isnt_commutative/tip.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -594,7 +594,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>107 – map’s keyword argument strict</h1>
+    <h1>230 – Addition isn’t commutative</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -608,20 +608,27 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="map-s-keyword-argument-strict">
-<span id="id1"></span><h1>107 – <code class="docutils literal notranslate"><span class="pre">map</span></code>’s keyword argument <code class="docutils literal notranslate"><span class="pre">strict</span></code><a class="headerlink" href="#map-s-keyword-argument-strict" title="Link to this heading">#</a></h1>
-<p>Akin to <code class="docutils literal notranslate"><span class="pre">zip</span></code>’s keyword argument <code class="docutils literal notranslate"><span class="pre">strict</span></code>, in Python 3.14 the built-in <code class="docutils literal notranslate"><span class="pre">map</span></code> got a keyword argument <code class="docutils literal notranslate"><span class="pre">strict</span></code>.
-By setting <code class="docutils literal notranslate"><span class="pre">strict=True</span></code>, you get a <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> if the iterables have different lengths:</p>
-<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">bases</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
-<span class="n">exps</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
-
-<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">map</span><span class="p">(</span><span class="nb">pow</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">exps</span><span class="p">,</span> <span class="n">strict</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
-<span class="c1"># 4 9 16</span>
-<span class="c1"># ValueError</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="addition-isn-t-commutative">
+<span id="id1"></span><h1>230 – Addition isn’t commutative<a class="headerlink" href="#addition-isn-t-commutative" title="Link to this heading">#</a></h1>
+<p>When working with floating-point numbers keep in mind that addition isn’t associative.
+That is, in a chain of additions, the order in which you do them is important.</p>
+<p>As an example, consider the following addition that produces the correct result:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">eps</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**-</span><span class="mi">16</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eps</span> <span class="o">+</span> <span class="n">eps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c1"># 1.0000000000000002</span>
 </pre></div>
 </div>
-<p>In 99% of the situations where you use <a class="reference internal" href="../0009-map_with_multiple_arguments/tip.html#id1"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">map</span></code> with multiple arguments</span></a> you’ll want to set this, so don’t forget it!</p>
+<p>The addition above evaluates from left to right, so <code class="docutils literal notranslate"><span class="pre">eps</span> <span class="pre">+</span> <span class="pre">eps</span> <span class="pre">+</span> <span class="pre">1</span></code> is the same as <code class="docutils literal notranslate"><span class="pre">(eps</span> <span class="pre">+</span> <span class="pre">eps)</span> <span class="pre">+</span> <span class="pre">1</span></code>.
+However, if you add parenthesis on the right, the result changes and becomes wrong:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">eps</span> <span class="o">+</span> <span class="p">(</span><span class="n">eps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+<span class="c1"># 1.0</span>
+</pre></div>
+</div>
+<p>You should be mindful of this when writing code that works with floating-point numbers, especially in sensitive contexts.</p>
+<p>Further reading:</p>
+<ul class="simple">
+<li><p>Precision of Python floats, <a class="reference external" href="https://mathspp.com/blog/til/precision-of-python-floats">https://mathspp.com/blog/til/precision-of-python-floats</a></p></li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
@@ -637,7 +644,7 @@ By setting <code class="docutils literal notranslate"><span class="pre">strict=T
         },
         kernelOptions: {
             name: "python3",
-            path: "./0107-map_strict_True"
+            path: "./0230-addition_isnt_commutative"
         },
         predefinedOutput: true
     }
@@ -655,20 +662,20 @@ By setting <code class="docutils literal notranslate"><span class="pre">strict=T
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../0106-custom_enum_search_behaviour/tip.html"
+       href="../0229-split_file_header_from_the_body/tip.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">106 – Custom <code class="docutils literal notranslate"><span class="pre">enum</span></code> search behaviour</p>
+        <p class="prev-next-title">229 – Split file header from the body</p>
       </div>
     </a>
     <a class="right-next"
-       href="../0108-dynamic_module_attribute_look-up/tip.html"
+       href="../0231-built-ins_any_and_all/tip.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">108 – Dynamic module attribute look-up</p>
+        <p class="prev-next-title">231 – Built-ins <code class="docutils literal notranslate"><span class="pre">any</span></code> and <code class="docutils literal notranslate"><span class="pre">all</span></code></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
