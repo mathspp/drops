@@ -1,6 +1,7 @@
 ---
 themes:
     - "sets"
+    - "`string` (module)"
 ---
 
 (148)=

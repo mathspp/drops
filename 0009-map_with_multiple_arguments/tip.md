@@ -1,6 +1,7 @@
 ---
 themes:
     - "`map`"
+    - "`itertools`"
 ---
 
 (9)=

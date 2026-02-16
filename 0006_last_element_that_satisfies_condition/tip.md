@@ -1,5 +1,6 @@
 ---
 themes:
+    - "`collections` (module)"
     - "iterables"
     - "`collections.deque`"
     - "generator expressions"

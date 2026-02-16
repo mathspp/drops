@@ -1,6 +1,7 @@
 ---
 themes:
-    - ""
+    - "conditional expressions"
+    - "truthy/falsy"
 ---
 
 (227)=

@@ -1,6 +1,7 @@
 ---
 themes:
-    - "`dataclassses.dataclass`"
+    - "`dataclasses.dataclass`"
+    - "`dataclasses` (module)"
     - "immutability"
     - "hashing"
     - "performance optimisation"

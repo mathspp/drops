@@ -1,6 +1,7 @@
 ---
 themes:
     - "typing/type hints"
+    - "`typing` (module)"
     - "`typing.Protocol`"
     - "protocols"
     - "OOP"

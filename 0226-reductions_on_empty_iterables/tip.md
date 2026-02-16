@@ -1,6 +1,7 @@
 ---
 themes:
-    - ""
+    - "iterables"
+    - "`sum`"
 ---
 
 (226)=
