@@ -8,10 +8,10 @@ options:
 chapters:
 - file: 0001-zip_strict_true/tip
 - file: 0002-string_casefold_case-insensitive_comparison/tip
-- file: 0003_type_unions_with_pipe/tip
-- file: 0004_int_integer_parsing_base/tip
-- file: 0005_first_element_that_satisfies_predicate_iterable/tip
-- file: 0006_last_element_that_satisfies_condition/tip
+- file: 0003-type_unions_with_pipe/tip
+- file: 0004-int_integer_parsing_base/tip
+- file: 0005-first_element_that_satisfies_predicate_iterable/tip
+- file: 0006-last_element_that_satisfies_condition/tip
 - file: 0007-unique_elements_from_a_list/tip
 - file: 0008-schedule_cleanup_actions/tip
 - file: 0009-map_with_multiple_arguments/tip
@@ -229,5 +229,15 @@ chapters:
 - file: 0221-generalise_pairwise_with_tee/tip
 - file: 0222-command_line_arguments/tip
 - file: 0223-protocols/tip
+- file: 0224-clamp/tip
+- file: 0225-protocols_and_bounded_type_variables/tip
+- file: 0226-reductions_on_empty_iterables/tip
+- file: 0227-chaining_conditional_expressions/tip
+- file: 0228-filter_with_a_predicate/tip
+- file: 0229-split_file_header_from_the_body/tip
+- file: 0230-addition_isnt_commutative/tip
+- file: 0231-built-ins_any_and_all/tip
+- file: 0232-map_to_simplify_loops/tip
+- file: 0233-tracking_generator_expression_progress/tip
 - file: 9998.themed-index
 - file: 9999.outro
