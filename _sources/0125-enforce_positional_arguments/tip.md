@@ -4,6 +4,8 @@ themes:
     - "positional arguments"
     - "forward slash `/`"
     - "readability"
+    - "`itertools`"
+    - "`operator` (module)"
 ---
 
 (125)=

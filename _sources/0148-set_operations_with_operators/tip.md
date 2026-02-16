@@ -1,6 +1,9 @@
 ---
 themes:
     - "sets"
+    - "`string` (module)"
+    - "assignment expressions"
+    - "`:=` (walrus operator)"
 ---
 
 (148)=

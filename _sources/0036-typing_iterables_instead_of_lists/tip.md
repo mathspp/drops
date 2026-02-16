@@ -3,6 +3,7 @@ themes:
     - "typing/type hints"
     - "standard library"
     - "`typing` (module)"
+    - "`collections` (module)"
     - "`typing.Iterable`"
     - "`collections.abc`"
     - "`collections.abc.Iterable`"

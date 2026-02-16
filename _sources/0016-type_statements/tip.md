@@ -1,6 +1,7 @@
 ---
 themes:
     - "typing/type hints"
+    - "`typing` (module)"
     - "type alias"
     - "generics"
     - "3.12 (new in Python 3.12)"

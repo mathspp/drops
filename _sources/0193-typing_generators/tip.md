@@ -3,6 +3,7 @@ themes:
     - "typing/type hints"
     - "`collections.abc.Generator`"
     - "`collections.abc`"
+    - "`collections` (module)"
     - "3.13 (new in Python 3.13)"
     - "generics"
 ---

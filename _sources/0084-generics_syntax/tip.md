@@ -1,6 +1,7 @@
 ---
 themes:
     - "typing/type hints"
+    - "`typing` (module)"
     - "generics"
     - "type variables"
     - "functions"

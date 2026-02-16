@@ -4,6 +4,7 @@ themes:
     - "`itertools`"
     - "`itertools.accumulate`"
     - "`lambda` function"
+    - "`operator` (module)"
 ---
 
 (184)=

@@ -2,6 +2,7 @@
 themes:
     - "strings"
     - "t-strings"
+    - "`string` (module)"
     - "security"
     - "3.14 (new in Python 3.14)"
 ---
