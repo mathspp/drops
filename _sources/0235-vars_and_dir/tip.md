@@ -43,12 +43,12 @@ If you use the built-in `dir`, then you get a list of all attributes and methods
 ```pycon
 >>> dir(john)
 [
-    '__class__',   # A long list of special
-    ...,           # methods and attributes
-    '__weakref__,  # inherited from `object`.
-    'flag',        # The class attribute.
-    'greet',       # The method.
-    'name'         # The instance attribute.
+    '__class__',    # A long list of special
+    ...,            # methods and attributes
+    '__weakref__',  # inherited from `object`.
+    'flag',         # The class attribute.
+    'greet',        # The method.
+    'name'          # The instance attribute.
 ]
 ```
 
