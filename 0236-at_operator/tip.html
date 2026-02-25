@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>53 – Module itertools categorisation &#8212; Practical Python tips</title>
+    <title>236 – at (@) operator &#8212; Practical Python tips</title>
   
   
   
@@ -58,12 +58,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '0053-itertools_classification/tip';</script>
-    <link rel="canonical" href="https://drops.mathspp.com/0053-itertools_classification/tip.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = '0236-at_operator/tip';</script>
+    <link rel="canonical" href="https://drops.mathspp.com/0236-at_operator/tip.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="54 – t-strings need processing" href="../0054-t-strings_need_processing/tip.html" />
-    <link rel="prev" title="52 – Case-insensitive regular expressions" href="../0052-case-insensitive_regex/tip.html" />
+    <link rel="next" title="Themed index" href="../9998.themed-index.html" />
+    <link rel="prev" title="235 – vars and dir" href="../0235-vars_and_dir/tip.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -228,7 +228,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../0050-dynamic_regex_replacements/tip.html">50 – Dynamic regex replacements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0051-string_constants/tip.html">51 – String constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0052-case-insensitive_regex/tip.html">52 – Case-insensitive regular expressions</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">53 – Module <code class="docutils literal notranslate"><span class="pre">itertools</span></code> categorisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0053-itertools_classification/tip.html">53 – Module <code class="docutils literal notranslate"><span class="pre">itertools</span></code> categorisation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0054-t-strings_need_processing/tip.html">54 – t-strings need processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0055-structural_unpacking/tip.html">55 – Structural unpacking</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0056-ergonomic_multiline_strings/tip.html">56 – Ergonomic multiline strings</a></li>
@@ -411,7 +411,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../0233-tracking_generator_expression_progress/tip.html">233 – Tracking generator expression progress</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0234-join_with_a_comprehension/tip.html">234 – <code class="docutils literal notranslate"><span class="pre">join</span></code> with a comprehension</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0235-vars_and_dir/tip.html">235 – <code class="docutils literal notranslate"><span class="pre">vars</span></code> and <code class="docutils literal notranslate"><span class="pre">dir</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../0236-at_operator/tip.html">236 – at (<code class="docutils literal notranslate"><span class="pre">@</span></code>) operator</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">236 – at (<code class="docutils literal notranslate"><span class="pre">@</span></code>) operator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../9998.themed-index.html">Themed index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../9999.outro.html">Conclusion</a></li>
 </ul>
@@ -485,7 +485,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F0053-itertools_classification/tip.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F0236-at_operator/tip.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -515,7 +515,7 @@
       
       
       
-      <li><a href="../_sources/0053-itertools_classification/tip.md" target="_blank"
+      <li><a href="../_sources/0236-at_operator/tip.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -597,7 +597,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>53 – Module itertools categorisation</h1>
+    <h1>236 – at (@) operator</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -611,21 +611,30 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="module-itertools-categorisation">
-<span id="id1"></span><h1>53 – Module <code class="docutils literal notranslate"><span class="pre">itertools</span></code> categorisation<a class="headerlink" href="#module-itertools-categorisation" title="Link to this heading">#</a></h1>
-<p>A good way to think about the module <code class="docutils literal notranslate"><span class="pre">itertools</span></code> is to remember it has five categories of iterables:</p>
-<ol class="arabic simple">
-<li><p>reshaping iterables: <code class="docutils literal notranslate"><span class="pre">batched</span></code>, <code class="docutils literal notranslate"><span class="pre">chain</span></code>, <code class="docutils literal notranslate"><span class="pre">groupby</span></code>, <code class="docutils literal notranslate"><span class="pre">islice</span></code>, and <code class="docutils literal notranslate"><span class="pre">pairwise</span></code>;</p></li>
-<li><p>filtering iterables: <code class="docutils literal notranslate"><span class="pre">compress</span></code>, <code class="docutils literal notranslate"><span class="pre">dropwhile</span></code>, <code class="docutils literal notranslate"><span class="pre">filterfalse</span></code>, and <code class="docutils literal notranslate"><span class="pre">takewhile</span></code>;</p></li>
-<li><p>combinatorial iterables: <code class="docutils literal notranslate"><span class="pre">combinations</span></code>, <code class="docutils literal notranslate"><span class="pre">combinations_with_replacement</span></code>, <code class="docutils literal notranslate"><span class="pre">permutations</span></code>, and <code class="docutils literal notranslate"><span class="pre">product</span></code>;</p></li>
-<li><p>infinite iterables: <code class="docutils literal notranslate"><span class="pre">count</span></code>, <code class="docutils literal notranslate"><span class="pre">cycle</span></code>, and <code class="docutils literal notranslate"><span class="pre">repeat</span></code>; and</p></li>
-<li><p>tool-complementing iterables: <code class="docutils literal notranslate"><span class="pre">accumulate</span></code>, <code class="docutils literal notranslate"><span class="pre">starmap</span></code>, and <code class="docutils literal notranslate"><span class="pre">zip_longest</span></code>.</p></li>
-</ol>
-<p>Knowing these five categories should help you remember what tools you have available.</p>
-<p>(There’s also <code class="docutils literal notranslate"><span class="pre">tee</span></code> in <code class="docutils literal notranslate"><span class="pre">itertools</span></code>, which manipulates iterables but isn’t an iterable itself!)</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="at-operator">
+<span id="id1"></span><h1>236 – at (<code class="docutils literal notranslate"><span class="pre">&#64;</span></code>) operator<a class="headerlink" href="#at-operator" title="Link to this heading">#</a></h1>
+<p>Python supports the operator at (<code class="docutils literal notranslate"><span class="pre">&#64;</span></code>), although it doesn’t have any built-in behaviour.
+To add at (<code class="docutils literal notranslate"><span class="pre">&#64;</span></code>) support to your own objects, implement <code class="docutils literal notranslate"><span class="pre">__matmul__</span></code>:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Slime</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="n">size</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__matmul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Combining slimes!&quot;</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">Slime</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">s</span>
+
+<span class="n">s1</span> <span class="o">=</span> <span class="n">Slime</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="n">Slime</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+
+<span class="n">slime</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">@</span> <span class="n">s2</span>   <span class="c1"># Combining slimes!</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">slime</span><span class="o">.</span><span class="n">size</span><span class="p">)</span> <span class="c1"># 18</span>
+</pre></div>
+</div>
+<p>Since the at (<code class="docutils literal notranslate"><span class="pre">&#64;</span></code>) operator is a binary arithmetic operator, you may also implement <code class="docutils literal notranslate"><span class="pre">__rmatmul__</span></code> (and <code class="docutils literal notranslate"><span class="pre">__imatmul__</span></code>) to fully specify its behaviour.</p>
 <p>Further reading:</p>
 <ul class="simple">
-<li><p>Module <code class="docutils literal notranslate"><span class="pre">itertools</span></code> overview, <a class="reference external" href="https://mathspp.com/blog/module-itertools-overview">https://mathspp.com/blog/module-itertools-overview</a> blog article.</p></li>
+<li><p>Overloading arithmetic operators with dunder methods, <a class="reference external" href="https://mathspp.com/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods">https://mathspp.com/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods</a></p></li>
 </ul>
 </section>
 
@@ -642,7 +651,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./0053-itertools_classification"
+            path: "./0236-at_operator"
         },
         predefinedOutput: true
     }
@@ -660,20 +669,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../0052-case-insensitive_regex/tip.html"
+       href="../0235-vars_and_dir/tip.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">52 – Case-insensitive regular expressions</p>
+        <p class="prev-next-title">235 – <code class="docutils literal notranslate"><span class="pre">vars</span></code> and <code class="docutils literal notranslate"><span class="pre">dir</span></code></p>
       </div>
     </a>
     <a class="right-next"
-       href="../0054-t-strings_need_processing/tip.html"
+       href="../9998.themed-index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">54 – t-strings need processing</p>
+        <p class="prev-next-title">Themed index</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
