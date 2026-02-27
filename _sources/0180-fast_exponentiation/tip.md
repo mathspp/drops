@@ -1,7 +1,7 @@
 ---
 themes:
     - "mathematics"
-    - "algorithm"
+    - "algorithms"
 ---
 
 (180)=
