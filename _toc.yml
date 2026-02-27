@@ -239,5 +239,10 @@ chapters:
 - file: 0231-built-ins_any_and_all/tip
 - file: 0232-map_to_simplify_loops/tip
 - file: 0233-tracking_generator_expression_progress/tip
+- file: 0234-join_with_a_comprehension/tip
+- file: 0235-vars_and_dir/tip
+- file: 0236-at_operator/tip
+- file: 0237-__eq__/tip
+- file: 0238-fixed_point/tip
 - file: 9998.themed-index
 - file: 9999.outro
