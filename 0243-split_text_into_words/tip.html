@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>182 – Field default factory &#8212; Practical Python tips</title>
+    <title>243 – Split text into words &#8212; Practical Python tips</title>
   
   
   
@@ -58,12 +58,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '0182-field_default_factory/tip';</script>
-    <link rel="canonical" href="https://drops.mathspp.com/0182-field_default_factory/tip.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = '0243-split_text_into_words/tip';</script>
+    <link rel="canonical" href="https://drops.mathspp.com/0243-split_text_into_words/tip.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="183 – Deprecation warnings" href="../0183-deprecation_warnings/tip.html" />
-    <link rel="prev" title="181 – Priority queues" href="../0181-priority_queues/tip.html" />
+    <link rel="next" title="Themed index" href="../9998.themed-index.html" />
+    <link rel="prev" title="242 – Read custom objects from CSV" href="../0242-read_custom_objects_from_csv/tip.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -357,7 +357,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../0179-immutable_dataclasses/tip.html">179 – Immutable dataclasses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0180-fast_exponentiation/tip.html">180 – Fast exponentiation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0181-priority_queues/tip.html">181 – Priority queues</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">182 – Field default factory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0182-field_default_factory/tip.html">182 – Field default factory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0183-deprecation_warnings/tip.html">183 – Deprecation warnings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0184-accumulate_with_a_custom_function/tip.html">184 – <code class="docutils literal notranslate"><span class="pre">accumulate</span></code> with a custom function</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0185-slicing_mnemonic/tip.html">185 – Slicing mnemonic</a></li>
@@ -418,7 +418,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../0240-open_standard_input/tip.html">240 – Open standard input</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0241-multiline_input_in_the_REPL/tip.html">241 – Multiline input in the REPL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0242-read_custom_objects_from_csv/tip.html">242 – Read custom objects from CSV</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../0243-split_text_into_words/tip.html">243 – Split text into words</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">243 – Split text into words</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../9998.themed-index.html">Themed index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../9999.outro.html">Conclusion</a></li>
 </ul>
@@ -492,7 +492,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F0182-field_default_factory/tip.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F0243-split_text_into_words/tip.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -522,7 +522,7 @@
       
       
       
-      <li><a href="../_sources/0182-field_default_factory/tip.md" target="_blank"
+      <li><a href="../_sources/0243-split_text_into_words/tip.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -604,7 +604,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>182 – Field default factory</h1>
+    <h1>243 – Split text into words</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -618,33 +618,24 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="field-default-factory">
-<span id="id1"></span><h1>182 – Field default factory<a class="headerlink" href="#field-default-factory" title="Link to this heading">#</a></h1>
-<p>Default mutable values create all kinds of problems, so using a mutable value as a default for a data class attribute raises an error:</p>
-<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">dataclasses</span><span class="w"> </span><span class="kn">import</span> <span class="n">dataclass</span>
-
-<span class="nd">@dataclass</span>
-<span class="k">class</span><span class="w"> </span><span class="nc">Exercise</span><span class="p">:</span>
-    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">reps</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">notes</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Wrong!</span>
-<span class="c1"># ValueError</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="split-text-into-words">
+<span id="id1"></span><h1>243 – Split text into words<a class="headerlink" href="#split-text-into-words" title="Link to this heading">#</a></h1>
+<p>When you need to split text into words, the typical solution of using the string method <code class="docutils literal notranslate"><span class="pre">split</span></code> will produce words with adjacent punctuation:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Hello, there!&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<span class="c1"># [&#39;Hello,&#39;, &#39;there!&#39;]</span>
 </pre></div>
 </div>
-<p>The correct way to set the attribute <code class="docutils literal notranslate"><span class="pre">notes</span></code> to have an empty list by default is by using <code class="docutils literal notranslate"><span class="pre">dataclasses.field</span></code>:</p>
-<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">dataclasses</span><span class="w"> </span><span class="kn">import</span> <span class="n">dataclass</span><span class="p">,</span> <span class="n">field</span>
+<p>A more robust approach uses the regular expression function <code class="docutils literal notranslate"><span class="pre">re.split</span></code> and the special regex character <code class="docutils literal notranslate"><span class="pre">\W</span></code>:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
 
-<span class="nd">@dataclass</span>
-<span class="k">class</span><span class="w"> </span><span class="nc">Exercise</span><span class="p">:</span>
-    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">reps</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">notes</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span>  <span class="c1"># Right!</span>
-        <span class="n">default_factory</span><span class="o">=</span><span class="nb">list</span>
-    <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\W+&quot;</span><span class="p">,</span> <span class="n">text</span><span class="p">))</span>
+<span class="c1"># [&#39;Hello&#39;, &#39;there&#39;, &#39;&#39;]</span>
 </pre></div>
 </div>
-<p>The parameter <code class="docutils literal notranslate"><span class="pre">default_factory</span></code> can be set to a callable that should take no arguments.
-The callable is called <em>each time</em> the default value is needed.</p>
+<p>The character <code class="docutils literal notranslate"><span class="pre">\W</span></code> matches non-word characters, so your final list will only contain words strings: strings of alphanumeric characters.
+You can tweak the regular expression to match your expectation of what a <em>word</em> must be.</p>
+<p>The final empty string <code class="docutils literal notranslate"><span class="pre">''</span></code> shows up because the original text ends with a separator.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -660,7 +651,7 @@ The callable is called <em>each time</em> the default value is needed.</p>
         },
         kernelOptions: {
             name: "python3",
-            path: "./0182-field_default_factory"
+            path: "./0243-split_text_into_words"
         },
         predefinedOutput: true
     }
@@ -678,20 +669,20 @@ The callable is called <em>each time</em> the default value is needed.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../0181-priority_queues/tip.html"
+       href="../0242-read_custom_objects_from_csv/tip.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">181 – Priority queues</p>
+        <p class="prev-next-title">242 – Read custom objects from CSV</p>
       </div>
     </a>
     <a class="right-next"
-       href="../0183-deprecation_warnings/tip.html"
+       href="../9998.themed-index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">183 – Deprecation warnings</p>
+        <p class="prev-next-title">Themed index</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
