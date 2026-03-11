@@ -5,6 +5,7 @@ themes:
     - "`re`"
     - "`re.split`"
     - "regex"
+    - "`str.split`"
 ---
 
 (243)=
