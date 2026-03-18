@@ -2,7 +2,7 @@
 themes:
     - "`*args`"
     - "`**kwargs`"
-    - "asterisk `*`"
+    - "`*` (asterisk)"
     - "typing/type hints"
 ---
 

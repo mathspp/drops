@@ -1,7 +1,7 @@
 ---
 themes:
     - "iterables"
-    - "asterisk `*`"
+    - "`*` (asterisk)"
     - "unpacking"
 ---
 

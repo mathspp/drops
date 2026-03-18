@@ -4,7 +4,7 @@ themes:
     - "dictionaries"
     - "match statement"
     - "guards"
-    - "asterisk `*`"
+    - "`*` (asterisk)"
     - "kwargs"
 ---
 

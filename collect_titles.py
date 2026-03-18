@@ -10,7 +10,7 @@ import re
 
 import pyperclip
 
-TITLE_PATTERN = re.compile(r"(?m)^## (?P<nr>\d{1,4}) – (?P<title>.*)$")
+TITLE_PATTERN = re.compile(r"(?m)^# (?P<nr>\d{1,4}) – (?P<title>.*)$")
 CODE_PATTERN = re.compile("`(.*?)`")
 
 def to_code(title: str) -> str:
@@ -21,7 +21,7 @@ def to_code(title: str) -> str:
 
 if __name__ == "__main__":
     titles: list[tuple[int, str]] = []
-    for tip in Path(".").rglob("**/tip.md"):
+    for tip in Path(".").glob("*/tip.md"):
         contents = tip.read_text()
         if (match := TITLE_PATTERN.search(contents)):
             titles.append(

@@ -244,5 +244,17 @@ chapters:
 - file: 0236-at_operator/tip
 - file: 0237-__eq__/tip
 - file: 0238-fixed_point/tip
+- file: 0239-collapse_runs_of_consecutive_spaces/tip
+- file: 0240-open_standard_input/tip
+- file: 0241-multiline_input_in_the_REPL/tip
+- file: 0242-read_custom_objects_from_csv/tip
+- file: 0243-split_text_into_words/tip
+- file: 0244-flexible_string_splitting/tip
+- file: 0245-frozendict/tip
+- file: 0246-custom_hashable_objects/tip
+- file: 0247-lazy_imports/tip
+- file: 0248-unpacking_inside_comprehensions/tip
+- file: 0249-recursive_structural_pattern_matching/tip
+- file: 0250-post_initialisation_in_data_classes/tip
 - file: 9998.themed-index
 - file: 9999.outro
