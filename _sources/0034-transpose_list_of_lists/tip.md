@@ -1,7 +1,7 @@
 ---
 themes:
     - "`zip`"
-    - "asterisk `*`"
+    - "`*` (asterisk)"
 ---
 
 (34)=

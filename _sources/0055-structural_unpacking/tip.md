@@ -1,7 +1,7 @@
 ---
 themes:
     - "unpacking"
-    - "asterisk `*`"
+    - "`*` (asterisk)"
     - "structural pattern matching"
 ---
 

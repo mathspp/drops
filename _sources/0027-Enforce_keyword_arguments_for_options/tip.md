@@ -2,7 +2,7 @@
 themes:
     - "functions"
     - "keyword arguments"
-    - "asterisk `*`"
+    - "`*` (asterisk)"
     - "readability"
 ---
 

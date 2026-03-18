@@ -5,7 +5,7 @@ themes:
     - "OOP"
     - "decorators"
     - "unpacking"
-    - "asterisk `*`"
+    - "`*` (asterisk)"
 ---
 
 (138)=
