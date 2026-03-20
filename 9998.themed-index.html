@@ -16,45 +16,42 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css?v=44dec17f" />
   
-  <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -66,10 +63,9 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Conclusion" href="9999.outro.html" />
-    <link rel="prev" title="250 – Post initialisation in data classes" href="0250-post_initialisation_in_data_classes/tip.html" />
+    <link rel="prev" title="252 – Nested attribute access exception" href="0252-nested_attribute_access_exception/tip.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="2026.01.28" />
   </head>
   
   
@@ -85,8 +81,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -94,6 +101,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -101,8 +109,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -118,8 +126,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -149,11 +156,15 @@
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -415,6 +426,8 @@
 <li class="toctree-l1"><a class="reference internal" href="0248-unpacking_inside_comprehensions/tip.html">248 – Unpacking inside comprehensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0249-recursive_structural_pattern_matching/tip.html">249 – Recursive structural pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0250-post_initialisation_in_data_classes/tip.html">250 – Post initialisation in data classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0251-hashable_protocol/tip.html">251 – Hashable protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0252-nested_attribute_access_exception/tip.html">252 – Nested attribute access exception</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Themed index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="9999.outro.html">Conclusion</a></li>
 </ul>
@@ -425,14 +438,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -562,7 +570,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  class="btn btn-sm btn-fullscreen-button"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -576,17 +584,25 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -659,7 +675,7 @@
 <li><p>3.12 (new in Python 3.12): <a class="reference internal" href="0016-type_statements/tip.html#id1"><span class="std std-ref">16</span></a>, <a class="reference internal" href="0047-batching_API_calls/tip.html#id1"><span class="std std-ref">47</span></a>, <a class="reference internal" href="0084-generics_syntax/tip.html#id1"><span class="std std-ref">84</span></a>, <a class="reference internal" href="0088-constrained_generics/tip.html#id1"><span class="std std-ref">88</span></a>, <a class="reference internal" href="0109-add_typing_to_decorators/tip.html#id1"><span class="std std-ref">109</span></a>, <a class="reference internal" href="0121-paginate_results/tip.html#id1"><span class="std std-ref">121</span></a></p></li>
 <li><p>3.13 (new in Python 3.13): <a class="reference internal" href="0136-strict_batching/tip.html#id1"><span class="std std-ref">136</span></a>, <a class="reference internal" href="0193-typing_generators/tip.html#id1"><span class="std std-ref">193</span></a></p></li>
 <li><p>3.14 (new in Python 3.14): <a class="reference internal" href="0046-dot_product/tip.html#id1"><span class="std std-ref">46</span></a>, <a class="reference internal" href="0054-t-strings_need_processing/tip.html#id1"><span class="std std-ref">54</span></a>, <a class="reference internal" href="0107-map_strict_True/tip.html#id1"><span class="std std-ref">107</span></a>, <a class="reference internal" href="0127-remove_punctuation_functionally/tip.html#id1"><span class="std std-ref">127</span></a>, <a class="reference internal" href="0150-colour_in_the_REPL/tip.html#id1"><span class="std std-ref">150</span></a>, <a class="reference internal" href="0151-copy_files/tip.html#id1"><span class="std std-ref">151</span></a>, <a class="reference internal" href="0152-find_similar_words/tip.html#id1"><span class="std std-ref">152</span></a>, <a class="reference internal" href="0153-forward_references_in_annotations/tip.html#id1"><span class="std std-ref">153</span></a>, <a class="reference internal" href="0154-compression_algorithms/tip.html#id1"><span class="std std-ref">154</span></a>, <a class="reference internal" href="0155-json_CLI/tip.html#id1"><span class="std std-ref">155</span></a>, <a class="reference internal" href="0156-custom_t-string_processing/tip.html#id1"><span class="std std-ref">156</span></a>, <a class="reference internal" href="0157-asyncio_introspection/tip.html#id1"><span class="std std-ref">157</span></a>, <a class="reference internal" href="0158-grouping_digits_in_the_fractional_part/tip.html#id1"><span class="std std-ref">158</span></a>, <a class="reference internal" href="0159-error_handling_with_multiple_types/tip.html#id1"><span class="std std-ref">159</span></a>, <a class="reference internal" href="0160-parse_dates_from_strings/tip.html#id1"><span class="std std-ref">160</span></a>, <a class="reference internal" href="0161-min-heaps_and_max-heaps/tip.html#id1"><span class="std std-ref">161</span></a>, <a class="reference internal" href="0162-check_for_None_functionally/tip.html#id1"><span class="std std-ref">162</span></a>, <a class="reference internal" href="0163-remote_interactive_debugging/tip.html#id1"><span class="std std-ref">163</span></a>, <a class="reference internal" href="0200-one-shot_data_compression/tip.html#id1"><span class="std std-ref">200</span></a></p></li>
-<li><p>3.15 (new in Python 3.15): <a class="reference internal" href="0245-frozendict/tip.html#id1"><span class="std std-ref">245</span></a>, <a class="reference internal" href="0247-lazy_imports/tip.html#id1"><span class="std std-ref">247</span></a>, <a class="reference internal" href="0248-unpacking_inside_comprehensions/tip.html#id1"><span class="std std-ref">248</span></a>, <a class="reference internal" href="0249-recursive_structural_pattern_matching/tip.html#id1"><span class="std std-ref">249</span></a></p></li>
+<li><p>3.15 (new in Python 3.15): <a class="reference internal" href="0245-frozendict/tip.html#id1"><span class="std std-ref">245</span></a>, <a class="reference internal" href="0247-lazy_imports/tip.html#id1"><span class="std std-ref">247</span></a>, <a class="reference internal" href="0248-unpacking_inside_comprehensions/tip.html#id1"><span class="std std-ref">248</span></a>, <a class="reference internal" href="0249-recursive_structural_pattern_matching/tip.html#id1"><span class="std std-ref">249</span></a>, <a class="reference internal" href="0252-nested_attribute_access_exception/tip.html#id1"><span class="std std-ref">252</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">:=</span></code> (walrus operator): <a class="reference internal" href="0148-set_operations_with_operators/tip.html#id1"><span class="std std-ref">148</span></a>, <a class="reference internal" href="0233-tracking_generator_expression_progress/tip.html#id1"><span class="std std-ref">233</span></a>, <a class="reference internal" href="0238-fixed_point/tip.html#id1"><span class="std std-ref">238</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&#64;</span></code> (at operator): <a class="reference internal" href="0236-at_operator/tip.html#id1"><span class="std std-ref">236</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">~</span></code> (tilde): <a class="reference internal" href="0134-invertible_flags/tip.html#id1"><span class="std std-ref">134</span></a></p></li>
@@ -710,8 +726,9 @@
 <li><p>closures: <a class="reference internal" href="0093-non-local_variables/tip.html#id1"><span class="std std-ref">93</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">collections.abc.Callable</span></code>: <a class="reference internal" href="0111-typing_simple_functions/tip.html#id1"><span class="std std-ref">111</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">collections.abc.Generator</span></code>: <a class="reference internal" href="0193-typing_generators/tip.html#id1"><span class="std std-ref">193</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">collections.abc.Hashable</span></code>: <a class="reference internal" href="0251-hashable_protocol/tip.html#id1"><span class="std std-ref">251</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">collections.abc.Iterable</span></code>: <a class="reference internal" href="0036-typing_iterables_instead_of_lists/tip.html#id1"><span class="std std-ref">36</span></a></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">collections.abc</span></code>: <a class="reference internal" href="0036-typing_iterables_instead_of_lists/tip.html#id1"><span class="std std-ref">36</span></a>, <a class="reference internal" href="0111-typing_simple_functions/tip.html#id1"><span class="std std-ref">111</span></a>, <a class="reference internal" href="0193-typing_generators/tip.html#id1"><span class="std std-ref">193</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">collections.abc</span></code>: <a class="reference internal" href="0036-typing_iterables_instead_of_lists/tip.html#id1"><span class="std std-ref">36</span></a>, <a class="reference internal" href="0111-typing_simple_functions/tip.html#id1"><span class="std std-ref">111</span></a>, <a class="reference internal" href="0193-typing_generators/tip.html#id1"><span class="std std-ref">193</span></a>, <a class="reference internal" href="0251-hashable_protocol/tip.html#id1"><span class="std std-ref">251</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">collections.ChainMap</span></code>: <a class="reference internal" href="0023-chain_multiple_dictionaries/tip.html#id1"><span class="std std-ref">23</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">collections.Counter</span></code>: <a class="reference internal" href="0011-count_characters_in_a_file/tip.html#id1"><span class="std std-ref">11</span></a>, <a class="reference internal" href="0132-efficiently_count_characters_in_a_string/tip.html#id1"><span class="std std-ref">132</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">collections.defaultdict</span></code>: <a class="reference internal" href="0037-multi-dictionary/tip.html#id1"><span class="std std-ref">37</span></a>, <a class="reference internal" href="0105-dunder_method___missing__/tip.html#id1"><span class="std std-ref">105</span></a></p></li>
@@ -777,7 +794,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">enum</span></code> (module): <a class="reference internal" href="0028-flag_enums/tip.html#id1"><span class="std std-ref">28</span></a>, <a class="reference internal" href="0031-enumerations_of_string_values/tip.html#id1"><span class="std std-ref">31</span></a>, <a class="reference internal" href="0038-global_enumeration_members/tip.html#id1"><span class="std std-ref">38</span></a>, <a class="reference internal" href="0039-automatic_enumeration_values/tip.html#id1"><span class="std std-ref">39</span></a>, <a class="reference internal" href="0106-custom_enum_search_behaviour/tip.html#id1"><span class="std std-ref">106</span></a>, <a class="reference internal" href="0134-invertible_flags/tip.html#id1"><span class="std std-ref">134</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">enumerate</span></code>: <a class="reference internal" href="0080-bulk_renaming_files/tip.html#id1"><span class="std std-ref">80</span></a></p></li>
 <li><p>exception handling: <a class="reference internal" href="0122-ignore_exceptions/tip.html#id1"><span class="std std-ref">122</span></a>, <a class="reference internal" href="0159-error_handling_with_multiple_types/tip.html#id1"><span class="std std-ref">159</span></a></p></li>
-<li><p>exceptions: <a class="reference internal" href="0149-NotImplementedError/tip.html#id1"><span class="std std-ref">149</span></a>, <a class="reference internal" href="0170-assert_statements_with_custom_message/tip.html#id1"><span class="std std-ref">170</span></a></p></li>
+<li><p>exceptions: <a class="reference internal" href="0149-NotImplementedError/tip.html#id1"><span class="std std-ref">149</span></a>, <a class="reference internal" href="0170-assert_statements_with_custom_message/tip.html#id1"><span class="std std-ref">170</span></a>, <a class="reference internal" href="0252-nested_attribute_access_exception/tip.html#id1"><span class="std std-ref">252</span></a></p></li>
 </ul>
 </section>
 <section id="f">
@@ -822,7 +839,7 @@
 <h2>H<a class="headerlink" href="#h" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">hash</span></code>: <a class="reference internal" href="0096-common_hash_implementation/tip.html#id1"><span class="std std-ref">96</span></a>, <a class="reference internal" href="0246-custom_hashable_objects/tip.html#id1"><span class="std std-ref">246</span></a></p></li>
-<li><p>hashing: <a class="reference internal" href="0096-common_hash_implementation/tip.html#id1"><span class="std std-ref">96</span></a>, <a class="reference internal" href="0191-frozen_dataclasses/tip.html#id1"><span class="std std-ref">191</span></a>, <a class="reference internal" href="0246-custom_hashable_objects/tip.html#id1"><span class="std std-ref">246</span></a></p></li>
+<li><p>hashing: <a class="reference internal" href="0096-common_hash_implementation/tip.html#id1"><span class="std std-ref">96</span></a>, <a class="reference internal" href="0191-frozen_dataclasses/tip.html#id1"><span class="std std-ref">191</span></a>, <a class="reference internal" href="0246-custom_hashable_objects/tip.html#id1"><span class="std std-ref">246</span></a>, <a class="reference internal" href="0251-hashable_protocol/tip.html#id1"><span class="std std-ref">251</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">heapq</span></code>: <a class="reference internal" href="0161-min-heaps_and_max-heaps/tip.html#id1"><span class="std std-ref">161</span></a>, <a class="reference internal" href="0181-priority_queues/tip.html#id1"><span class="std std-ref">181</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">help</span></code>: <a class="reference internal" href="0095-docstring_attribute/tip.html#id1"><span class="std std-ref">95</span></a></p></li>
 <li><p>higher-order functions: <a class="reference internal" href="0111-typing_simple_functions/tip.html#id1"><span class="std std-ref">111</span></a></p></li>
@@ -999,9 +1016,9 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">secrets</span></code> (module): <a class="reference internal" href="0144-safe_random_tokens/tip.html#id1"><span class="std std-ref">144</span></a></p></li>
 <li><p>security: <a class="reference internal" href="0054-t-strings_need_processing/tip.html#id1"><span class="std std-ref">54</span></a>, <a class="reference internal" href="0144-safe_random_tokens/tip.html#id1"><span class="std std-ref">144</span></a></p></li>
 <li><p>sequences: <a class="reference internal" href="0059-idiomatic_sequence_slicing/tip.html#id1"><span class="std std-ref">59</span></a>, <a class="reference internal" href="0185-slicing_mnemonic/tip.html#id1"><span class="std std-ref">185</span></a>, <a class="reference internal" href="0186-assigning_to_list_slices/tip.html#id1"><span class="std std-ref">186</span></a></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">set</span></code>: <a class="reference internal" href="0007-unique_elements_from_a_list/tip.html#id1"><span class="std std-ref">7</span></a>, <a class="reference internal" href="0087-caching_sets_and_frozen_sets/tip.html#id1"><span class="std std-ref">87</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">set</span></code>: <a class="reference internal" href="0007-unique_elements_from_a_list/tip.html#id1"><span class="std std-ref">7</span></a>, <a class="reference internal" href="0087-caching_sets_and_frozen_sets/tip.html#id1"><span class="std std-ref">87</span></a>, <a class="reference internal" href="0251-hashable_protocol/tip.html#id1"><span class="std std-ref">251</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">setattr</span></code>: <a class="reference internal" href="0025-Dynamic_attribute_manipulation/tip.html#id1"><span class="std std-ref">25</span></a></p></li>
-<li><p>sets: <a class="reference internal" href="0007-unique_elements_from_a_list/tip.html#id1"><span class="std std-ref">7</span></a>, <a class="reference internal" href="0022-set_operations_with_dict_keys/tip.html#id1"><span class="std std-ref">22</span></a>, <a class="reference internal" href="0087-caching_sets_and_frozen_sets/tip.html#id1"><span class="std std-ref">87</span></a>, <a class="reference internal" href="0148-set_operations_with_operators/tip.html#id1"><span class="std std-ref">148</span></a>, <a class="reference internal" href="0190-use_set_operations_with_dictionary_keys/tip.html#id1"><span class="std std-ref">190</span></a>, <a class="reference internal" href="0201-check_if_a_number_is_a_power_of_2/tip.html#id1"><span class="std std-ref">201</span></a></p></li>
+<li><p>sets: <a class="reference internal" href="0007-unique_elements_from_a_list/tip.html#id1"><span class="std std-ref">7</span></a>, <a class="reference internal" href="0022-set_operations_with_dict_keys/tip.html#id1"><span class="std std-ref">22</span></a>, <a class="reference internal" href="0087-caching_sets_and_frozen_sets/tip.html#id1"><span class="std std-ref">87</span></a>, <a class="reference internal" href="0148-set_operations_with_operators/tip.html#id1"><span class="std std-ref">148</span></a>, <a class="reference internal" href="0190-use_set_operations_with_dictionary_keys/tip.html#id1"><span class="std std-ref">190</span></a>, <a class="reference internal" href="0201-check_if_a_number_is_a_power_of_2/tip.html#id1"><span class="std std-ref">201</span></a>, <a class="reference internal" href="0251-hashable_protocol/tip.html#id1"><span class="std std-ref">251</span></a></p></li>
 <li><p>short-circuiting: <a class="reference internal" href="0231-built-ins_any_and_all/tip.html#id1"><span class="std std-ref">231</span></a>, <a class="reference internal" href="0232-map_to_simplify_loops/tip.html#id1"><span class="std std-ref">232</span></a>, <a class="reference internal" href="0233-tracking_generator_expression_progress/tip.html#id1"><span class="std std-ref">233</span></a></p></li>
 <li><p>slicing: <a class="reference internal" href="0059-idiomatic_sequence_slicing/tip.html#id1"><span class="std std-ref">59</span></a>, <a class="reference internal" href="0073-slicing_generators_for_debugging/tip.html#id1"><span class="std std-ref">73</span></a>, <a class="reference internal" href="0185-slicing_mnemonic/tip.html#id1"><span class="std std-ref">185</span></a>, <a class="reference internal" href="0186-assigning_to_list_slices/tip.html#id1"><span class="std std-ref">186</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">sorted</span></code>: <a class="reference internal" href="0089-natural_alphabetical_sorting/tip.html#id1"><span class="std std-ref">89</span></a></p></li>
@@ -1071,7 +1088,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">typing.reveal_type</span></code>: <a class="reference internal" href="0214-reveal_type/tip.html#id1"><span class="std std-ref">214</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">typing.Self</span></code>: <a class="reference internal" href="0206-typing_Self/tip.html#id1"><span class="std std-ref">206</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">typing.TypedDict</span></code>: <a class="reference internal" href="0194-type_safe_dictionaries/tip.html#id1"><span class="std std-ref">194</span></a></p></li>
-<li><p>typing/type hints: <a class="reference internal" href="0003-type_unions_with_pipe/tip.html#id1"><span class="std std-ref">3</span></a>, <a class="reference internal" href="0016-type_statements/tip.html#id1"><span class="std std-ref">16</span></a>, <a class="reference internal" href="0029-use_literal_type_for_options/tip.html#id1"><span class="std std-ref">29</span></a>, <a class="reference internal" href="0036-typing_iterables_instead_of_lists/tip.html#id1"><span class="std std-ref">36</span></a>, <a class="reference internal" href="0079-typing_overloads/tip.html#id1"><span class="std std-ref">79</span></a>, <a class="reference internal" href="0081-structural_validation_and_homogenisation/tip.html#id1"><span class="std std-ref">81</span></a>, <a class="reference internal" href="0084-generics_syntax/tip.html#id1"><span class="std std-ref">84</span></a>, <a class="reference internal" href="0088-constrained_generics/tip.html#id1"><span class="std std-ref">88</span></a>, <a class="reference internal" href="0103-typing_args_and_kwargs/tip.html#id1"><span class="std std-ref">103</span></a>, <a class="reference internal" href="0109-add_typing_to_decorators/tip.html#id1"><span class="std std-ref">109</span></a>, <a class="reference internal" href="0111-typing_simple_functions/tip.html#id1"><span class="std std-ref">111</span></a>, <a class="reference internal" href="0113-constant_variables/tip.html#id1"><span class="std std-ref">113</span></a>, <a class="reference internal" href="0118-safely_overriding_methods/tip.html#id1"><span class="std std-ref">118</span></a>, <a class="reference internal" href="0129-prevent_subclassing_overriding/tip.html#id1"><span class="std std-ref">129</span></a>, <a class="reference internal" href="0135-class_and_instance_attributes/tip.html#id1"><span class="std std-ref">135</span></a>, <a class="reference internal" href="0153-forward_references_in_annotations/tip.html#id1"><span class="std std-ref">153</span></a>, <a class="reference internal" href="0193-typing_generators/tip.html#id1"><span class="std std-ref">193</span></a>, <a class="reference internal" href="0194-type_safe_dictionaries/tip.html#id1"><span class="std std-ref">194</span></a>, <a class="reference internal" href="0199-newtype/tip.html#id1"><span class="std std-ref">199</span></a>, <a class="reference internal" href="0205-parse_dont_validate/tip.html#id1"><span class="std std-ref">205</span></a>, <a class="reference internal" href="0206-typing_Self/tip.html#id1"><span class="std std-ref">206</span></a>, <a class="reference internal" href="0211-typealias_vs_newtype/tip.html#id1"><span class="std std-ref">211</span></a>, <a class="reference internal" href="0214-reveal_type/tip.html#id1"><span class="std std-ref">214</span></a>, <a class="reference internal" href="0223-protocols/tip.html#id1"><span class="std std-ref">223</span></a>, <a class="reference internal" href="0225-protocols_and_bounded_type_variables/tip.html#id1"><span class="std std-ref">225</span></a></p></li>
+<li><p>typing/type hints: <a class="reference internal" href="0003-type_unions_with_pipe/tip.html#id1"><span class="std std-ref">3</span></a>, <a class="reference internal" href="0016-type_statements/tip.html#id1"><span class="std std-ref">16</span></a>, <a class="reference internal" href="0029-use_literal_type_for_options/tip.html#id1"><span class="std std-ref">29</span></a>, <a class="reference internal" href="0036-typing_iterables_instead_of_lists/tip.html#id1"><span class="std std-ref">36</span></a>, <a class="reference internal" href="0079-typing_overloads/tip.html#id1"><span class="std std-ref">79</span></a>, <a class="reference internal" href="0081-structural_validation_and_homogenisation/tip.html#id1"><span class="std std-ref">81</span></a>, <a class="reference internal" href="0084-generics_syntax/tip.html#id1"><span class="std std-ref">84</span></a>, <a class="reference internal" href="0088-constrained_generics/tip.html#id1"><span class="std std-ref">88</span></a>, <a class="reference internal" href="0103-typing_args_and_kwargs/tip.html#id1"><span class="std std-ref">103</span></a>, <a class="reference internal" href="0109-add_typing_to_decorators/tip.html#id1"><span class="std std-ref">109</span></a>, <a class="reference internal" href="0111-typing_simple_functions/tip.html#id1"><span class="std std-ref">111</span></a>, <a class="reference internal" href="0113-constant_variables/tip.html#id1"><span class="std std-ref">113</span></a>, <a class="reference internal" href="0118-safely_overriding_methods/tip.html#id1"><span class="std std-ref">118</span></a>, <a class="reference internal" href="0129-prevent_subclassing_overriding/tip.html#id1"><span class="std std-ref">129</span></a>, <a class="reference internal" href="0135-class_and_instance_attributes/tip.html#id1"><span class="std std-ref">135</span></a>, <a class="reference internal" href="0153-forward_references_in_annotations/tip.html#id1"><span class="std std-ref">153</span></a>, <a class="reference internal" href="0193-typing_generators/tip.html#id1"><span class="std std-ref">193</span></a>, <a class="reference internal" href="0194-type_safe_dictionaries/tip.html#id1"><span class="std std-ref">194</span></a>, <a class="reference internal" href="0199-newtype/tip.html#id1"><span class="std std-ref">199</span></a>, <a class="reference internal" href="0205-parse_dont_validate/tip.html#id1"><span class="std std-ref">205</span></a>, <a class="reference internal" href="0206-typing_Self/tip.html#id1"><span class="std std-ref">206</span></a>, <a class="reference internal" href="0211-typealias_vs_newtype/tip.html#id1"><span class="std std-ref">211</span></a>, <a class="reference internal" href="0214-reveal_type/tip.html#id1"><span class="std std-ref">214</span></a>, <a class="reference internal" href="0223-protocols/tip.html#id1"><span class="std std-ref">223</span></a>, <a class="reference internal" href="0225-protocols_and_bounded_type_variables/tip.html#id1"><span class="std std-ref">225</span></a>, <a class="reference internal" href="0251-hashable_protocol/tip.html#id1"><span class="std std-ref">251</span></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">typing</span></code> (module): <a class="reference internal" href="0016-type_statements/tip.html#id1"><span class="std std-ref">16</span></a>, <a class="reference internal" href="0029-use_literal_type_for_options/tip.html#id1"><span class="std std-ref">29</span></a>, <a class="reference internal" href="0036-typing_iterables_instead_of_lists/tip.html#id1"><span class="std std-ref">36</span></a>, <a class="reference internal" href="0079-typing_overloads/tip.html#id1"><span class="std std-ref">79</span></a>, <a class="reference internal" href="0084-generics_syntax/tip.html#id1"><span class="std std-ref">84</span></a>, <a class="reference internal" href="0109-add_typing_to_decorators/tip.html#id1"><span class="std std-ref">109</span></a>, <a class="reference internal" href="0113-constant_variables/tip.html#id1"><span class="std std-ref">113</span></a>, <a class="reference internal" href="0118-safely_overriding_methods/tip.html#id1"><span class="std std-ref">118</span></a>, <a class="reference internal" href="0129-prevent_subclassing_overriding/tip.html#id1"><span class="std std-ref">129</span></a>, <a class="reference internal" href="0135-class_and_instance_attributes/tip.html#id1"><span class="std std-ref">135</span></a>, <a class="reference internal" href="0194-type_safe_dictionaries/tip.html#id1"><span class="std std-ref">194</span></a>, <a class="reference internal" href="0199-newtype/tip.html#id1"><span class="std std-ref">199</span></a>, <a class="reference internal" href="0205-parse_dont_validate/tip.html#id1"><span class="std std-ref">205</span></a>, <a class="reference internal" href="0206-typing_Self/tip.html#id1"><span class="std std-ref">206</span></a>, <a class="reference internal" href="0211-typealias_vs_newtype/tip.html#id1"><span class="std std-ref">211</span></a>, <a class="reference internal" href="0214-reveal_type/tip.html#id1"><span class="std std-ref">214</span></a>, <a class="reference internal" href="0223-protocols/tip.html#id1"><span class="std std-ref">223</span></a>, <a class="reference internal" href="0225-protocols_and_bounded_type_variables/tip.html#id1"><span class="std std-ref">225</span></a></p></li>
 </ul>
 </section>
@@ -1170,12 +1187,12 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="0250-post_initialisation_in_data_classes/tip.html"
+       href="0252-nested_attribute_access_exception/tip.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">250 – Post initialisation in data classes</p>
+        <p class="prev-next-title">252 – Nested attribute access exception</p>
       </div>
     </a>
     <a class="right-next"
@@ -1194,16 +1211,14 @@
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item"><div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+  <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><code class="docutils literal notranslate"><span class="pre">#</span></code></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a">A</a></li>
@@ -1279,8 +1294,8 @@ By Rodrigo Girão Serrão
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
