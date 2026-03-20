@@ -256,5 +256,7 @@ chapters:
 - file: 0248-unpacking_inside_comprehensions/tip
 - file: 0249-recursive_structural_pattern_matching/tip
 - file: 0250-post_initialisation_in_data_classes/tip
+- file: 0251-hashable_protocol/tip
+- file: 0252-nested_attribute_access_exception/tip
 - file: 9998.themed-index
 - file: 9999.outro
